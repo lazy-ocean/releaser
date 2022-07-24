@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Links, LiveReload, Meta } from "@remix-run/react";
-import Header from "./shared/components/Header";
+import { Links, LiveReload, Meta, Outlet } from "@remix-run/react";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -17,8 +16,7 @@ export default function App() {
         {typeof document === "undefined" ? "__STYLES__" : null}
       </head>
       <body>
-        <Header />
-        Hello world
+        <Outlet />
         <LiveReload />
       </body>
     </html>
