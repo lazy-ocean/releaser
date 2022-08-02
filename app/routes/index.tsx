@@ -1,24 +1,28 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
-import axios from "axios";
+import { getData, ENDPOINTS } from "~/shared/utils/getData";
+import type { Album, Artist, IndexData } from "~/shared/types/types";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
-  let followedArtists = null;
+  let followedArtists: Artist[] | [] = [];
+
+  const getFollowedArtists = async (link: string) => {
+    const data = await getData(userData, link);
+    followedArtists = [...followedArtists, ...data?.artists.items];
+    if (data.artists.next) await getFollowedArtists(data.artists.next);
+  };
+
   if (userData?.user) {
-    const { data } = await axios.get(
-      `https://api.spotify.com/v1/me/following?type=artist`,
-      {
-        headers: {
-          Authorization: `Bearer ${userData?.accessToken}`,
-          "Content-Type": "application/json",
-        },
-      }
+    await getFollowedArtists(ENDPOINTS.FOLLOWED_ARTISTS_API);
+    const albums: { items: Album[] } = await getData(
+      userData,
+      ENDPOINTS.ARTISTS_RELEASES(followedArtists[0].id)
     );
-    /*     console.log(data); */
-    followedArtists = data?.artists;
+    console.log(albums);
   }
+
   const res = {
     user: userData?.user,
     artists: followedArtists,
@@ -26,20 +30,9 @@ export const loader: LoaderFunction = async ({ request }) => {
   return res;
 };
 
-interface Artist {
-  id: string;
-  name: string;
-}
-
-interface IndexData {
-  user: any;
-  artists: { items: Artist[] };
-}
-
 export default function Index() {
   const data = useLoaderData<IndexData>();
   const { user = null, artists } = data;
-
   return (
     <div>
       {user ? (
@@ -47,11 +40,11 @@ export default function Index() {
           <p>You are logged in as: {user?.email}</p>
           <div>
             <p>Followed artists:</p>
-            <ul>
-              {artists?.items.map(({ name, id }) => (
+            <ol>
+              {artists?.map(({ name, id }) => (
                 <li key={id}>{name}</li>
               ))}
-            </ul>
+            </ol>
           </div>
         </>
       ) : (
