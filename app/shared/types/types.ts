@@ -1,3 +1,5 @@
+import type { User } from "remix-auth-spotify";
+
 export interface Album {
   album_group: string;
   album_type: string;
@@ -18,9 +20,10 @@ export interface Album {
 export interface Artist {
   id: string;
   name: string;
+  external_urls: { spotify: string };
 }
 
 export interface IndexData {
-  user: any;
-  artists: Artist[];
+  user: User | null;
+  releases: Album[];
 }
