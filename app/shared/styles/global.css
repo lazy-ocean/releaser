@@ -1,0 +1,10 @@
+html {
+  --bg-base: #121212;
+  --bg-card: #181818;
+  --text-primary: #fff;
+  --text-secondary: #a7a7a7;
+  --brand-green: #1ed760;
+
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
