@@ -32,7 +32,7 @@ export default function Index() {
 
   return (
     <>
-      <Header />
+      <Header user={user} />
       <div>
         {user ? (
           <>

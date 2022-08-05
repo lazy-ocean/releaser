@@ -1,10 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap");
+
 html {
+  /* colours */
   --bg-base: #121212;
   --bg-card: #181818;
+  --bg-elevation: #282828;
+  --bg-elevation-hover: #3e3e3e;
   --text-primary: #fff;
   --text-secondary: #a7a7a7;
   --brand-green: #1ed760;
 
+  /* spacings */
+  --spacing-xxs: 0.5rem;
+  --spacing-xs: 1rem;
+  --spacing-s: 2rem;
+
   background-color: var(--bg-base);
   color: var(--text-primary);
+  font-family: "Montserrat", sans-serif;
 }

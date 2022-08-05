@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Links, LiveReload, Meta, Outlet } from "@remix-run/react";
+import { Links, LiveReload, Meta, Outlet, Scripts } from "@remix-run/react";
 import styles from "~/shared/styles/global.css";
 
 export const meta: MetaFunction = () => ({
@@ -23,6 +23,7 @@ export default function App() {
       <body>
         <Outlet />
         <LiveReload />
+        <Scripts />
       </body>
     </html>
   );
