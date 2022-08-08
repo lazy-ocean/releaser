@@ -5,7 +5,7 @@ import { ENDPOINTS } from "~/shared/utils/getData";
 import type { Album, IndexData } from "~/shared/types/types";
 import getFollowedArtists from "~/shared/functions/getFollowedArtists";
 import getRecentReleases from "~/shared/functions/getRecentReleases";
-import Header from "~/shared/features/header/Header";
+import { Header } from "~/shared/features";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
