@@ -3,17 +3,19 @@ import { FlexRow, FlexColumn } from "~/shared/styles/utils";
 
 export const Card = styled.section`
   display: flex;
-  gap: var(--spacing-s);
-  margin: var(--spacing-s);
+  gap: var(--spacing-xs);
+  margin: var(--spacing-xs);
   align-items: flex-start;
+  width: 35%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const Cover = styled.img`
-  max-width: 6rem;
+  max-width: 5rem;
   aspect-ratio: 1/1;
-
-  @media (max-width: 12450px) {
-  }
 `;
 
 export const Info = styled(FlexColumn)`
@@ -22,7 +24,7 @@ export const Info = styled(FlexColumn)`
 
 export const AlbumName = styled.h2`
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
 `;
 

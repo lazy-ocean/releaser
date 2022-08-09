@@ -5,7 +5,7 @@ import { ENDPOINTS } from "~/shared/utils/getData";
 import type { ReleasesInterface, IndexData } from "~/shared/types/types";
 import getFollowedArtists from "~/shared/functions/getFollowedArtists";
 import getRecentReleases from "~/shared/functions/getRecentReleases";
-import { Card, Header } from "~/shared/features";
+import { Header, AlbumsTile } from "~/shared/features";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
@@ -35,21 +35,7 @@ export default function Index() {
       <Header user={user} />
       <div>
         {user ? (
-          <>
-            <div>
-              <p>Releases:</p>
-              <ol>
-                {Object.entries(releases).map(([key, values]) => (
-                  <>
-                    <p>{key}</p>
-                    {values?.map((release) => (
-                      <Card release={release} key={release.id} />
-                    ))}
-                  </>
-                ))}
-              </ol>
-            </div>
-          </>
+          <AlbumsTile releases={releases} />
         ) : (
           <p>You are not logged in yet!</p>
         )}

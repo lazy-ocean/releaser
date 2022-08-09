@@ -14,7 +14,6 @@ const AlbumCard = ({ release }: { release: Album }) => {
     artists,
     images,
     album_type: type,
-    release_date: date,
     total_tracks: tracksNum,
     external_urls: url,
   } = release;
@@ -39,7 +38,6 @@ const AlbumCard = ({ release }: { release: Album }) => {
         {artistsNames}
         <AdditionalInfo>
           <p>{type}</p>
-          <p> {date}</p>
           <p>{`${tracksNum} track(s)`}</p>
         </AdditionalInfo>
       </Info>

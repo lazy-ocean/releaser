@@ -15,7 +15,10 @@ html {
   --spacing-xs: 1rem;
   --spacing-s: 2rem;
 
-  /* media-queries */
+  /* media-queries (just for the reference, wont work anyway)*/
+  --mobile: 600px;
+  --tablet: 810px;
+  --desktop: 1200px;
 
   background-color: var(--bg-base);
   color: var(--text-primary);
