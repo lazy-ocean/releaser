@@ -7,7 +7,7 @@ html {
   --bg-elevation: #282828;
   --bg-elevation-hover: #3e3e3e;
   --text-primary: #fff;
-  --text-secondary: #a7a7a7;
+  --text-secondary: #b3b3b3; /*B3B3B3*/
   --brand-green: #1ed760;
 
   /* spacings */
@@ -15,7 +15,20 @@ html {
   --spacing-xs: 1rem;
   --spacing-s: 2rem;
 
+  /* media-queries */
+
   background-color: var(--bg-base);
   color: var(--text-primary);
   font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  margin-block-start: 0;
+  padding: 0;
 }

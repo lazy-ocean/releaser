@@ -1,12 +1,12 @@
 import type { Session } from "remix-auth-spotify";
-import type { Album, Artist } from "../types/types";
+import type { Album, Artist, ReleasesInterface } from "../types/types";
 import { getData, ENDPOINTS } from "../utils/getData";
 import chooseRecentAlbums from "./chooseRecentAlbums";
 
 const getRecentReleases = async (
   artists: Artist[],
   userData: Session
-): Promise<Album[]> => {
+): Promise<ReleasesInterface> => {
   let recentReleases: Album[] = [];
   await Promise.all(
     artists.map(async ({ id }) => {
@@ -18,7 +18,14 @@ const getRecentReleases = async (
     })
   );
   recentReleases = [...new Map(recentReleases.map((v) => [v.id, v])).values()];
-  return recentReleases;
+
+  return recentReleases.reduce((acc, release) => {
+    const { release_date } = release;
+    acc[release_date] = acc[release_date]
+      ? [...acc[release_date], release]
+      : [release];
+    return acc;
+  }, {} as ReleasesInterface);
 };
 
 export default getRecentReleases;

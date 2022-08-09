@@ -2,14 +2,14 @@ import type { LoaderFunction } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
 import { ENDPOINTS } from "~/shared/utils/getData";
-import type { Album, IndexData } from "~/shared/types/types";
+import type { ReleasesInterface, IndexData } from "~/shared/types/types";
 import getFollowedArtists from "~/shared/functions/getFollowedArtists";
 import getRecentReleases from "~/shared/functions/getRecentReleases";
-import { Header } from "~/shared/features";
+import { Card, Header } from "~/shared/features";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
-  let recentReleases: Album[] = [];
+  let recentReleases: ReleasesInterface = {};
 
   if (userData?.user) {
     const followedArtists = await getFollowedArtists(
@@ -39,21 +39,14 @@ export default function Index() {
             <div>
               <p>Releases:</p>
               <ol>
-                {releases?.map(({ name, id, artists }) => {
-                  const artistsNames = artists.map(
-                    ({ name, external_urls, id }) => (
-                      <a href={external_urls.spotify} key={id}>
-                        {name}{" "}
-                      </a>
-                    )
-                  );
-                  return (
-                    <li key={id} id={id}>
-                      {artistsNames}
-                      {name}
-                    </li>
-                  );
-                })}
+                {Object.entries(releases).map(([key, values]) => (
+                  <>
+                    <p>{key}</p>
+                    {values?.map((release) => (
+                      <Card release={release} key={release.id} />
+                    ))}
+                  </>
+                ))}
               </ol>
             </div>
           </>
