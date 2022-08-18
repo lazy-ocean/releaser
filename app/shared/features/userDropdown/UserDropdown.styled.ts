@@ -14,7 +14,7 @@ export const Menu = styled.ul`
   text-align: initial;
   font-weight: 100;
   transition: background-color 0.2s ease-in-out;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Circular Std", sans-serif;
 
   & li,
   & button {
@@ -36,7 +36,7 @@ export const Menu = styled.ul`
     background-color: transparent;
     color: var(--text-primary);
     font-weight: 100;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Circular Std", sans-serif;
   }
 `;
 
@@ -54,7 +54,7 @@ export const Username = styled.span`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Circular Std", sans-serif;
 `;
 
 export const UserButton = styled.button`

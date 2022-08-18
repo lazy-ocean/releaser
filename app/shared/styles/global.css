@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap");
+@font-face {
+  font-family: "Circular Std";
+  src: url("/fonts/CircularStd-Medium.woff2") format("woff2");
+}
 
 html {
   /* colours */
@@ -22,7 +25,8 @@ html {
 
   background-color: var(--bg-base);
   color: var(--text-primary);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Circular Std", system, -apple-system, BlinkMacSystemFont,
+    sans-serif;
 }
 
 a {
