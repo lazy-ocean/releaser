@@ -1,47 +1,39 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { Form, useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
-import { ENDPOINTS } from "~/shared/utils/getData";
-import type { ReleasesInterface, IndexData } from "~/shared/types/types";
-import getFollowedArtists from "~/shared/functions/getFollowedArtists";
-import getRecentReleases from "~/shared/functions/getRecentReleases";
-import { Header, AlbumsTile } from "~/shared/features";
+import type { IndexData } from "~/shared/types/types";
+import { Header } from "~/shared/features";
+import { Button } from "~/shared/components";
+import { ButtonType } from "~/shared/components/button/button";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
-  let recentReleases: ReleasesInterface = {};
-
-  if (userData?.user) {
-    const followedArtists = await getFollowedArtists(
-      ENDPOINTS.FOLLOWED_ARTISTS_API,
-      userData
-    );
-    recentReleases = await getRecentReleases(followedArtists, userData);
-  }
 
   const res = {
     user: userData?.user,
-    releases: recentReleases,
   };
   return res;
 };
 
 export default function Index() {
   const data = useLoaderData<IndexData>();
-  const { user = null, releases } = data;
+  const { user = null } = data;
 
   return (
     <>
       <Header user={user} />
       <div>
-        {user ? (
-          <AlbumsTile releases={releases} />
-        ) : (
-          <p>You are not logged in yet!</p>
+        {!user && (
+          <>
+            <p>Please login to your Spotify account</p>
+            <Form action={user ? "/logout" : "/auth/spotify"} method="post">
+              <Button
+                label={user ? "Logout" : "Log in to Spotify"}
+                type={ButtonType.PRIMARY}
+              />
+            </Form>
+          </>
         )}
-        <Form action={user ? "/logout" : "/auth/spotify"} method="post">
-          <button>{user ? "Logout" : "Log in with Spotify"}</button>
-        </Form>
       </div>
     </>
   );
