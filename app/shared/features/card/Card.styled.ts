@@ -30,6 +30,7 @@ export const AlbumName = styled.h2`
 
 export const Artists = styled(FlexRow)`
   gap: var(--spacing-xxs);
+  flex-wrap: wrap;
 
   & a {
     color: var(--brand-green);
