@@ -30,7 +30,12 @@ export interface ReleasesInterface {
   [key: string]: Album[];
 }
 
-export interface IndexData {
+export interface HomeData {
   user: User | null;
   releases: ReleasesInterface;
+}
+
+export interface IndexData {
+  user: User | null;
+  releases: { albums: ReleasesInterface; location: string };
 }

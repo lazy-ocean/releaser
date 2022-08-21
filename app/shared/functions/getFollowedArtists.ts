@@ -7,7 +7,7 @@ const getFollowedArtists = async (
   userData: Session,
   followedArtists: Artist[] = []
 ): Promise<Artist[]> => {
-  const data = await getData(userData, link);
+  const data = await getData(userData.accessToken, link);
   followedArtists = [...followedArtists, ...data?.artists.items];
   if (data.artists.next)
     return await getFollowedArtists(

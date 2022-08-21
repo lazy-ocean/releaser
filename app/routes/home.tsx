@@ -2,9 +2,9 @@ import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
 import { ENDPOINTS } from "~/shared/utils/getData";
-import type { ReleasesInterface, IndexData } from "~/shared/types/types";
+import type { ReleasesInterface, HomeData } from "~/shared/types/types";
 import getFollowedArtists from "~/shared/functions/getFollowedArtists";
-import getRecentReleases from "~/shared/functions/getRecentReleases";
+import { getRecentReleases } from "~/shared/functions/getRecentReleases";
 import { Header, AlbumsTile } from "~/shared/features";
 
 export const loader: LoaderFunction = async ({ request }) => {
@@ -27,7 +27,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 export default function HomePage() {
-  const data = useLoaderData<IndexData>();
+  const data = useLoaderData<HomeData>();
   const { user = null, releases } = data;
 
   return (

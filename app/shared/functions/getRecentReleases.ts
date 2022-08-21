@@ -3,7 +3,16 @@ import type { Album, Artist, ReleasesInterface } from "../types/types";
 import { getData, ENDPOINTS } from "../utils/getData";
 import chooseRecentAlbums from "./chooseRecentAlbums";
 
-const getRecentReleases = async (
+export const groupAlbumsByDate = (albums: Album[]) =>
+  albums.reduce((acc, release) => {
+    const { release_date } = release;
+    acc[release_date] = acc[release_date]
+      ? [...acc[release_date], release]
+      : [release];
+    return acc;
+  }, {} as ReleasesInterface);
+
+export const getRecentReleases = async (
   artists: Artist[],
   userData: Session
 ): Promise<ReleasesInterface> => {
@@ -11,7 +20,7 @@ const getRecentReleases = async (
   await Promise.all(
     artists.map(async ({ id }) => {
       const albums: { items: Album[] } = await getData(
-        userData,
+        userData.accessToken,
         ENDPOINTS.ARTISTS_RELEASES(id)
       );
       recentReleases = [...recentReleases, ...chooseRecentAlbums(albums.items)];
@@ -19,13 +28,5 @@ const getRecentReleases = async (
   );
   recentReleases = [...new Map(recentReleases.map((v) => [v.id, v])).values()];
 
-  return recentReleases.reduce((acc, release) => {
-    const { release_date } = release;
-    acc[release_date] = acc[release_date]
-      ? [...acc[release_date], release]
-      : [release];
-    return acc;
-  }, {} as ReleasesInterface);
+  return groupAlbumsByDate(recentReleases);
 };
-
-export default getRecentReleases;

@@ -1,40 +1,35 @@
 import type { LoaderFunction } from "@remix-run/node";
-import { Form, useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
 import type { IndexData } from "~/shared/types/types";
-import { Header } from "~/shared/features";
-import { Button } from "~/shared/components";
-import { ButtonType } from "~/shared/components/button/button";
+import { Header, LoginForm, RegionalReleases } from "~/shared/features";
+import requestClientCredentials from "~/shared/functions/requestClientCredentials";
+import getRegionalReleases from "~/shared/functions/getRegionalReleases";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
+  let releases = null;
 
-  const res = {
-    user: userData?.user,
-  };
-  return res;
+  const baseAccessToken = await requestClientCredentials();
+  if (baseAccessToken) {
+    releases = await getRegionalReleases(baseAccessToken);
+  }
+
+  return { user: userData?.user, releases };
 };
 
 export default function Index() {
   const data = useLoaderData<IndexData>();
-  const { user = null } = data;
+  const { user = null, releases } = data;
 
   return (
     <>
       <Header user={user} />
-      <div>
-        {!user && (
-          <>
-            <p>Please login to your Spotify account</p>
-            <Form action={user ? "/logout" : "/auth/spotify"} method="post">
-              <Button
-                label={user ? "Logout" : "Log in to Spotify"}
-                type={ButtonType.PRIMARY}
-              />
-            </Form>
-          </>
-        )}
-      </div>
+      {!user && <LoginForm />}
+      <RegionalReleases
+        releases={releases.albums}
+        location={releases.location}
+      />
     </>
   );
 }
