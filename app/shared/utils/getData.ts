@@ -5,6 +5,7 @@ export const ENDPOINTS = {
   FOLLOWED_ARTISTS_API: `https://api.spotify.com/v1/me/following?type=artist`,
   ARTISTS_RELEASES: (id: string): string =>
     `https://api.spotify.com/v1/artists/${id}/albums?include_groups=album,single`,
+  REQUEST_TOKEN: "https://accounts.spotify.com/api/token",
 };
 
 export const getData = async (userData: Session | null, url: string) => {
