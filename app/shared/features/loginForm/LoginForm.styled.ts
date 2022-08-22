@@ -8,6 +8,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   margin: var(--spacing-s);
+  box-shadow: var(--shadow);
 `;
 
 export const Header = styled.h2`

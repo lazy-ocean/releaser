@@ -4,7 +4,7 @@ import { Container } from "./RegionalReleases.styled";
 
 const RegionalReleases = ({
   releases,
-  location,
+  location = "the USA",
 }: {
   releases: ReleasesInterface;
   location: string;

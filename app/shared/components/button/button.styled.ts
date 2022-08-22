@@ -9,6 +9,7 @@ export const CommonButton = css`
   min-height: 3rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, filter 0.2s ease-in-out;
+  box-shadow: var(--shadow);
 `;
 
 export const PrimaryButton = styled.button`

@@ -12,6 +12,7 @@ html {
   --text-primary: #fff;
   --text-secondary: #b3b3b3;
   --brand-green: #1ed760;
+  --shadow: 8px 8px 9px -2px rgb(14 14 14 / 80%);
 
   /* spacings */
   --spacing-xxs: 0.5rem;
