@@ -11,7 +11,7 @@ const RegionalReleases = ({
 }) => {
   return (
     <Container>
-      <h2>Recent music releases in {location}</h2>
+      <h2>New music releases in {location}</h2>
       {!!releases && <AlbumsTile releases={releases} />}
     </Container>
   );

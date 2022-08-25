@@ -32,7 +32,7 @@ export interface ReleasesInterface {
 
 export interface HomeData {
   user: User | null;
-  releases: ReleasesInterface;
+  releases: Album[];
 }
 
 export interface IndexData {

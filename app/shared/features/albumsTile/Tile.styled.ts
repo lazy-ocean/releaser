@@ -8,8 +8,7 @@ export const DayList = styled(FlexRow)`
 
 export const ReleaseDate = styled.p`
   text-align: right;
-  color: var(--text-secondary);
-  opacity: 0.5;
+  color: var(--text-faded);
   padding-right: var(--spacing-xs);
   padding-left: var(--spacing-s);
   font-size: 1.3rem;
@@ -29,4 +28,8 @@ export const ReleasesRow = styled(FlexRow)`
   align-items: center;
   padding: var(--spacing-xs);
   box-shadow: var(--shadow);
+`;
+
+export const HomePageContainer = styled.section`
+  padding: var(--spacing-xs) var(--spacing-s);
 `;
