@@ -3,8 +3,10 @@ import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
 import type { IndexData } from "~/shared/types/types";
 import { Header, LoginForm, RegionalReleases } from "~/shared/features";
-import requestClientCredentials from "~/shared/functions/requestClientCredentials";
-import getRegionalReleases from "~/shared/functions/getRegionalReleases";
+import {
+  requestClientCredentials,
+  getRegionalReleases,
+} from "~/shared/functions";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);

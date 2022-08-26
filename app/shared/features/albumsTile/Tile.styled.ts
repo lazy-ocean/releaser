@@ -33,3 +33,9 @@ export const ReleasesRow = styled(FlexRow)`
 export const HomePageContainer = styled.section`
   padding: var(--spacing-xs) var(--spacing-s);
 `;
+
+export const LoaderWrapper = styled.div`
+  margin-top: var(--spacing-s);
+  width: 40px;
+  margin: 0 auto;
+`;

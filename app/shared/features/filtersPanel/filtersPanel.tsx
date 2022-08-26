@@ -9,6 +9,13 @@ import { useState } from "react";
 import { FilterActions } from "./filtersPanel.interface";
 import type { FiltersPanelProps } from "./filtersPanel.interface";
 
+const PERIOD_VALUES: { value: number; label: string }[] = [
+  { value: 7, label: "7 days" },
+  { value: 14, label: "14 days" },
+  { value: 30, label: "1 month" },
+  { value: 90, label: "3 months" },
+];
+
 const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const handleSubmit = (e: React.SyntheticEvent) => {
@@ -31,10 +38,11 @@ const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
         <div>
           <FilterLabel htmlFor="period">Show releases for </FilterLabel>
           <Dropdown id="period" name="period">
-            <option value={7}>7 days</option>
-            <option value={14}>14 days</option>
-            <option value={30}>1 month</option>
-            <option value={90}>3 months</option>
+            {PERIOD_VALUES.map(({ value, label }, i) => (
+              <option value={value} key={i} selected={state.period === value}>
+                {label}
+              </option>
+            ))}
           </Dropdown>
         </div>
       ) : (

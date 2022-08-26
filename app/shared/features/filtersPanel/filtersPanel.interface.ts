@@ -1,5 +1,5 @@
 export interface FiltersState {
-  period: number;
+  period: number | null;
 }
 
 export enum FilterActions {
