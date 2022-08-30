@@ -14,6 +14,7 @@ export const FilterLabel = styled.label`
   font-size: 1rem;
   color: var(--text-faded);
   margin: 0;
+  cursor: pointer;
 
   & span {
     background-color: #b3b3b32b;
@@ -46,4 +47,10 @@ export const FiltersButton = styled.button<{ active: boolean }>`
     fill: ${({ active }) =>
       active ? `var(  --brand-green)` : `var(--text-secondary)`};
   }
+`;
+
+export const FiltersWrapper = styled.div`
+  display: flex;
+  gap: var(--spacing-s);
+  flex-wrap: wrap;
 `;

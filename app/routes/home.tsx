@@ -7,7 +7,7 @@ import type { Album, HomeData } from "~/shared/types/types";
 import {
   getFollowedArtists,
   getRecentReleases,
-  chooseRecentAlbums,
+  chooseRecentReleases,
   groupAlbumsByDate,
 } from "~/shared/functions";
 import { Header, AlbumsTile, FiltersPanel } from "~/shared/features";
@@ -16,7 +16,10 @@ import {
   HomePageContainer,
   LoaderWrapper,
 } from "~/shared/features/albumsTile/Tile.styled";
-import { FilterActions } from "~/shared/features/filtersPanel/filtersPanel.interface";
+import {
+  FilterActions,
+  ReleaseType,
+} from "~/shared/features/filtersPanel/filtersPanel.interface";
 import { readFromLocalStorage } from "~/shared/utils/hooks/useLocalStorage";
 import { ClipLoader } from "react-spinners";
 
@@ -42,11 +45,19 @@ export const loader: LoaderFunction = async ({ request }) => {
 export default function HomePage() {
   const data = useLoaderData<HomeData>();
   const { user = null, releases } = data;
-  const [state, dispatch] = useReducer(filtersPanelReducer, { period: null });
+  const [state, dispatch] = useReducer(filtersPanelReducer, {
+    period: null,
+    type: ReleaseType.Both,
+  });
 
   useEffect(() => {
-    const item = readFromLocalStorage("period");
-    dispatch({ type: FilterActions.ChangePeriod, value: Number(item) || 7 });
+    const period = readFromLocalStorage("period");
+    dispatch({ type: FilterActions.ChangePeriod, value: Number(period) || 7 });
+    const type = readFromLocalStorage("type");
+    dispatch({
+      type: FilterActions.ChangeType,
+      value: type || ReleaseType.Both,
+    });
   }, []);
 
   return (
@@ -64,7 +75,7 @@ export default function HomePage() {
               {user && (
                 <AlbumsTile
                   releases={groupAlbumsByDate(
-                    chooseRecentAlbums(releases, state.period)
+                    chooseRecentReleases(releases, state.period, state.type)
                   )}
                 />
               )}

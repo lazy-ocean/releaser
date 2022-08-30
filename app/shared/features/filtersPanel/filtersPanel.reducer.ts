@@ -13,7 +13,12 @@ const filtersPanelReducer = (
         ...state,
         period: Number(action.value),
       };
-
+    case FilterActions.ChangeType:
+      setLocalStorageItem("type", action.value.toString());
+      return {
+        ...state,
+        type: action.value,
+      };
     default:
       return state;
   }

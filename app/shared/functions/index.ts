@@ -1,4 +1,4 @@
-export { default as chooseRecentAlbums } from "./chooseRecentAlbums";
+export { default as chooseRecentReleases } from "./chooseRecentAlbums";
 export { default as getFollowedArtists } from "./getFollowedArtists";
 export { groupAlbumsByDate, getRecentReleases } from "./getRecentReleases";
 export { default as getRegionalReleases } from "./getRegionalReleases";
