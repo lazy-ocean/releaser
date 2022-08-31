@@ -8,6 +8,7 @@ export const Form = styled.form`
   border-radius: 20px;
   align-items: center;
   min-height: 35px;
+  gap: var(--spacing-s);
 `;
 
 export const FilterLabel = styled.label`

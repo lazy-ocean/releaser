@@ -16,6 +16,13 @@ export const ReleaseDate = styled.p`
   writing-mode: tb;
   transform: rotate(180deg);
   margin: 0;
+
+  @media (max-width: 600px) {
+    padding-left: var(--spacing-xs);
+    font-size: 1rem;
+    writing-mode: inherit;
+    transform: initial;
+  }
 `;
 
 export const ReleasesPanel = styled(FlexColumn)`
@@ -28,6 +35,11 @@ export const ReleasesRow = styled(FlexRow)`
   align-items: center;
   padding: var(--spacing-xs);
   box-shadow: var(--shadow);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const HomePageContainer = styled.section`

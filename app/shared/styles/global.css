@@ -31,6 +31,12 @@ html {
     sans-serif;
 }
 
+@media (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;

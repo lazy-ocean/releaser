@@ -55,6 +55,10 @@ export const Username = styled.span`
   white-space: nowrap;
   overflow: hidden;
   font-family: "Circular Std", sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 
 export const UserButton = styled.button`
