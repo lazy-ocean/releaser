@@ -32,7 +32,11 @@ const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent): void => {
-      if (formFef.current && !formFef.current.contains(event.target as Node)) {
+      if (
+        filtersOpen &&
+        formFef.current &&
+        !formFef.current.contains(event.target as Node)
+      ) {
         if (typeof formFef.current.requestSubmit === "function") {
           formFef.current.requestSubmit();
         } else
@@ -46,7 +50,7 @@ const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [filtersOpen]);
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
