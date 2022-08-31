@@ -10,7 +10,7 @@ import {
   chooseRecentReleases,
   groupAlbumsByDate,
 } from "~/shared/functions";
-import { Header, AlbumsTile, FiltersPanel } from "~/shared/features";
+import { Header, AlbumsTile, FiltersPanel, Footer } from "~/shared/features";
 import filtersPanelReducer from "~/shared/features/filtersPanel/filtersPanel.reducer";
 import {
   HomePageContainer,
@@ -83,6 +83,7 @@ export default function HomePage() {
           </>
         )}
       </main>
+      <Footer />
     </>
   );
 }

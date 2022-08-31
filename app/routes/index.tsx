@@ -2,7 +2,7 @@ import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
 import type { IndexData } from "~/shared/types/types";
-import { Header, LoginForm, RegionalReleases } from "~/shared/features";
+import { Footer, Header, LoginForm, RegionalReleases } from "~/shared/features";
 import {
   requestClientCredentials,
   getRegionalReleases,
@@ -32,6 +32,7 @@ export default function Index() {
         releases={releases.albums}
         location={releases.location}
       />
+      <Footer />
     </>
   );
 }
