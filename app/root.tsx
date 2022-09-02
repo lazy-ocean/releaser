@@ -12,12 +12,28 @@ export const meta: MetaFunction = () => {
     title: "Spotify Releaser",
     "og:title": "Spotify Releaser",
     "og:description": description,
-    "og:image": "meta_img.png",
+    "og:image": "https://spotify-releaser.vercel.app/meta_img.png",
   };
 };
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    {
+      rel: "icon",
+      href: "/favicon.ico",
+      sizes: "any",
+    },
+    {
+      rel: "icon",
+      href: "/icon.png",
+      type: "image/png",
+    },
+    {
+      rel: "apple-touch-icon",
+      href: "/apple-touch-icon.png",
+    },
+  ];
 }
 
 export default function App() {
