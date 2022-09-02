@@ -27,7 +27,7 @@ export default function Index() {
   return (
     <>
       <Header user={user} />
-      {!user && <LoginForm />}
+      <LoginForm user={user} />
       <RegionalReleases
         releases={releases.albums}
         location={releases.location}
