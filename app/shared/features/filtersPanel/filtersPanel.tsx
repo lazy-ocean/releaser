@@ -18,6 +18,8 @@ const PERIOD_VALUES: {
   { value: 14, label: "14 days" },
   { value: 30, label: "1 month" },
   { value: 90, label: "3 months" },
+  { value: 180, label: "6 months" },
+  { value: 365, label: "1 year" },
 ];
 
 const RELEASE_TYPES = {

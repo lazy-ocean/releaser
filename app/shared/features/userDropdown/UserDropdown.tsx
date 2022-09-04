@@ -1,5 +1,5 @@
 import type { User } from "remix-auth-spotify";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   UserButton,
   DropdownButton,
@@ -11,6 +11,7 @@ import { Form, useSubmit } from "@remix-run/react";
 
 const UserDropdown = ({ user }: { user: User }) => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
+  const ref = useRef<HTMLButtonElement>(null);
   const submit = useSubmit();
 
   const { name, image } = user;
@@ -19,25 +20,35 @@ const UserDropdown = ({ user }: { user: User }) => {
     submit(event.currentTarget);
   };
 
-  return (
-    <>
-      <UserButton onClick={() => setMenuOpen(!isMenuOpen)}>
-        <img src={image} alt="" />
-        <Username>{name}</Username>
-        <DropdownButton>
-          {isMenuOpen ? <AiFillCaretUp /> : <AiFillCaretDown />}
-        </DropdownButton>
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (ref.current && !ref.current.contains(event?.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
 
-        {isMenuOpen && (
-          <Menu>
-            <li>Profile</li>
-            <Form action="/logout" method="post">
-              <button onClick={handleSubmit}>Logout</button>
-            </Form>
-          </Menu>
-        )}
-      </UserButton>
-    </>
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
+
+  return (
+    <UserButton onClick={() => setMenuOpen(!isMenuOpen)} ref={ref}>
+      <img src={image} alt="Your avatar" />
+      <Username>{name}</Username>
+      <DropdownButton>
+        {isMenuOpen ? <AiFillCaretUp /> : <AiFillCaretDown />}
+      </DropdownButton>
+
+      {isMenuOpen && (
+        <Menu>
+          <Form action="/logout" method="post">
+            <button onClick={handleSubmit}>Logout</button>
+          </Form>
+        </Menu>
+      )}
+    </UserButton>
   );
 };
 
