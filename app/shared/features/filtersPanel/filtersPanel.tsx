@@ -7,7 +7,7 @@ import {
 } from "./filtersPanel.styled";
 import { FaFilter } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
-import { FilterActions, ReleaseType } from "./filtersPanel.interface";
+import { ReleaseType } from "./filtersPanel.interface";
 import type { FiltersPanelProps } from "./filtersPanel.interface";
 
 const PERIOD_VALUES: {
@@ -28,7 +28,12 @@ const RELEASE_TYPES = {
   [ReleaseType.Both]: "albums and singles",
 };
 
-const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
+const FiltersPanel = ({
+  type,
+  setType,
+  period,
+  setPeriod,
+}: FiltersPanelProps) => {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const formFef = useRef<HTMLFormElement>(null);
 
@@ -65,8 +70,8 @@ const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
         period: target.period.value,
         type: target.type.value,
       };
-      dispatch({ type: FilterActions.ChangePeriod, value: data.period });
-      dispatch({ type: FilterActions.ChangeType, value: data.type });
+      setPeriod(data.period);
+      setType(data.type);
       setFiltersOpen(false);
     } else setFiltersOpen(true);
   };
@@ -80,11 +85,7 @@ const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
               <FilterLabel htmlFor="period">Show releases for </FilterLabel>
               <Dropdown id="period" name="period">
                 {PERIOD_VALUES.map(({ value, label }, i) => (
-                  <option
-                    value={value}
-                    key={i}
-                    selected={state.period === value}
-                  >
+                  <option value={value} key={i} selected={period === value}>
                     {label}
                   </option>
                 ))}
@@ -95,7 +96,7 @@ const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
               <Dropdown
                 id="type"
                 name="type"
-                defaultValue={RELEASE_TYPES[state.type]}
+                defaultValue={RELEASE_TYPES[type]}
               >
                 {Object.entries(RELEASE_TYPES).map(([key, value], i) => {
                   return (
@@ -110,10 +111,10 @@ const FiltersPanel = ({ dispatch, state }: FiltersPanelProps) => {
         ) : (
           <>
             <FilterLabel as="p" onClick={() => setFiltersOpen(true)}>
-              Show releases for <span>{state.period}</span> days
+              Show releases for <span>{period}</span> days
             </FilterLabel>
             <FilterLabel as="p" onClick={() => setFiltersOpen(true)}>
-              Show <span>{RELEASE_TYPES[state.type]}</span>
+              Show <span>{RELEASE_TYPES[type]}</span>
             </FilterLabel>
           </>
         )}

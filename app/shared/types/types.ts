@@ -1,4 +1,4 @@
-import type { User } from "remix-auth-spotify";
+import type { Session, User } from "remix-auth-spotify";
 
 interface AlbumImage {
   url: string;
@@ -18,6 +18,7 @@ export interface Album {
   total_tracks: number;
   type: string;
   uri: string;
+  liked?: boolean;
 }
 
 export interface Artist {
@@ -31,7 +32,7 @@ export interface ReleasesInterface {
 }
 
 export interface HomeData {
-  user: User | null;
+  user: Session | null;
   releases: Album[];
 }
 
