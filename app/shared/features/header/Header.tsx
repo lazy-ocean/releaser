@@ -3,7 +3,7 @@ import { StyledHeader, Logo } from "./Header.styled";
 import { UserDropdown } from "~/shared/features";
 import { Link } from "@remix-run/react";
 
-const Header = ({ user }: { user: User | null }) => {
+const Header = ({ user }: { user?: User | null }) => {
   return (
     <StyledHeader>
       <Link to="/">

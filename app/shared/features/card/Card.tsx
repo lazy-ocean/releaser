@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import type { Album } from "~/shared/types/types";
 import {
   Card,
@@ -7,8 +8,11 @@ import {
   Artists,
   AdditionalInfo,
 } from "./Card.styled";
+import AddToLibrary from "../addToLibrary/AddToLibrary";
+import UserContext from "~/shared/contexts/userContext";
 
 const AlbumCard = ({ release }: { release: Album }) => {
+  const { user } = useContext(UserContext);
   const {
     name,
     artists,
@@ -16,6 +20,8 @@ const AlbumCard = ({ release }: { release: Album }) => {
     album_type: type,
     total_tracks: tracksNum,
     external_urls: url,
+    liked,
+    id,
   } = release;
 
   const artistsNames = (
@@ -41,6 +47,7 @@ const AlbumCard = ({ release }: { release: Album }) => {
           <p>{`${tracksNum} track(s)`}</p>
         </AdditionalInfo>
       </Info>
+      {user && <AddToLibrary liked={liked} albumId={id} />}
     </Card>
   );
 };
