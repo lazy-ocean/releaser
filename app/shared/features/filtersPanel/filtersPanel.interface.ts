@@ -25,6 +25,8 @@ export type Action =
     };
 
 export interface FiltersPanelProps {
-  dispatch: React.Dispatch<Action>;
-  state: FiltersState;
+  type: ReleaseType;
+  setType: (arg: ReleaseType) => void;
+  period: number;
+  setPeriod: (arg: number) => void;
 }
