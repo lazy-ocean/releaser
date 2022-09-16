@@ -21,6 +21,8 @@ const scopes = [
   "user-follow-read",
   "user-library-read",
   "user-library-modify",
+  "playlist-modify-public",
+  "playlist-modify-private",
 ].join(" ");
 
 export const spotifyStrategy = new SpotifyStrategy(

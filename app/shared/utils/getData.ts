@@ -5,17 +5,23 @@ export const ENDPOINTS = {
   ARTISTS_RELEASES: (id: string): string =>
     `https://api.spotify.com/v1/artists/${id}/albums?include_groups=album,single`,
   RECENT_RELEASES: (country: string = "US"): string =>
-    `https://api.spotify.com/v1/browse/new-releases?country=${country}`,
+    `https://api.spotify.com/v1/browse/new-releases?country=${country}&limit=10`,
   REQUEST_TOKEN: "https://accounts.spotify.com/api/token",
   IF_ALBUM_IN_LIBRARY: (id: string) =>
     `https://api.spotify.com/v1/me/albums/contains?ids=${id}`,
   ADD_ALBUM: (id: string) => `https://api.spotify.com/v1/me/albums?ids=${id}`,
+  GET_PLAYLISTS: "https://api.spotify.com/v1/me/playlists",
+  GET_ALBUM_TRACKS: (id: string) =>
+    `https://api.spotify.com/v1/albums/${id}/tracks`,
+  ADD_TO_PLAYLIST: (id: string, uris: string) =>
+    `https://api.spotify.com/v1/playlists/${id}/tracks?uris=${uris}`,
 };
 
 export enum TYPES {
   GET = "get",
   PUT = "put",
   DELETE = "delete",
+  POST = "post",
 }
 
 export const getData = async (
@@ -44,6 +50,11 @@ export const getData = async (
       break;
     case TYPES.DELETE:
       data = await axios.delete(url, {
+        headers,
+      });
+      break;
+    case TYPES.POST:
+      data = await axios.post(url, null, {
         headers,
       });
       break;
