@@ -12,7 +12,6 @@ export const ReleaseDate = styled.p`
   padding-right: var(--spacing-xs);
   padding-left: var(--spacing-s);
   font-size: 1.3rem;
-  font-weight: 300;
   writing-mode: tb;
   transform: rotate(180deg);
   margin: 0;
