@@ -19,6 +19,9 @@ import { ReleaseType } from "~/shared/features/filtersPanel/filtersPanel.interfa
 import { readFromLocalStorage } from "~/shared/utils/hooks/useLocalStorage";
 import { ClipLoader } from "react-spinners";
 import UserContext from "~/shared/contexts/userContext";
+import AlertContext from "~/shared/contexts/alertContext";
+import type { AlertType } from "~/shared/components/alert/Alert.interface";
+import { Alert } from "~/shared/components";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
@@ -45,6 +48,8 @@ export default function HomePage() {
   const [albums, setAlbums] = useState<Album[] | []>([]);
   const [period, setPeriod] = useState<number | null>(null);
   const [type, setType] = useState(ReleaseType.Both);
+  const [alertIsOpen, setAlertIsOpen] = useState<AlertType | false>(false);
+  const [alertText, setAlertText] = useState<string | null>(null);
 
   useEffect(() => {
     const period = readFromLocalStorage("period");
@@ -71,31 +76,38 @@ export default function HomePage() {
 
   return (
     <UserContext.Provider value={{ user }}>
-      <>
-        <Header user={user?.user} />
-        <main>
-          {!period ? (
-            <LoaderWrapper>
-              <ClipLoader color="#1ed760" size={100} />
-            </LoaderWrapper>
-          ) : (
-            albums && (
-              <>
-                <FiltersPanel
-                  type={type}
-                  setType={setType}
-                  period={period}
-                  setPeriod={setPeriod}
-                />
-                <HomePageContainer>
-                  {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}
-                </HomePageContainer>
-              </>
-            )
-          )}
-        </main>
-        <Footer />
-      </>
+      <AlertContext.Provider
+        value={{ alertIsOpen, setAlertIsOpen, alertText, setAlertText }}
+      >
+        <>
+          <Header user={user?.user} />
+          <main style={{ position: "relative" }}>
+            {!period ? (
+              <LoaderWrapper>
+                <ClipLoader color="#1ed760" size={100} />
+              </LoaderWrapper>
+            ) : (
+              albums && (
+                <>
+                  <FiltersPanel
+                    type={type}
+                    setType={setType}
+                    period={period}
+                    setPeriod={setPeriod}
+                  />
+                  <HomePageContainer>
+                    {user && (
+                      <AlbumsTile releases={groupAlbumsByDate(albums)} />
+                    )}
+                  </HomePageContainer>
+                </>
+              )
+            )}
+            <Alert />
+          </main>
+          <Footer />
+        </>
+      </AlertContext.Provider>
     </UserContext.Provider>
   );
 }

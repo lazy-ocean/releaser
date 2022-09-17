@@ -13,6 +13,8 @@ html {
   --text-secondary: #b3b3b3;
   --text-faded: #6d6d6d;
   --brand-green: #1ed760;
+  --alert-success: #0d72ea;
+  --alert-error: #f15e6c;
   --shadow: 8px 8px 9px -2px rgb(14 14 14 / 80%);
 
   /* spacings */
