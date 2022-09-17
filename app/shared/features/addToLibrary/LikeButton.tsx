@@ -2,6 +2,8 @@ import { useState, useContext } from "react";
 import { ENDPOINTS, getData, TYPES } from "~/shared/utils/getData";
 import UserContext from "~/shared/contexts/userContext";
 import { EmptyHeart, FullHeart, IconButton } from "./AddToLibrary.styled";
+import AlertContext from "~/shared/contexts/alertContext";
+import { AlertType } from "~/shared/components/alert/Alert.interface";
 
 const LikeButton = ({
   liked,
@@ -14,6 +16,7 @@ const LikeButton = ({
 }) => {
   const { user } = useContext(UserContext);
   const [isLiked, setIsLiked] = useState(liked || false);
+  const { setAlertIsOpen, setAlertText } = useContext(AlertContext);
 
   const handleClick = async () => {
     try {
@@ -24,6 +27,8 @@ const LikeButton = ({
           TYPES.DELETE
         );
         setIsLiked(false);
+        setAlertText("Removed from your library");
+        setAlertIsOpen(AlertType.SUCCESS);
       } else {
         await getData(
           user?.accessToken as string,
@@ -31,8 +36,12 @@ const LikeButton = ({
           TYPES.PUT
         );
         setIsLiked(true);
+        setAlertText("Added to your library");
+        setAlertIsOpen(AlertType.SUCCESS);
       }
     } catch (e) {
+      setAlertText("Something went wrong");
+      setAlertIsOpen(AlertType.ERROR);
       console.log(e);
     }
   };

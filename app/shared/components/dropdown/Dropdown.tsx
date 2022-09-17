@@ -30,7 +30,7 @@ const Dropdown = forwardRef<HTMLDivElement, DropdownProps>((props, ref) => {
         <li
           key={id}
           onClick={() => {
-            action(id);
+            action(id, name);
           }}
           aria-label={props.ariaLabel ? props.ariaLabel + name : ""}
         >
