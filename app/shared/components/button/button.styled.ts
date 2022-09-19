@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const CommonButton = css`
+export const CommonButton = css<{ shadow?: boolean }>`
   border: none;
   font-size: 1rem;
   font-family: "Circular Std", sans-serif;
@@ -9,10 +9,10 @@ export const CommonButton = css`
   min-height: 3rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, filter 0.2s ease-in-out;
-  box-shadow: var(--shadow);
+  ${({ shadow }) => shadow && `box-shadow: var(--shadow)`};
 `;
 
-export const PrimaryButton = styled.button`
+export const PrimaryButton = styled.button<{ shadow?: boolean }>`
   ${CommonButton};
   background-color: var(--brand-green);
 
@@ -21,7 +21,7 @@ export const PrimaryButton = styled.button`
   }
 `;
 
-export const SecondaryButton = styled.button`
+export const SecondaryButton = styled.button<{ shadow?: boolean }>`
   ${CommonButton};
   border: 1px solid var(--text-secondary);
   color: var(--text-primary);

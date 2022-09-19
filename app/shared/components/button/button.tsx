@@ -9,17 +9,23 @@ const Button = ({
   type,
   label,
   onClick,
+  shadow,
 }: {
   type: ButtonType;
   label: string;
   onClick?: () => void;
+  shadow?: boolean;
 }) => {
   const buttonsMapping = {
     [ButtonType.PRIMARY]: (
-      <PrimaryButton onClick={onClick}>{label}</PrimaryButton>
+      <PrimaryButton shadow={shadow} onClick={onClick}>
+        {label}
+      </PrimaryButton>
     ),
     [ButtonType.SECONDARY]: (
-      <SecondaryButton onClick={onClick}>{label}</SecondaryButton>
+      <SecondaryButton shadow={shadow} onClick={onClick}>
+        {label}
+      </SecondaryButton>
     ),
   };
 
