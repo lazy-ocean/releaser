@@ -3,6 +3,8 @@ import { formatDistanceToNowStrict } from "date-fns";
 import { ReleaseType } from "../features/filtersPanel/filtersPanel.interface";
 import { ENDPOINTS, getData } from "../utils/getData";
 
+const LIMIT = 49;
+
 const chooseRecentReleases = async (
   albums: Album[],
   range = 10,
@@ -20,14 +22,18 @@ const chooseRecentReleases = async (
       Number(n) <= range && (album_type === type || type === ReleaseType.Both)
     );
   });
-  const ids = recent.map(({ id }) => id);
+  let ids = recent.map(({ id }) => id);
 
   if (user) {
-    const liked = await getData(
-      user,
-      ENDPOINTS.IF_ALBUM_IN_LIBRARY(encodeURIComponent(ids.join(",")))
-    );
-    recent = recent.map((album, i) => ({ ...album, liked: liked[i] }));
+    for (let i = LIMIT; i < ids.length; i += LIMIT) {
+      const curr = ids.slice(0, i);
+      const liked = await getData(
+        user,
+        ENDPOINTS.IF_ALBUM_IN_LIBRARY(encodeURIComponent(curr.join(",")))
+      );
+      recent = recent.map((album, i) => ({ ...album, liked: liked[i] }));
+      ids = ids.slice(i);
+    }
   }
 
   return recent;
