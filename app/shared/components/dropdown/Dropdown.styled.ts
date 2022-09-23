@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.ul`
   position: absolute;
   top: 2rem;
-  left: 2rem;
+  left: 1rem;
   list-style-type: none;
   background-color: var(--bg-elevation);
   padding: var(--spacing-xxs);
@@ -12,6 +12,10 @@ export const Container = styled.ul`
   overflow-y: scroll;
   max-height: 20rem;
   font-size: 0.9rem;
+
+  @media (max-width: 600px) {
+    left: -13rem;
+  }
 
   &::-webkit-scrollbar {
     background-color: var(--bg-elevation);
