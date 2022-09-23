@@ -9,6 +9,7 @@ import { FaFilter } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
 import { ReleaseType } from "./filtersPanel.interface";
 import type { FiltersPanelProps } from "./filtersPanel.interface";
+import { setLocalStorageItem } from "~/shared/utils/hooks/useLocalStorage";
 
 const PERIOD_VALUES: {
   value: number;
@@ -70,6 +71,8 @@ const FiltersPanel = ({
         period: target.period.value,
         type: target.type.value,
       };
+      setLocalStorageItem("period", target.period.value);
+      setLocalStorageItem("type", target.type.value);
       setPeriod(data.period);
       setType(data.type);
       setFiltersOpen(false);
