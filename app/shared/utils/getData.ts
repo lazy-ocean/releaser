@@ -11,8 +11,12 @@ export const ENDPOINTS = {
     `https://api.spotify.com/v1/me/albums/contains?ids=${id}`,
   ADD_ALBUM: (id: string) => `https://api.spotify.com/v1/me/albums?ids=${id}`,
   GET_PLAYLISTS: "https://api.spotify.com/v1/me/playlists",
+  GET_PLAYLIST_TRACKS: (
+    id: string
+  ) => `https://api.spotify.com/v1/playlists/${id}/tracks
+  `,
   GET_ALBUM_TRACKS: (id: string) =>
-    `https://api.spotify.com/v1/albums/${id}/tracks`,
+    `https://api.spotify.com/v1/albums/${id}/tracks?limit=50`,
   ADD_TO_PLAYLIST: (id: string, uris: string) =>
     `https://api.spotify.com/v1/playlists/${id}/tracks?uris=${uris}`,
 };

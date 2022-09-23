@@ -48,4 +48,5 @@ export interface Playlist {
 
 export interface Track {
   uri: string;
+  id: string;
 }

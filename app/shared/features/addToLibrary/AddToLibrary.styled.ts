@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { FlexColumn } from "~/shared/styles/utils";
+import { FlexColumn, FlexRow } from "~/shared/styles/utils";
 import { HiHeart, HiOutlineHeart } from "react-icons/hi";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
 
@@ -38,4 +38,17 @@ export const PlaylistButton = styled(MdOutlinePlaylistAdd)`
 
 export const Wrapper = styled.div`
   position: relative;
+`;
+
+export const ModalHeader = styled.h3`
+  margin: 0;
+  margin-bottom: var(--spacing-xs);
+`;
+
+export const ModalTxt = styled.p`
+  margin-bottom: var(--spacing-s);
+
+  & + ${FlexRow} {
+    justify-content: flex-end;
+  }
 `;
