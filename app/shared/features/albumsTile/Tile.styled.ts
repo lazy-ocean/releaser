@@ -4,6 +4,7 @@ import { FlexRow, FlexColumn } from "~/shared/styles/utils";
 export const DayList = styled(FlexRow)`
   flex-grow: 1;
   flex-wrap: wrap;
+  width: 100%;
 `;
 
 export const ReleaseDate = styled.p`
@@ -12,7 +13,6 @@ export const ReleaseDate = styled.p`
   padding-right: var(--spacing-xs);
   padding-left: var(--spacing-s);
   font-size: 1.3rem;
-  font-weight: 300;
   writing-mode: tb;
   transform: rotate(180deg);
   margin: 0;

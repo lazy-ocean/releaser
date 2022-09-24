@@ -13,7 +13,7 @@ const LoginForm = ({ user }: { user: User | null }) => {
       </Header>
       {user ? (
         <Link to="/home">
-          <Button label="Go to my releases" type={ButtonType.PRIMARY} />
+          <Button label="Go to my releases" type={ButtonType.PRIMARY} shadow />
         </Link>
       ) : (
         <Form action="/auth/spotify" method="post">

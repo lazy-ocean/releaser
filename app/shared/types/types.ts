@@ -40,3 +40,13 @@ export interface IndexData {
   user: User | null;
   releases: { albums: ReleasesInterface; location: string };
 }
+
+export interface Playlist {
+  id: string;
+  name: string;
+}
+
+export interface Track {
+  uri: string;
+  id: string;
+}

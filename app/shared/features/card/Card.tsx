@@ -47,7 +47,7 @@ const AlbumCard = ({ release }: { release: Album }) => {
           <p>{`${tracksNum} track(s)`}</p>
         </AdditionalInfo>
       </Info>
-      {user && <AddToLibrary liked={liked} albumId={id} />}
+      {user && <AddToLibrary liked={liked} albumId={id} albumName={name} />}
     </Card>
   );
 };

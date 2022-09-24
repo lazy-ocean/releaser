@@ -15,6 +15,7 @@ export const Menu = styled.ul`
   font-weight: 100;
   transition: background-color 0.2s ease-in-out;
   font-family: "Circular Std", sans-serif;
+  z-index: 1;
 
   & li,
   & button {
