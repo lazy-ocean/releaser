@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useState } from "react";
 import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
@@ -11,17 +11,18 @@ import {
   groupAlbumsByDate,
 } from "~/shared/functions";
 import { Header, AlbumsTile, FiltersPanel, Footer } from "~/shared/features";
-import filtersPanelReducer from "~/shared/features/filtersPanel/filtersPanel.reducer";
 import {
   HomePageContainer,
   LoaderWrapper,
 } from "~/shared/features/albumsTile/Tile.styled";
-import {
-  FilterActions,
-  ReleaseType,
-} from "~/shared/features/filtersPanel/filtersPanel.interface";
+import { ReleaseType } from "~/shared/features/filtersPanel/filtersPanel.interface";
 import { readFromLocalStorage } from "~/shared/utils/hooks/useLocalStorage";
 import { ClipLoader } from "react-spinners";
+import UserContext from "~/shared/contexts/userContext";
+import AlertContext from "~/shared/contexts/alertContext";
+import type { AlertType } from "~/shared/components/alert/Alert.interface";
+import { Alert } from "~/shared/components";
+import ModalContext from "~/shared/contexts/modalContext";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
@@ -36,7 +37,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   }
 
   const res = {
-    user: userData?.user,
+    user: userData,
     releases: recentReleases,
   };
   return res;
@@ -45,45 +46,72 @@ export const loader: LoaderFunction = async ({ request }) => {
 export default function HomePage() {
   const data = useLoaderData<HomeData>();
   const { user = null, releases } = data;
-  const [state, dispatch] = useReducer(filtersPanelReducer, {
-    period: null,
-    type: ReleaseType.Both,
-  });
+  const [albums, setAlbums] = useState<Album[] | []>([]);
+  const [period, setPeriod] = useState<number | null>(null);
+  const [type, setType] = useState(ReleaseType.Both);
+  const [alertIsOpen, setAlertIsOpen] = useState<AlertType | false>(false);
+  const [alertText, setAlertText] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<string | false>(false);
 
   useEffect(() => {
     const period = readFromLocalStorage("period");
-    dispatch({ type: FilterActions.ChangePeriod, value: Number(period) || 7 });
+    setPeriod(Number(period) || 7);
     const type = readFromLocalStorage("type");
-    dispatch({
-      type: FilterActions.ChangeType,
-      value: type || ReleaseType.Both,
-    });
+    if (type) setType(type);
   }, []);
 
+  useEffect(() => {
+    if (period) {
+      const getAlbums = async () => {
+        const data = await chooseRecentReleases(
+          releases,
+          period,
+          type,
+          user?.accessToken
+        );
+        setAlbums(data);
+      };
+      getAlbums();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [period, type, releases]);
+
   return (
-    <>
-      <Header user={user} />
-      <main>
-        {!state.period ? (
-          <LoaderWrapper>
-            <ClipLoader color="#1ed760" size={100} />
-          </LoaderWrapper>
-        ) : (
+    <UserContext.Provider value={{ user }}>
+      <AlertContext.Provider
+        value={{ alertIsOpen, setAlertIsOpen, alertText, setAlertText }}
+      >
+        <ModalContext.Provider value={{ isModalOpen, setIsModalOpen }}>
           <>
-            <FiltersPanel dispatch={dispatch} state={state} />
-            <HomePageContainer>
-              {user && (
-                <AlbumsTile
-                  releases={groupAlbumsByDate(
-                    chooseRecentReleases(releases, state.period, state.type)
-                  )}
-                />
+            <Header user={user?.user} />
+            <main style={{ position: "relative" }}>
+              {!period ? (
+                <LoaderWrapper>
+                  <ClipLoader color="#1ed760" size={100} />
+                </LoaderWrapper>
+              ) : (
+                albums && (
+                  <>
+                    <FiltersPanel
+                      type={type}
+                      setType={setType}
+                      period={period}
+                      setPeriod={setPeriod}
+                    />
+                    <HomePageContainer>
+                      {user && (
+                        <AlbumsTile releases={groupAlbumsByDate(albums)} />
+                      )}
+                    </HomePageContainer>
+                  </>
+                )
               )}
-            </HomePageContainer>
+              <Alert />
+            </main>
+            <Footer />
           </>
-        )}
-      </main>
-      <Footer />
-    </>
+        </ModalContext.Provider>
+      </AlertContext.Provider>
+    </UserContext.Provider>
   );
 }

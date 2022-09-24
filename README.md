@@ -18,8 +18,9 @@ On Vercel - **[Spotify Releaser](https://spotify-releaser.vercel.app/)**
 
 ## ✨ What to expect next
 
-- [ ] Like interesting releases to add it to your Spotify library
-- [ ] Add releases to an existing playlist from your profile
+- [x] Like interesting releases to add it to your Spotify library (v.1.1.0)
+- [x] Add releases to an existing playlist from your profile (v.1.1.0)
+- [ ] Choose your region on starting page
 - [ ] Create new playlists with selected releases
 - [ ] Get new releases from your liked songs, not only artists
 - [ ] "Infinite" scrolling feed
