@@ -22,21 +22,24 @@ const chooseRecentReleases = async (
       Number(n) <= range && (album_type === type || type === ReleaseType.Both)
     );
   });
-  let ids = recent.map(({ id }) => id);
+
+  let releases: Album[] = [];
 
   if (user) {
-    for (let i = LIMIT; i < ids.length; i += LIMIT) {
-      const curr = ids.slice(0, i);
+    while (recent.length) {
+      let curr = recent.slice(0, LIMIT);
+      let ids = curr.map(({ id }) => id);
       const liked = await getData(
         user,
-        ENDPOINTS.IF_ALBUM_IN_LIBRARY(encodeURIComponent(curr.join(",")))
+        ENDPOINTS.IF_ALBUM_IN_LIBRARY(encodeURIComponent(ids.join(",")))
       );
-      recent = recent.map((album, i) => ({ ...album, liked: liked[i] }));
-      ids = ids.slice(i);
+      curr = curr.map((album, i) => ({ ...album, liked: liked[i] }));
+      releases = [...releases, ...curr];
+      recent = recent.slice(LIMIT);
     }
   }
 
-  return recent;
+  return releases;
 };
 
 export default chooseRecentReleases;
