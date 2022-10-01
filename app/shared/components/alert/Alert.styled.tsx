@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { AlertType } from "./Alert.interface";
 
-export const StyledAlert = styled.div<{ type: AlertType | false }>`
-  opacity: ${({ type }) => (type ? "1" : "0")};
+export const StyledAlert = styled.div<{ alerttype: AlertType | false }>`
+  opacity: ${({ alerttype }) => (alerttype ? "1" : "0")};
   position: fixed;
   bottom: 4rem;
   left: 50%;
@@ -11,9 +11,11 @@ export const StyledAlert = styled.div<{ type: AlertType | false }>`
   border-radius: 20px;
   transition: all 0.4s ease-in-out;
 
-  ${({ type }) =>
-    type &&
+  ${({ alerttype }) =>
+    alerttype &&
     `background-color: ${
-      type === AlertType.ERROR ? "var(--alert-error)" : "var(--alert-success)"
+      alerttype === AlertType.ERROR
+        ? "var(--alert-error)"
+        : "var(--alert-success)"
     }`}
 `;

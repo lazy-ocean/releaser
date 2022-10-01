@@ -19,15 +19,15 @@ const AlbumCard = ({ release }: { release: Album }) => {
     images,
     album_type: type,
     total_tracks: tracksNum,
-    external_urls: url,
     liked,
     id,
+    uri,
   } = release;
 
   const artistsNames = (
     <Artists>
-      {artists.map(({ name, external_urls, id }) => (
-        <a href={external_urls.spotify} key={id}>
+      {artists.map(({ name, uri, id }) => (
+        <a href={uri} key={id}>
           {name}
         </a>
       ))}
@@ -36,10 +36,12 @@ const AlbumCard = ({ release }: { release: Album }) => {
 
   return (
     <Card>
-      <Cover src={images[1].url} alt={`${name} album cover`} />
+      <a href={uri}>
+        <Cover src={images[1].url} alt={`${name} album cover`} />
+      </a>
       <Info>
         <AlbumName>
-          <a href={url.spotify}>{name}</a>
+          <a href={uri}>{name}</a>
         </AlbumName>
         {artistsNames}
         <AdditionalInfo>

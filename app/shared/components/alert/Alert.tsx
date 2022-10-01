@@ -12,7 +12,7 @@ const Alert = () => {
   }, [alertIsOpen]);
 
   return (
-    <StyledAlert type={alertIsOpen} aria-live="polite">
+    <StyledAlert alerttype={alertIsOpen} aria-live="polite">
       {alertText}
     </StyledAlert>
   );

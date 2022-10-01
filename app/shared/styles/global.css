@@ -40,6 +40,12 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 80%;

@@ -1,5 +1,5 @@
 import type { Session } from "remix-auth-spotify";
-import type { Album, Artist, ReleasesInterface } from "../types/types";
+import type { Album, ReleasesInterface } from "../types/types";
 import { getData, ENDPOINTS } from "../utils/getData";
 
 export const groupAlbumsByDate = (albums: Album[]) =>
@@ -12,20 +12,26 @@ export const groupAlbumsByDate = (albums: Album[]) =>
   }, {} as ReleasesInterface);
 
 export const getRecentReleases = async (
-  artists: Artist[],
+  artists: string[],
   userData: Session
 ) => {
   let recentReleases: Album[] = [];
-  await Promise.all(
-    artists.map(async ({ id }) => {
-      const albums: { items: Album[] } = await getData(
-        userData.accessToken,
-        ENDPOINTS.ARTISTS_RELEASES(id)
-      );
-      recentReleases = [...recentReleases, ...albums.items];
-    })
-  );
-  recentReleases = [...new Map(recentReleases.map((v) => [v.id, v])).values()];
+  try {
+    await Promise.all(
+      artists.map(async (id) => {
+        const albums: { items: Album[] } = await getData(
+          userData.accessToken,
+          ENDPOINTS.ARTISTS_RELEASES(id)
+        );
+        recentReleases = [...recentReleases, ...albums.items];
+      })
+    );
+    recentReleases = [
+      ...new Map(recentReleases.map((v) => [v.id, v])).values(),
+    ];
+  } catch (e) {
+    console.log(e);
+  }
 
   return recentReleases;
 };
