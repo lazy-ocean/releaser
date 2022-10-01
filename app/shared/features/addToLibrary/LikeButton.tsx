@@ -51,14 +51,14 @@ const LikeButton = ({
       onClick={handleClick}
       aria-label={`Remove ${albumName} from your liked songs`}
     >
-      <FullHeart liked={isLiked} aria-hidden={true} />
+      <FullHeart $isLiked={isLiked} aria-hidden={true} />
     </IconButton>
   ) : (
     <IconButton
       onClick={handleClick}
       aria-label={`Add ${albumName} to your liked songs`}
     >
-      <EmptyHeart liked={isLiked} aria-hidden={true} />
+      <EmptyHeart $isLiked={isLiked} aria-hidden={true} />
     </IconButton>
   );
 };
