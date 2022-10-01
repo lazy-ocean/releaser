@@ -129,14 +129,19 @@ export default function HomePage() {
                     </h3>
                   )}
                 </LoaderWrapper>
+              ) : albums.length ? (
+                <HomePageContainer>
+                  {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}
+                </HomePageContainer>
               ) : (
-                albums && (
-                  <HomePageContainer>
-                    {user && (
-                      <AlbumsTile releases={groupAlbumsByDate(albums)} />
-                    )}
-                  </HomePageContainer>
-                )
+                <LoaderWrapper>
+                  <h3>
+                    Looks like there's nothing there 🤔
+                    <br />
+                    Try adjusting filters or go like more of your favourite
+                    artists on Spotify!
+                  </h3>
+                </LoaderWrapper>
               )}
               <Alert />
             </main>
