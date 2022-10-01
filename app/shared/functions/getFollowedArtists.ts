@@ -5,10 +5,13 @@ import type { Session } from "remix-auth-spotify";
 const getFollowedArtists = async (
   link: string,
   userData: Session,
-  followedArtists: Artist[] = []
-): Promise<Artist[]> => {
+  followedArtists: string[] = []
+): Promise<string[]> => {
   const data = await getData(userData.accessToken, link);
-  followedArtists = [...followedArtists, ...data?.artists.items];
+  followedArtists = [
+    ...followedArtists,
+    ...data?.artists.items.map((item: Artist) => item.id),
+  ];
   if (data.artists.next)
     return await getFollowedArtists(
       data.artists.next,

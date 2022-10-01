@@ -7,7 +7,7 @@ import {
 } from "./filtersPanel.styled";
 import { FaFilter } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
-import { ReleaseType } from "./filtersPanel.interface";
+import { LibraryAccessType, ReleaseType } from "./filtersPanel.interface";
 import type { FiltersPanelProps } from "./filtersPanel.interface";
 import { setLocalStorageItem } from "~/shared/utils/hooks/useLocalStorage";
 
@@ -29,11 +29,18 @@ const RELEASE_TYPES = {
   [ReleaseType.Both]: "albums and singles",
 };
 
+const LIBRARY_ACCESS = {
+  [LibraryAccessType.Artists]: "liked artists",
+  [LibraryAccessType.Songs]: "liked songs",
+};
+
 const FiltersPanel = ({
   type,
   setType,
   period,
   setPeriod,
+  libraryAccess,
+  setLibraryAccess,
 }: FiltersPanelProps) => {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const formFef = useRef<HTMLFormElement>(null);
@@ -66,15 +73,19 @@ const FiltersPanel = ({
       const target = e.target as typeof e.target & {
         period: { value: number };
         type: { value: ReleaseType };
+        library: { value: LibraryAccessType };
       };
       const data = {
         period: target.period.value,
         type: target.type.value,
+        library: target.library.value,
       };
       setLocalStorageItem("period", target.period.value);
       setLocalStorageItem("type", target.type.value);
+      setLocalStorageItem("library", target.library.value);
       setPeriod(data.period);
       setType(data.type);
+      setLibraryAccess(data.library);
       setFiltersOpen(false);
     } else setFiltersOpen(true);
   };
@@ -86,28 +97,36 @@ const FiltersPanel = ({
           <>
             <div>
               <FilterLabel htmlFor="period">Show releases for </FilterLabel>
-              <Dropdown id="period" name="period">
+              <Dropdown id="period" name="period" defaultValue={period}>
                 {PERIOD_VALUES.map(({ value, label }, i) => (
-                  <option value={value} key={i} selected={period === value}>
+                  <option value={value} key={i}>
                     {label}
                   </option>
                 ))}
               </Dropdown>
             </div>
             <div>
-              <FilterLabel htmlFor="period">Show </FilterLabel>
+              <FilterLabel htmlFor="type">Show </FilterLabel>
+              <Dropdown id="type" name="type" defaultValue={type}>
+                {Object.entries(RELEASE_TYPES).map(([key, value], i) => (
+                  <option value={key} key={i}>
+                    {value}
+                  </option>
+                ))}
+              </Dropdown>
+            </div>
+            <div>
+              <FilterLabel htmlFor="library">Show releases from </FilterLabel>
               <Dropdown
-                id="type"
-                name="type"
-                defaultValue={RELEASE_TYPES[type]}
+                id="library"
+                name="library"
+                defaultValue={libraryAccess}
               >
-                {Object.entries(RELEASE_TYPES).map(([key, value], i) => {
-                  return (
-                    <option value={key} key={i}>
-                      {value}
-                    </option>
-                  );
-                })}
+                {Object.entries(LIBRARY_ACCESS).map(([key, value], i) => (
+                  <option value={key} key={i}>
+                    {value}
+                  </option>
+                ))}
               </Dropdown>
             </div>
           </>
@@ -118,6 +137,9 @@ const FiltersPanel = ({
             </FilterLabel>
             <FilterLabel as="p" onClick={() => setFiltersOpen(true)}>
               Show <span>{RELEASE_TYPES[type]}</span>
+            </FilterLabel>
+            <FilterLabel as="p" onClick={() => setFiltersOpen(true)}>
+              Show releases from <span>{LIBRARY_ACCESS[libraryAccess]}</span>
             </FilterLabel>
           </>
         )}

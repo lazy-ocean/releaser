@@ -19,6 +19,7 @@ export const ENDPOINTS = {
     `https://api.spotify.com/v1/albums/${id}/tracks?limit=50`,
   ADD_TO_PLAYLIST: (id: string, uris: string) =>
     `https://api.spotify.com/v1/playlists/${id}/tracks?uris=${uris}`,
+  GET_SAVED_TRACKS: `https://api.spotify.com/v1/me/tracks?limit=50`,
 };
 
 export enum TYPES {
@@ -40,30 +41,33 @@ export const getData = async (
   };
 
   let data = null;
-
-  switch (type) {
-    case TYPES.GET:
-      data = await axios.get(url, {
-        headers,
-      });
-      break;
-    case TYPES.PUT:
-      data = await axios.put(url, null, {
-        headers,
-      });
-      break;
-    case TYPES.DELETE:
-      data = await axios.delete(url, {
-        headers,
-      });
-      break;
-    case TYPES.POST:
-      data = await axios.post(url, null, {
-        headers,
-      });
-      break;
-    default:
-      break;
+  try {
+    switch (type) {
+      case TYPES.GET:
+        data = await axios.get(url, {
+          headers,
+        });
+        break;
+      case TYPES.PUT:
+        data = await axios.put(url, null, {
+          headers,
+        });
+        break;
+      case TYPES.DELETE:
+        data = await axios.delete(url, {
+          headers,
+        });
+        break;
+      case TYPES.POST:
+        data = await axios.post(url, null, {
+          headers,
+        });
+        break;
+      default:
+        break;
+    }
+  } catch (e) {
+    console.log(e);
   }
 
   return data?.data;

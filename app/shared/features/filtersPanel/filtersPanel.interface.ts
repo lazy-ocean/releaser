@@ -4,6 +4,11 @@ export enum ReleaseType {
   Both = "albums and singles",
 }
 
+export enum LibraryAccessType {
+  Artists = "artists",
+  Songs = "songs",
+}
+
 export interface FiltersState {
   period: number | null;
   type: ReleaseType;
@@ -29,4 +34,6 @@ export interface FiltersPanelProps {
   setType: (arg: ReleaseType) => void;
   period: number;
   setPeriod: (arg: number) => void;
+  libraryAccess: LibraryAccessType;
+  setLibraryAccess: (arg: LibraryAccessType) => void;
 }

@@ -48,6 +48,9 @@ export const HomePageContainer = styled.section`
 
 export const LoaderWrapper = styled.div`
   margin-top: var(--spacing-s);
-  width: 40px;
-  margin: 0 auto;
+  text-align: center;
+
+  & span {
+    color: var(--brand-green);
+  }
 `;
