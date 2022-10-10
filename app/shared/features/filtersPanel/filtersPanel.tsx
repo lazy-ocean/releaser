@@ -10,6 +10,7 @@ import { useState, useRef, useEffect } from "react";
 import { LibraryAccessType, ReleaseType } from "./filtersPanel.interface";
 import type { FiltersPanelProps } from "./filtersPanel.interface";
 import { setLocalStorageItem } from "~/shared/utils/hooks/useLocalStorage";
+import LikedSongsWarningModal from "./LikedSongsWarningModal";
 
 const PERIOD_VALUES: {
   value: number;
@@ -66,6 +67,8 @@ const FiltersPanel = ({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [filtersOpen]);
+  /* 
+  const onConfirmSongsSearch = () => */
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -151,6 +154,10 @@ const FiltersPanel = ({
       >
         <FaFilter />
       </FiltersButton>
+      <LikedSongsWarningModal
+        onAccept={() => setLibraryAccess(LibraryAccessType.Artists)}
+        onSkip={() => setLibraryAccess(LibraryAccessType.Songs)}
+      />
     </Form>
   );
 };

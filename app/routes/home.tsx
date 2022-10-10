@@ -24,9 +24,10 @@ import { ClipLoader } from "react-spinners";
 import UserContext from "~/shared/contexts/userContext";
 import AlertContext from "~/shared/contexts/alertContext";
 import type { AlertType } from "~/shared/components/alert/Alert.interface";
-import { Alert } from "~/shared/components";
+import { Alert, Button } from "~/shared/components";
 import ModalContext from "~/shared/contexts/modalContext";
 import getArtistsFromLikedSongs from "~/shared/functions/getArtistsFromLikedSongs";
+import { ButtonType } from "~/shared/components/button/button";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
@@ -62,6 +63,7 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [count, setCount] = useState(0);
   const [total, setTotal] = useState(0);
+  const [abort, setAbort] = useState(false);
 
   useEffect(() => {
     const period = readFromLocalStorage("period");
@@ -73,6 +75,8 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
+    const controller = new AbortController();
+    if (abort) controller.abort();
     if (period && user) {
       const getAlbums = async () => {
         let allReleases = releases;
@@ -82,7 +86,8 @@ export default function HomePage() {
             user?.accessToken,
             setCount,
             total,
-            setTotal
+            setTotal,
+            controller.signal
           );
           allReleases = await getRecentReleases(likedArtists, user);
         }
@@ -97,8 +102,12 @@ export default function HomePage() {
       };
       getAlbums();
     }
+
+    return () => {
+      controller.abort();
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [period, type, libraryAccess]);
+  }, [period, type, libraryAccess, abort]);
 
   return (
     <UserContext.Provider value={{ user }}>
@@ -122,11 +131,23 @@ export default function HomePage() {
               {isLoading ? (
                 <LoaderWrapper>
                   <ClipLoader color="#1ed760" size={100} />
+                  {abort && (
+                    <>
+                      <h3>Stopping everything...</h3>
+                    </>
+                  )}
                   {!!total && libraryAccess === LibraryAccessType.Songs && (
-                    <h3>
-                      Processed <span>{count}</span> of <span>{total}</span>{" "}
-                      your liked songs
-                    </h3>
+                    <>
+                      <h3>
+                        Processed <span>{count}</span> of <span>{total}</span>{" "}
+                        your liked songs
+                      </h3>
+                      <Button
+                        label="Abort mission"
+                        type={ButtonType.SECONDARY}
+                        onClick={() => setAbort(true)}
+                      />
+                    </>
                   )}
                 </LoaderWrapper>
               ) : albums.length ? (
