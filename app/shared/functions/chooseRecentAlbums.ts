@@ -1,6 +1,9 @@
 import type { Album } from "~/shared/types/types";
 import { formatDistanceToNowStrict } from "date-fns";
-import { ReleaseType } from "../features/filtersPanel/filtersPanel.interface";
+import {
+  LibraryAccessType,
+  ReleaseType,
+} from "../features/filtersPanel/filtersPanel.interface";
 import { ENDPOINTS, getData } from "../utils/getData";
 
 const LIMIT = 49;
@@ -9,6 +12,7 @@ const chooseRecentReleases = async (
   albums: Album[],
   range = 10,
   type: ReleaseType = ReleaseType.Both,
+  libraryAccess: LibraryAccessType,
   user?: string
 ): Promise<Album[]> => {
   let recent = albums.filter(({ release_date, album_type }) => {
@@ -25,7 +29,7 @@ const chooseRecentReleases = async (
 
   let releases: Album[] = [];
 
-  if (user) {
+  if (user && libraryAccess !== LibraryAccessType.Songs) {
     while (recent.length) {
       let curr = recent.slice(0, LIMIT);
       let ids = curr.map(({ id }) => id);
@@ -37,7 +41,7 @@ const chooseRecentReleases = async (
       releases = [...releases, ...curr];
       recent = recent.slice(LIMIT);
     }
-  }
+  } else releases = recent;
 
   return releases;
 };

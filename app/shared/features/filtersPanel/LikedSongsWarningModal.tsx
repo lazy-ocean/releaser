@@ -15,7 +15,8 @@ const LikedSongsWarningModal = ({
       <ModalHeader>Warning!</ModalHeader>
       <ModalTxt>
         This feature is highly experimental. If you have more than 5000 liked
-        songs, you may encounter issues and/or incorrect data in liked status.
+        songs, you may encounter issues and incorrect data.
+        <br />
         Want to proceed anyway?
       </ModalTxt>
       <FlexRow gap="xs">

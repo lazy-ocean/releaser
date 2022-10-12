@@ -20,14 +20,13 @@ import {
   ReleaseType,
 } from "~/shared/features/filtersPanel/filtersPanel.interface";
 import { readFromLocalStorage } from "~/shared/utils/hooks/useLocalStorage";
-import { ClipLoader } from "react-spinners";
 import UserContext from "~/shared/contexts/userContext";
 import AlertContext from "~/shared/contexts/alertContext";
 import type { AlertType } from "~/shared/components/alert/Alert.interface";
-import { Alert, Button } from "~/shared/components";
+import { Alert } from "~/shared/components";
 import ModalContext from "~/shared/contexts/modalContext";
 import getArtistsFromLikedSongs from "~/shared/functions/getArtistsFromLikedSongs";
-import { ButtonType } from "~/shared/components/button/button";
+import Loader from "~/shared/features/loader/Loader";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
@@ -75,26 +74,32 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    const controller = new AbortController();
-    if (abort) controller.abort();
+    const controllerArtists = new AbortController();
+    const controllerReleases = new AbortController();
+    if (abort) controllerArtists.abort();
     if (period && user) {
+      setIsLoading(true);
       const getAlbums = async () => {
         let allReleases = releases;
         if (libraryAccess === LibraryAccessType.Songs) {
-          setIsLoading(true);
           const likedArtists = await getArtistsFromLikedSongs(
             user?.accessToken,
             setCount,
             total,
             setTotal,
-            controller.signal
+            controllerArtists.signal
           );
-          allReleases = await getRecentReleases(likedArtists, user);
+          allReleases = await getRecentReleases(
+            likedArtists,
+            user,
+            controllerReleases
+          );
         }
         const data = await chooseRecentReleases(
           allReleases,
           period,
           type,
+          libraryAccess,
           user?.accessToken
         );
         setIsLoading(false);
@@ -104,7 +109,8 @@ export default function HomePage() {
     }
 
     return () => {
-      controller.abort();
+      controllerArtists.abort();
+      controllerReleases.abort();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [period, type, libraryAccess, abort]);
@@ -129,27 +135,13 @@ export default function HomePage() {
                 />
               )}
               {isLoading ? (
-                <LoaderWrapper>
-                  <ClipLoader color="#1ed760" size={100} />
-                  {abort && (
-                    <>
-                      <h3>Stopping everything...</h3>
-                    </>
-                  )}
-                  {!!total && libraryAccess === LibraryAccessType.Songs && (
-                    <>
-                      <h3>
-                        Processed <span>{count}</span> of <span>{total}</span>{" "}
-                        your liked songs
-                      </h3>
-                      <Button
-                        label="Abort mission"
-                        type={ButtonType.SECONDARY}
-                        onClick={() => setAbort(true)}
-                      />
-                    </>
-                  )}
-                </LoaderWrapper>
+                <Loader
+                  abort={abort}
+                  total={total}
+                  libraryAccess={libraryAccess}
+                  count={count}
+                  setAbort={setAbort}
+                />
               ) : albums.length ? (
                 <HomePageContainer>
                   {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}

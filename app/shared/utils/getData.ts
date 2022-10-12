@@ -32,7 +32,8 @@ export enum TYPES {
 export const getData = async (
   accessToken: string,
   url: string,
-  type: TYPES = TYPES.GET
+  type: TYPES = TYPES.GET,
+  controller?: AbortController
 ) => {
   const headers = {
     Authorization: `Bearer ${accessToken}`,
@@ -46,28 +47,32 @@ export const getData = async (
       case TYPES.GET:
         data = await axios.get(url, {
           headers,
+          signal: controller?.signal,
         });
         break;
       case TYPES.PUT:
         data = await axios.put(url, null, {
           headers,
+          signal: controller?.signal,
         });
         break;
       case TYPES.DELETE:
         data = await axios.delete(url, {
           headers,
+          signal: controller?.signal,
         });
         break;
       case TYPES.POST:
         data = await axios.post(url, null, {
           headers,
+          signal: controller?.signal,
         });
         break;
       default:
         break;
     }
   } catch (e) {
-    console.log(e);
+    controller && controller.abort();
   }
 
   return data?.data;
