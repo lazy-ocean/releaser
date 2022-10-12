@@ -92,7 +92,8 @@ export default function HomePage() {
           allReleases = await getRecentReleases(
             likedArtists,
             user,
-            controllerReleases
+            controllerReleases,
+            type
           );
         }
         const data = await chooseRecentReleases(

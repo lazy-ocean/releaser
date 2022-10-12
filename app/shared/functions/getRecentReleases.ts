@@ -1,4 +1,5 @@
 import type { Session } from "remix-auth-spotify";
+import { ReleaseType } from "../features/filtersPanel/filtersPanel.interface";
 import type { Album, ReleasesInterface } from "../types/types";
 import { getData, ENDPOINTS, TYPES } from "../utils/getData";
 
@@ -14,15 +15,17 @@ export const groupAlbumsByDate = (albums: Album[]) =>
 export const getRecentReleases = async (
   artists: string[],
   userData: Session,
-  controller?: AbortController
+  controller?: AbortController,
+  type?: ReleaseType
 ) => {
   let recentReleases = new Map();
+  const releaseType = type === ReleaseType.Both ? `album,single` : type;
   try {
     await Promise.all(
       artists.map(async (id) => {
         const albums: { items: Album[] } = await getData(
           userData.accessToken,
-          ENDPOINTS.ARTISTS_RELEASES(id),
+          ENDPOINTS.ARTISTS_RELEASES(id, releaseType),
           TYPES.GET,
           controller
         );
