@@ -1,3 +1,5 @@
+import type { RefObject } from "react";
+import { useState } from "react";
 import { ClipLoader } from "react-spinners";
 import { Button } from "~/shared/components";
 import { ButtonType } from "~/shared/components/button/button";
@@ -5,18 +7,17 @@ import { LoaderWrapper } from "../albumsTile/Tile.styled";
 import { LibraryAccessType } from "../filtersPanel/filtersPanel.interface";
 
 const Loader = ({
-  abort,
   total,
   libraryAccess,
   count,
-  setAbort,
+  controller,
 }: {
-  abort: boolean;
   total?: number;
   libraryAccess: LibraryAccessType;
   count: number;
-  setAbort: (arg: boolean) => void;
+  controller: RefObject<any>;
 }) => {
+  const [abort, setAbort] = useState(false);
   return (
     <LoaderWrapper>
       <ClipLoader color="#1ed760" size={100} />
@@ -34,7 +35,10 @@ const Loader = ({
           <Button
             label="Abort mission"
             type={ButtonType.SECONDARY}
-            onClick={() => setAbort(true)}
+            onClick={() => {
+              setAbort(true);
+              controller?.current.abort();
+            }}
           />
         </>
       )}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
@@ -62,7 +62,8 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [count, setCount] = useState(0);
   const [total, setTotal] = useState(0);
-  const [abort, setAbort] = useState(false);
+  const songsControllerRef = useRef<AbortController | null>(null);
+  const releasesControllerRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
     const period = readFromLocalStorage("period");
@@ -71,12 +72,11 @@ export default function HomePage() {
     if (type) setType(type);
     const library = readFromLocalStorage("library");
     if (library) setLibraryAccess(library);
+    songsControllerRef.current = new AbortController();
+    releasesControllerRef.current = new AbortController();
   }, []);
 
   useEffect(() => {
-    const controllerArtists = new AbortController();
-    const controllerReleases = new AbortController();
-    if (abort) controllerArtists.abort();
     if (period && user) {
       setIsLoading(true);
       const getAlbums = async () => {
@@ -87,14 +87,15 @@ export default function HomePage() {
             setCount,
             total,
             setTotal,
-            controllerArtists.signal
+            songsControllerRef?.current?.signal as AbortSignal
           );
           allReleases = await getRecentReleases(
             likedArtists,
             user,
-            controllerReleases,
+            releasesControllerRef.current as AbortController,
             type
           );
+          songsControllerRef.current = new AbortController();
         }
         const data = await chooseRecentReleases(
           allReleases,
@@ -108,13 +109,8 @@ export default function HomePage() {
       };
       getAlbums();
     }
-
-    return () => {
-      controllerArtists.abort();
-      controllerReleases.abort();
-    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [period, type, libraryAccess, abort]);
+  }, [period, type, libraryAccess]);
 
   return (
     <UserContext.Provider value={{ user }}>
@@ -137,11 +133,10 @@ export default function HomePage() {
               )}
               {isLoading ? (
                 <Loader
-                  abort={abort}
                   total={total}
                   libraryAccess={libraryAccess}
                   count={count}
-                  setAbort={setAbort}
+                  controller={songsControllerRef}
                 />
               ) : albums.length ? (
                 <HomePageContainer>

@@ -21,7 +21,7 @@ const getArtistsFromLikedSongs = async (
     limit += 50;
     setCount(limit);
     const data = await getData(userData, link, TYPES.GET);
-    if (total !== data.total) setTotal(data?.total);
+    if (total !== data?.total) setTotal(data?.total);
     const tracks = data?.items;
     tracks.forEach((track: { track: Track }) => {
       const artistsList = track.track.artists;
