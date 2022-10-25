@@ -2,8 +2,10 @@ import axios from "axios";
 
 export const ENDPOINTS = {
   FOLLOWED_ARTISTS_API: `https://api.spotify.com/v1/me/following?type=artist`,
-  ARTISTS_RELEASES: (id: string): string =>
-    `https://api.spotify.com/v1/artists/${id}/albums?include_groups=album,single`,
+  ARTISTS_RELEASES: (id: string, type?: string): string =>
+    `https://api.spotify.com/v1/artists/${id}/albums?include_groups=${
+      type ? type : "album,single"
+    }`,
   RECENT_RELEASES: (country: string = "US"): string =>
     `https://api.spotify.com/v1/browse/new-releases?country=${country}&limit=10`,
   REQUEST_TOKEN: "https://accounts.spotify.com/api/token",
@@ -32,7 +34,8 @@ export enum TYPES {
 export const getData = async (
   accessToken: string,
   url: string,
-  type: TYPES = TYPES.GET
+  type: TYPES = TYPES.GET,
+  controller?: AbortController
 ) => {
   const headers = {
     Authorization: `Bearer ${accessToken}`,
@@ -46,28 +49,32 @@ export const getData = async (
       case TYPES.GET:
         data = await axios.get(url, {
           headers,
+          signal: controller?.signal,
         });
         break;
       case TYPES.PUT:
         data = await axios.put(url, null, {
           headers,
+          signal: controller?.signal,
         });
         break;
       case TYPES.DELETE:
         data = await axios.delete(url, {
           headers,
+          signal: controller?.signal,
         });
         break;
       case TYPES.POST:
         data = await axios.post(url, null, {
           headers,
+          signal: controller?.signal,
         });
         break;
       default:
         break;
     }
   } catch (e) {
-    console.log(e);
+    controller && controller.abort();
   }
 
   return data?.data;

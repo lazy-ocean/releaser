@@ -11,6 +11,7 @@ export const ModalStyles = {
     border: "none",
     borderRadius: "20px",
     minWidth: "30%",
+    maxWidth: "50%",
   },
   overlay: {
     backgroundColor: "none",

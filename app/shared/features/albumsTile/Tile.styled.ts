@@ -50,6 +50,10 @@ export const LoaderWrapper = styled.div`
   margin-top: var(--spacing-s);
   text-align: center;
 
+  & h3 {
+    color: var(--text-secondary);
+  }
+
   & span {
     color: var(--brand-green);
   }

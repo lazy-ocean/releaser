@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
@@ -20,13 +20,13 @@ import {
   ReleaseType,
 } from "~/shared/features/filtersPanel/filtersPanel.interface";
 import { readFromLocalStorage } from "~/shared/utils/hooks/useLocalStorage";
-import { ClipLoader } from "react-spinners";
 import UserContext from "~/shared/contexts/userContext";
 import AlertContext from "~/shared/contexts/alertContext";
 import type { AlertType } from "~/shared/components/alert/Alert.interface";
 import { Alert } from "~/shared/components";
 import ModalContext from "~/shared/contexts/modalContext";
 import getArtistsFromLikedSongs from "~/shared/functions/getArtistsFromLikedSongs";
+import Loader from "~/shared/features/loader/Loader";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const userData = await spotifyStrategy.getSession(request);
@@ -62,6 +62,8 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [count, setCount] = useState(0);
   const [total, setTotal] = useState(0);
+  const songsControllerRef = useRef<AbortController | null>(null);
+  const releasesControllerRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
     const period = readFromLocalStorage("period");
@@ -70,26 +72,36 @@ export default function HomePage() {
     if (type) setType(type);
     const library = readFromLocalStorage("library");
     if (library) setLibraryAccess(library);
+    songsControllerRef.current = new AbortController();
+    releasesControllerRef.current = new AbortController();
   }, []);
 
   useEffect(() => {
     if (period && user) {
+      setIsLoading(true);
       const getAlbums = async () => {
         let allReleases = releases;
         if (libraryAccess === LibraryAccessType.Songs) {
-          setIsLoading(true);
           const likedArtists = await getArtistsFromLikedSongs(
             user?.accessToken,
             setCount,
             total,
-            setTotal
+            setTotal,
+            songsControllerRef?.current?.signal as AbortSignal
           );
-          allReleases = await getRecentReleases(likedArtists, user);
+          allReleases = await getRecentReleases(
+            likedArtists,
+            user,
+            releasesControllerRef.current as AbortController,
+            type
+          );
+          songsControllerRef.current = new AbortController();
         }
         const data = await chooseRecentReleases(
           allReleases,
           period,
           type,
+          libraryAccess,
           user?.accessToken
         );
         setIsLoading(false);
@@ -120,23 +132,25 @@ export default function HomePage() {
                 />
               )}
               {isLoading ? (
-                <LoaderWrapper>
-                  <ClipLoader color="#1ed760" size={100} />
-                  {!!total && libraryAccess === LibraryAccessType.Songs && (
-                    <h3>
-                      Processed <span>{count}</span> of <span>{total}</span>{" "}
-                      your liked songs
-                    </h3>
-                  )}
-                </LoaderWrapper>
+                <Loader
+                  total={total}
+                  libraryAccess={libraryAccess}
+                  count={count}
+                  controller={songsControllerRef}
+                />
+              ) : albums.length ? (
+                <HomePageContainer>
+                  {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}
+                </HomePageContainer>
               ) : (
-                albums && (
-                  <HomePageContainer>
-                    {user && (
-                      <AlbumsTile releases={groupAlbumsByDate(albums)} />
-                    )}
-                  </HomePageContainer>
-                )
+                <LoaderWrapper>
+                  <h3>
+                    Looks like there's nothing there 🤔
+                    <br />
+                    Try adjusting filters or go like more of your favourite
+                    artists on Spotify!
+                  </h3>
+                </LoaderWrapper>
               )}
               <Alert />
             </main>

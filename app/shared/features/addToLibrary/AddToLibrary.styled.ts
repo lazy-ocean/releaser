@@ -47,6 +47,8 @@ export const ModalHeader = styled.h3`
 
 export const ModalTxt = styled.p`
   margin-bottom: var(--spacing-s);
+  line-height: 1.5rem;
+  font-size: 1.1rem;
 
   & + ${FlexRow} {
     justify-content: flex-end;

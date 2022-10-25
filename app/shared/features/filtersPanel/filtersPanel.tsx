@@ -6,10 +6,12 @@ import {
   FiltersWrapper,
 } from "./filtersPanel.styled";
 import { FaFilter } from "react-icons/fa";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
 import { LibraryAccessType, ReleaseType } from "./filtersPanel.interface";
 import type { FiltersPanelProps } from "./filtersPanel.interface";
 import { setLocalStorageItem } from "~/shared/utils/hooks/useLocalStorage";
+import LikedSongsWarningModal from "./LikedSongsWarningModal";
+import ModalContext from "~/shared/contexts/modalContext";
 
 const PERIOD_VALUES: {
   value: number;
@@ -42,7 +44,14 @@ const FiltersPanel = ({
   libraryAccess,
   setLibraryAccess,
 }: FiltersPanelProps) => {
+  const isInitialMount = useRef(true);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [filtersData, setFiltersData] = useState({
+    period,
+    type,
+    library: libraryAccess,
+  });
+  const { isModalOpen, setIsModalOpen } = useContext(ModalContext);
   const formFef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
@@ -67,6 +76,28 @@ const FiltersPanel = ({
     };
   }, [filtersOpen]);
 
+  const onConfirmSearch = () => {
+    if (isModalOpen) setIsModalOpen(false);
+    setLocalStorageItem("period", filtersData.period);
+    setLocalStorageItem("type", filtersData.type);
+
+    setPeriod(filtersData.period);
+    setType(filtersData.type);
+    setLibraryAccess(filtersData.library);
+    setFiltersOpen(false);
+  };
+
+  const onAbortSongsSearch = () => {
+    if (isModalOpen) setIsModalOpen(false);
+    setLocalStorageItem("period", filtersData.period);
+    setLocalStorageItem("type", filtersData.type);
+
+    setPeriod(filtersData.period);
+    setType(filtersData.type);
+    setLibraryAccess(LibraryAccessType.Artists);
+    setFiltersOpen(false);
+  };
+
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     if (filtersOpen) {
@@ -80,15 +111,25 @@ const FiltersPanel = ({
         type: target.type.value,
         library: target.library.value,
       };
-      setLocalStorageItem("period", target.period.value);
-      setLocalStorageItem("type", target.type.value);
-      setLocalStorageItem("library", target.library.value);
-      setPeriod(data.period);
-      setType(data.type);
-      setLibraryAccess(data.library);
-      setFiltersOpen(false);
+      setFiltersData(data);
     } else setFiltersOpen(true);
   };
+
+  useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+    } else {
+      if (filtersData) {
+        if (filtersData?.library === LibraryAccessType.Songs) {
+          setIsModalOpen("liked-warning");
+        } else {
+          onConfirmSearch();
+        }
+      }
+    }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filtersData]);
 
   return (
     <Form onSubmit={handleSubmit} ref={formFef}>
@@ -151,6 +192,10 @@ const FiltersPanel = ({
       >
         <FaFilter />
       </FiltersButton>
+      <LikedSongsWarningModal
+        onAccept={onConfirmSearch}
+        onSkip={onAbortSongsSearch}
+      />
     </Form>
   );
 };
