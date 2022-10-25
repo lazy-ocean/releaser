@@ -16,12 +16,14 @@ export const FilterLabel = styled.label`
   color: var(--text-faded);
   margin: 0;
   cursor: pointer;
+  line-height: 2rem;
 
   & span {
     background-color: #b3b3b32b;
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
     color: var(--text-secondary);
+    margin-left: 0.4rem;
   }
 `;
 
@@ -54,8 +56,13 @@ export const FiltersButton = styled.button<{ active: boolean }>`
   }
 `;
 
-export const FiltersWrapper = styled.div`
+export const FiltersWrapper = styled.div<{ isOpen: boolean }>`
   display: flex;
-  gap: var(--spacing-s);
+  gap: ${({ isOpen }) => (isOpen ? `var(--spacing-s)` : `var(--spacing-m)`)};
+
   flex-wrap: wrap;
+
+  @media (max-width: 850px) {
+    gap: var(--spacing-s);
+  }
 `;

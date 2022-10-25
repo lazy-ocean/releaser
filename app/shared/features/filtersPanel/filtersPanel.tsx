@@ -133,7 +133,7 @@ const FiltersPanel = ({
 
   return (
     <Form onSubmit={handleSubmit} ref={formFef}>
-      <FiltersWrapper>
+      <FiltersWrapper isOpen={filtersOpen}>
         {filtersOpen ? (
           <>
             <div>
