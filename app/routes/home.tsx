@@ -58,7 +58,6 @@ export default function HomePage() {
   const [type, setType] = useState(ReleaseType.Both);
   const [alertIsOpen, setAlertIsOpen] = useState<AlertType | false>(false);
   const [alertText, setAlertText] = useState<string | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState<string | false>(false);
   const [isLoading, setIsLoading] = useState(false);
   const [count, setCount] = useState(0);
   const [total, setTotal] = useState(0);
@@ -117,46 +116,42 @@ export default function HomePage() {
       <AlertContext.Provider
         value={{ alertIsOpen, setAlertIsOpen, alertText, setAlertText }}
       >
-        <ModalContext.Provider value={{ isModalOpen, setIsModalOpen }}>
-          <>
-            <Header user={user?.user} />
-            <main style={{ position: "relative" }}>
-              {period && (
-                <FiltersPanel
-                  type={type}
-                  setType={setType}
-                  period={period}
-                  setPeriod={setPeriod}
-                  libraryAccess={libraryAccess}
-                  setLibraryAccess={setLibraryAccess}
-                />
-              )}
-              {isLoading ? (
-                <Loader
-                  total={total}
-                  libraryAccess={libraryAccess}
-                  count={count}
-                  controller={songsControllerRef}
-                />
-              ) : albums.length ? (
-                <HomePageContainer>
-                  {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}
-                </HomePageContainer>
-              ) : (
-                <LoaderWrapper>
-                  <h3>
-                    Looks like there's nothing there 🤔
-                    <br />
-                    Try adjusting filters or go like more of your favourite
-                    artists on Spotify!
-                  </h3>
-                </LoaderWrapper>
-              )}
-              <Alert />
-            </main>
-            <Footer />
-          </>
-        </ModalContext.Provider>
+        <Header user={user?.user} />
+        <main style={{ position: "relative" }}>
+          {period && (
+            <FiltersPanel
+              type={type}
+              setType={setType}
+              period={period}
+              setPeriod={setPeriod}
+              libraryAccess={libraryAccess}
+              setLibraryAccess={setLibraryAccess}
+            />
+          )}
+          {isLoading ? (
+            <Loader
+              total={total}
+              libraryAccess={libraryAccess}
+              count={count}
+              controller={songsControllerRef}
+            />
+          ) : albums.length ? (
+            <HomePageContainer>
+              {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}
+            </HomePageContainer>
+          ) : (
+            <LoaderWrapper>
+              <h3>
+                Looks like there's nothing there 🤔
+                <br />
+                Try adjusting filters or go like more of your favourite artists
+                on Spotify!
+              </h3>
+            </LoaderWrapper>
+          )}
+          <Alert />
+        </main>
+        <Footer />
       </AlertContext.Provider>
     </UserContext.Provider>
   );

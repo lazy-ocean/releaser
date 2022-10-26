@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Form = styled.form`
   display: flex;
@@ -25,7 +25,7 @@ export const FilterLabel = styled.label`
   }
 `;
 
-export const Dropdown = styled.select`
+export const DropdownStyles = css`
   margin-left: 0.4rem;
   background-color: var(--bg-elevation);
   border: none;
@@ -34,6 +34,10 @@ export const Dropdown = styled.select`
   font-size: 1rem;
   border-radius: 5px;
   padding: 0.3rem;
+`;
+
+export const Dropdown = styled.select`
+  ${DropdownStyles}
 `;
 
 export const FiltersButton = styled.button<{ active: boolean }>`

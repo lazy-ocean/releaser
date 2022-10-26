@@ -3,12 +3,12 @@ import { getData, ENDPOINTS } from "../utils/getData";
 import { groupAlbumsByDate } from "./getRecentReleases";
 
 const getRegionalReleases = async (
-  accessToken: string
-): Promise<{ albums: ReleasesInterface; location: string }> => {
-  const data = await getData(accessToken, ENDPOINTS.RECENT_RELEASES("GB"));
+  accessToken: string,
+  location?: string
+): Promise<{ albums: ReleasesInterface }> => {
+  const data = await getData(accessToken, ENDPOINTS.RECENT_RELEASES(location));
   return {
     albums: groupAlbumsByDate(data.albums.items),
-    location: "the UK",
   };
 };
 
