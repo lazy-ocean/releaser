@@ -39,7 +39,8 @@ export interface HomeData {
 
 export interface IndexData {
   user: User | null;
-  releases: { albums: ReleasesInterface; location: string };
+  releases: { albums: ReleasesInterface };
+  baseAccessToken: string;
 }
 
 export interface Playlist {
