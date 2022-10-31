@@ -53,7 +53,7 @@ const FiltersPanel = ({
 }: FiltersPanelProps) => {
   const isInitialMount = useRef(true);
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [focused, setFocused] = useState("");
+  const [focused, setFocused] = useState("period");
   const [filtersData, setFiltersData] = useState({
     period,
     type,
@@ -86,7 +86,7 @@ const FiltersPanel = ({
   }, [filtersOpen]);
 
   useEffect(() => {
-    if (document) {
+    if (document && filtersOpen) {
       document.getElementById(focused)?.focus();
     }
   }, [filtersOpen, focused]);
