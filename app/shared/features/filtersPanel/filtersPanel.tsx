@@ -6,12 +6,19 @@ import {
   FiltersWrapper,
 } from "./filtersPanel.styled";
 import { FaFilter } from "react-icons/fa";
-import { useState, useRef, useEffect, useContext } from "react";
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  useContext,
+  useCallback,
+} from "react";
 import { LibraryAccessType, ReleaseType } from "./filtersPanel.interface";
 import type { FiltersPanelProps } from "./filtersPanel.interface";
 import { setLocalStorageItem } from "~/shared/utils/hooks/useLocalStorage";
 import LikedSongsWarningModal from "./LikedSongsWarningModal";
 import ModalContext from "~/shared/contexts/modalContext";
+import useKeyboard from "~/shared/utils/hooks/useKeyboard";
 
 const PERIOD_VALUES: {
   value: number;
@@ -46,25 +53,27 @@ const FiltersPanel = ({
 }: FiltersPanelProps) => {
   const isInitialMount = useRef(true);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [focused, setFocused] = useState("");
   const [filtersData, setFiltersData] = useState({
     period,
     type,
     library: libraryAccess,
   });
   const { isModalOpen, setIsModalOpen } = useContext(ModalContext);
-  const formFef = useRef<HTMLFormElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const periodRef = useRef<HTMLSelectElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent): void => {
       if (
         filtersOpen &&
-        formFef.current &&
-        !formFef.current.contains(event.target as Node)
+        formRef.current &&
+        !formRef.current.contains(event.target as Node)
       ) {
-        if (typeof formFef.current.requestSubmit === "function") {
-          formFef.current.requestSubmit();
+        if (typeof formRef.current.requestSubmit === "function") {
+          formRef.current.requestSubmit();
         } else
-          formFef.current.dispatchEvent(
+          formRef.current.dispatchEvent(
             new Event("submit", { cancelable: true })
           );
       }
@@ -75,6 +84,12 @@ const FiltersPanel = ({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [filtersOpen]);
+
+  useEffect(() => {
+    if (document) {
+      document.getElementById(focused)?.focus();
+    }
+  }, [filtersOpen, focused]);
 
   const onConfirmSearch = () => {
     if (isModalOpen) setIsModalOpen(false);
@@ -97,6 +112,16 @@ const FiltersPanel = ({
     setLibraryAccess(LibraryAccessType.Artists);
     setFiltersOpen(false);
   };
+
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.code === "Space" && !filtersOpen) {
+        setFiltersOpen(true);
+        setFocused((e.target as HTMLElement).id);
+      }
+    },
+    [filtersOpen]
+  );
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -127,20 +152,36 @@ const FiltersPanel = ({
         }
       }
     }
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filtersData]);
 
+  useKeyboard({ escape: () => setFiltersOpen(false) });
+
+  const handleBlur = (e: React.SyntheticEvent) => {
+    if (!e.currentTarget.contains((e as any).relatedTarget) && filtersOpen) {
+      if (formRef && formRef.current) formRef.current.requestSubmit();
+    }
+  };
+
   return (
-    <Form onSubmit={handleSubmit} ref={formFef}>
+    <Form onSubmit={handleSubmit} ref={formRef} onBlur={handleBlur}>
       <FiltersWrapper isOpen={filtersOpen}>
         {filtersOpen ? (
           <>
             <div>
               <FilterLabel htmlFor="period">Show releases for </FilterLabel>
-              <Dropdown id="period" name="period" defaultValue={period}>
+              <Dropdown
+                id="period"
+                name="period"
+                defaultValue={period}
+                ref={periodRef}
+              >
                 {PERIOD_VALUES.map(({ value, label }, i) => (
-                  <option value={value} key={i}>
+                  <option
+                    value={value}
+                    key={i}
+                    aria-selected={value === period}
+                  >
                     {label}
                   </option>
                 ))}
@@ -150,7 +191,7 @@ const FiltersPanel = ({
               <FilterLabel htmlFor="type">Show </FilterLabel>
               <Dropdown id="type" name="type" defaultValue={type}>
                 {Object.entries(RELEASE_TYPES).map(([key, value], i) => (
-                  <option value={key} key={i}>
+                  <option value={key} key={i} aria-selected={value === type}>
                     {value}
                   </option>
                 ))}
@@ -162,9 +203,15 @@ const FiltersPanel = ({
                 id="library"
                 name="library"
                 defaultValue={libraryAccess}
+                role="listbox"
+                aria-multiselectable="false"
               >
                 {Object.entries(LIBRARY_ACCESS).map(([key, value], i) => (
-                  <option value={key} key={i}>
+                  <option
+                    value={key}
+                    key={i}
+                    aria-selected={value === LIBRARY_ACCESS[libraryAccess]}
+                  >
                     {value}
                   </option>
                 ))}
@@ -173,13 +220,31 @@ const FiltersPanel = ({
           </>
         ) : (
           <>
-            <FilterLabel as="p" onClick={() => setFiltersOpen(true)}>
+            <FilterLabel
+              as="p"
+              onClick={() => setFiltersOpen(true)}
+              tabIndex={0}
+              onKeyUp={handleKeyDown}
+              id="period"
+            >
               Show releases for <span>{period}</span> days
             </FilterLabel>
-            <FilterLabel as="p" onClick={() => setFiltersOpen(true)}>
+            <FilterLabel
+              as="p"
+              onClick={() => setFiltersOpen(true)}
+              tabIndex={0}
+              onKeyUp={handleKeyDown}
+              id="type"
+            >
               Show <span>{RELEASE_TYPES[type]}</span>
             </FilterLabel>
-            <FilterLabel as="p" onClick={() => setFiltersOpen(true)}>
+            <FilterLabel
+              as="p"
+              onClick={() => setFiltersOpen(true)}
+              tabIndex={0}
+              onKeyUp={handleKeyDown}
+              id="library"
+            >
               Show releases from <span>{LIBRARY_ACCESS[libraryAccess]}</span>
             </FilterLabel>
           </>
