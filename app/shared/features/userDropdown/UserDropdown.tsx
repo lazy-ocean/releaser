@@ -8,6 +8,7 @@ import {
 } from "./UserDropdown.styled";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { Form, useSubmit } from "@remix-run/react";
+import useKeyboard from "~/shared/utils/hooks/useKeyboard";
 
 const UserDropdown = ({ user }: { user: User }) => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
@@ -33,18 +34,27 @@ const UserDropdown = ({ user }: { user: User }) => {
     };
   }, []);
 
+  useKeyboard({ escape: () => setMenuOpen(false) });
+
   return (
     <UserButton onClick={() => setMenuOpen(!isMenuOpen)} ref={ref}>
       <img src={image} alt="Your avatar" />
       <Username>{name}</Username>
-      <DropdownButton>
+      <DropdownButton aria-label="Open user menu">
         {isMenuOpen ? <AiFillCaretUp /> : <AiFillCaretDown />}
       </DropdownButton>
 
       {isMenuOpen && (
         <Menu>
-          <Form action="/logout" method="post">
-            <button onClick={handleSubmit}>Logout</button>
+          <Form action="/logout" method="post" tabIndex={-1}>
+            <button
+              onClick={handleSubmit}
+              type="submit"
+              onBlur={() => setMenuOpen(false)}
+              autoFocus
+            >
+              Logout
+            </button>
           </Form>
         </Menu>
       )}
