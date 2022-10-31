@@ -14,12 +14,13 @@ const RegionalReleases = ({
   return (
     <Container>
       <h2>
-        New releases for{" "}
+        <label htmlFor="region-selector">New releases for </label>
         <CountriesSelect
           onChange={(val: string) => setUserCountry(val)}
           value={location}
           valueType="short"
           defaultOptionLabel="everywhere"
+          id="region-selector"
         />
       </h2>
       {!!releases && <AlbumsTile releases={releases} />}

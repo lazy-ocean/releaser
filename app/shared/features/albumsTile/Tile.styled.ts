@@ -5,6 +5,7 @@ export const DayList = styled(FlexRow)`
   flex-grow: 1;
   flex-wrap: wrap;
   width: 100%;
+  margin: 0;
 `;
 
 export const ReleaseDate = styled.p`

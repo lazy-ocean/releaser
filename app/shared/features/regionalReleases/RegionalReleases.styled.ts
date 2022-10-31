@@ -6,7 +6,6 @@ export const Container = styled.section`
   padding: var(--spacing-s);
 `;
 
-// @ts-ignore
 export const CountriesSelect = styled(CountryDropdown)`
   ${DropdownStyles};
   width: 10rem;
