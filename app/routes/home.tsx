@@ -24,7 +24,6 @@ import UserContext from "~/shared/contexts/userContext";
 import AlertContext from "~/shared/contexts/alertContext";
 import type { AlertType } from "~/shared/components/alert/Alert.interface";
 import { Alert } from "~/shared/components";
-import ModalContext from "~/shared/contexts/modalContext";
 import getArtistsFromLikedSongs from "~/shared/functions/getArtistsFromLikedSongs";
 import Loader from "~/shared/features/loader/Loader";
 
@@ -136,7 +135,7 @@ export default function HomePage() {
               controller={songsControllerRef}
             />
           ) : albums.length ? (
-            <HomePageContainer>
+            <HomePageContainer id="main">
               {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}
             </HomePageContainer>
           ) : (

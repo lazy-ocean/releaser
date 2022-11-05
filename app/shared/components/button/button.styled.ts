@@ -15,6 +15,7 @@ export const CommonButton = css<{ shadow?: boolean }>`
 export const PrimaryButton = styled.button<{ shadow?: boolean }>`
   ${CommonButton};
   background-color: var(--brand-green);
+  color: var(--bg-base);
 
   &:hover {
     filter: brightness(0.8);

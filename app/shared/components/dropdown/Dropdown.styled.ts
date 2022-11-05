@@ -12,6 +12,7 @@ export const Container = styled.ul`
   overflow-y: scroll;
   max-height: 20rem;
   font-size: 0.9rem;
+  z-index: 10;
 
   @media (max-width: 600px) {
     left: -13rem;

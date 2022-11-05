@@ -28,11 +28,7 @@ export default function Index() {
   const [country, setCountry] = useState<string>("");
   const { user = null, releases, baseAccessToken } = data;
   const [regionalReleases, setRegionalReleases] = useState(releases);
-  const { isModalOpen, setIsModalOpen } = useContext(ModalContext);
-
-  useEffect(() => {
-    console.log(isModalOpen);
-  }, [isModalOpen]);
+  const { setIsModalOpen } = useContext(ModalContext);
 
   useEffect(() => {
     const getReleases = async () => {
@@ -44,7 +40,6 @@ export default function Index() {
           );
           setRegionalReleases(chosenReleases);
         } catch (e) {
-          console.log("?");
           setIsModalOpen("location-error");
           setCountry("");
         }
