@@ -12,7 +12,7 @@ const RegionalReleases = ({
   setUserCountry: (arg0: string) => void;
 }) => {
   return (
-    <Container>
+    <Container id="main">
       <h2>
         <label htmlFor="region-selector">New releases for </label>
         <CountriesSelect

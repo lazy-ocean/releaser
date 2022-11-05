@@ -1,5 +1,5 @@
 import type { User } from "remix-auth-spotify";
-import { StyledHeader, Logo } from "./Header.styled";
+import { StyledHeader, Logo, SkipToMain } from "./Header.styled";
 import { UserDropdown } from "~/shared/features";
 import { Link } from "@remix-run/react";
 
@@ -12,7 +12,9 @@ const Header = ({ user }: { user?: User | null }) => {
           alt="Spotify logo"
         />
       </Link>
-
+      <SkipToMain href="#main" aria-label="Skip to main content">
+        Skip to main
+      </SkipToMain>
       {user && <UserDropdown user={user} />}
     </StyledHeader>
   );
