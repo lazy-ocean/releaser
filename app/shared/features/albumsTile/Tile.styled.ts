@@ -5,6 +5,7 @@ export const DayList = styled(FlexRow)`
   flex-grow: 1;
   flex-wrap: wrap;
   width: 100%;
+  margin: 0;
 `;
 
 export const ReleaseDate = styled.p`
@@ -48,6 +49,13 @@ export const HomePageContainer = styled.section`
 
 export const LoaderWrapper = styled.div`
   margin-top: var(--spacing-s);
-  width: 40px;
-  margin: 0 auto;
+  text-align: center;
+
+  & h3 {
+    color: var(--text-secondary);
+  }
+
+  & span {
+    color: var(--brand-green);
+  }
 `;

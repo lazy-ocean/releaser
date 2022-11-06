@@ -10,6 +10,7 @@ import {
 } from "./Card.styled";
 import AddToLibrary from "../addToLibrary/AddToLibrary";
 import UserContext from "~/shared/contexts/userContext";
+import { Link } from "@remix-run/react";
 
 const AlbumCard = ({ release }: { release: Album }) => {
   const { user } = useContext(UserContext);
@@ -19,34 +20,38 @@ const AlbumCard = ({ release }: { release: Album }) => {
     images,
     album_type: type,
     total_tracks: tracksNum,
-    external_urls: url,
     liked,
     id,
+    uri,
   } = release;
 
   const artistsNames = (
     <Artists>
-      {artists.map(({ name, external_urls, id }) => (
-        <a href={external_urls.spotify} key={id}>
+      {artists.map(({ name, uri, id }) => (
+        <a href={uri} key={id}>
           {name}
         </a>
       ))}
     </Artists>
   );
 
+  const altText = `${name} ${type} by ${artists
+    .map(({ name }) => name)
+    .join(" and ")}`;
+
   return (
     <Card>
-      <Cover src={images[1].url} alt={`${name} album cover`} />
-      <Info>
-        <AlbumName>
-          <a href={url.spotify}>{name}</a>
-        </AlbumName>
-        {artistsNames}
-        <AdditionalInfo>
-          <p>{type}</p>
-          <p>{`${tracksNum} track(s)`}</p>
-        </AdditionalInfo>
-      </Info>
+      <Link to={uri} aria-label={altText}>
+        <Cover src={images[1].url} alt={altText} role="presentation" />
+        <Info>
+          <AlbumName>{name}</AlbumName>
+          {artistsNames}
+          <AdditionalInfo>
+            <p>{type}</p>
+            <p>{`${tracksNum} track(s)`}</p>
+          </AdditionalInfo>
+        </Info>
+      </Link>
       {user && <AddToLibrary liked={liked} albumId={id} albumName={name} />}
     </Card>
   );

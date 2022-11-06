@@ -1,6 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts } from "@remix-run/react";
 import styles from "~/shared/styles/global.css";
+import { useState } from "react";
+import ModalContext from "./shared/contexts/modalContext";
 
 export const meta: MetaFunction = () => {
   const description =
@@ -37,6 +39,7 @@ export function links() {
 }
 
 export default function App() {
+  const [isModalOpen, setIsModalOpen] = useState<string | false>(false);
   return (
     <html lang="en">
       <head>
@@ -44,11 +47,13 @@ export default function App() {
         <Links />
         {typeof document === "undefined" ? "__STYLES__" : null}
       </head>
-      <body>
-        <Outlet />
-        <LiveReload />
-        <Scripts />
-      </body>
+      <ModalContext.Provider value={{ isModalOpen, setIsModalOpen }}>
+        <body>
+          <Outlet />
+          <LiveReload />
+          <Scripts />
+        </body>
+      </ModalContext.Provider>
     </html>
   );
 }

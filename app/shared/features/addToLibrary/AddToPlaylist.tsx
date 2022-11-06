@@ -8,6 +8,7 @@ import AlertContext from "~/shared/contexts/alertContext";
 import { AlertType } from "~/shared/components/alert/Alert.interface";
 import ModalContext from "~/shared/contexts/modalContext";
 import PlaylistErrorModal from "./PlaylistErrorModal";
+import useKeyboard from "~/shared/utils/hooks/useKeyboard";
 
 const AddToPlaylist = ({
   albumId,
@@ -102,6 +103,8 @@ const AddToPlaylist = ({
       console.log(e);
     }
   };
+
+  useKeyboard({ escape: () => setMenuOpen(false) });
 
   return (
     <Wrapper ref={ref}>

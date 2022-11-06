@@ -16,9 +16,11 @@ const AlbumsTile = ({ releases }: { releases: ReleasesInterface }) => {
   return (
     <ReleasesPanel>
       {sortedDates.map((date, i) => (
-        <ReleasesRow key={i}>
-          <ReleaseDate>{format(new Date(date), "d MMMM")}</ReleaseDate>
-          <DayList>
+        <ReleasesRow key={i} as="section">
+          <ReleaseDate tabIndex={0}>
+            {format(new Date(date), "d MMMM")}
+          </ReleaseDate>
+          <DayList as="ul">
             {releases[date]?.map((release: Album) => (
               <Card release={release} key={release.id} />
             ))}

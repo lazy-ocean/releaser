@@ -21,6 +21,7 @@ html {
   --spacing-xxs: 0.5rem;
   --spacing-xs: 1rem;
   --spacing-s: 2rem;
+  --spacing-m: 4rem;
 
   /* media-queries (just for the reference, wont work anyway)*/
   --mobile: 600px;
@@ -40,9 +41,19 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 80%;
+  }
+
+  .ReactModal__Content--after-open {
+    max-width: 75% !important;
   }
 }
 

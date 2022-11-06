@@ -3,10 +3,10 @@ import { FlexColumn, FlexRow } from "~/shared/styles/utils";
 import { HiHeart, HiOutlineHeart } from "react-icons/hi";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
 
-const IconCss = css<{ liked: boolean }>`
+const IconCss = css<{ $isLiked: boolean }>`
   width: 1.5rem;
   height: 1.5rem;
-  ${({ liked }) => liked && `fill: var(--brand-green)`};
+  ${({ $isLiked }) => $isLiked && `fill: var(--brand-green)`};
 `;
 
 export const IconButton = styled.button`
@@ -18,16 +18,16 @@ export const IconButton = styled.button`
   margin: 0;
 `;
 
-export const AddToLibraryPanel = styled(FlexColumn)<{ liked?: boolean }>`
+export const AddToLibraryPanel = styled(FlexColumn)<{ $isLiked?: boolean }>`
   margin-left: auto;
   gap: var(--spacing-xxs);
 `;
 
-export const FullHeart = styled(HiHeart)<{ liked: boolean }>`
+export const FullHeart = styled(HiHeart)<{ $isLiked: boolean }>`
   ${IconCss}
 `;
 
-export const EmptyHeart = styled(HiOutlineHeart)<{ liked: boolean }>`
+export const EmptyHeart = styled(HiOutlineHeart)<{ $isLiked: boolean }>`
   ${IconCss}
 `;
 
@@ -47,6 +47,8 @@ export const ModalHeader = styled.h3`
 
 export const ModalTxt = styled.p`
   margin-bottom: var(--spacing-s);
+  line-height: 1.5rem;
+  font-size: 1.1rem;
 
   & + ${FlexRow} {
     justify-content: flex-end;

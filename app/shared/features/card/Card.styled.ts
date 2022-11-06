@@ -1,14 +1,22 @@
 import styled from "styled-components";
 import { FlexRow, FlexColumn } from "~/shared/styles/utils";
 
-export const Card = styled.section`
+export const Card = styled.li`
   display: flex;
   gap: var(--spacing-xs);
+
+  & > a {
+    display: flex;
+    gap: var(--spacing-xs);
+    align-items: flex-start;
+  }
+
+  list-style-type: none;
   margin: var(--spacing-xs);
   align-items: flex-start;
   width: 35%;
 
-  @media (max-width: 600px) {
+  @media (max-width: 850px) {
     width: 100%;
   }
 `;

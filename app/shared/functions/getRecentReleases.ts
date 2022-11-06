@@ -1,6 +1,7 @@
 import type { Session } from "remix-auth-spotify";
-import type { Album, Artist, ReleasesInterface } from "../types/types";
-import { getData, ENDPOINTS } from "../utils/getData";
+import { ReleaseType } from "../features/filtersPanel/filtersPanel.interface";
+import type { Album, ReleasesInterface } from "../types/types";
+import { getData, ENDPOINTS, TYPES } from "../utils/getData";
 
 export const groupAlbumsByDate = (albums: Album[]) =>
   albums.reduce((acc, release) => {
@@ -12,20 +13,34 @@ export const groupAlbumsByDate = (albums: Album[]) =>
   }, {} as ReleasesInterface);
 
 export const getRecentReleases = async (
-  artists: Artist[],
-  userData: Session
+  artists: string[],
+  userData: Session,
+  controller?: AbortController,
+  type?: ReleaseType
 ) => {
-  let recentReleases: Album[] = [];
-  await Promise.all(
-    artists.map(async ({ id }) => {
-      const albums: { items: Album[] } = await getData(
-        userData.accessToken,
-        ENDPOINTS.ARTISTS_RELEASES(id)
-      );
-      recentReleases = [...recentReleases, ...albums.items];
-    })
-  );
-  recentReleases = [...new Map(recentReleases.map((v) => [v.id, v])).values()];
+  let recentReleases = new Map();
+  const releaseType = type === ReleaseType.Both ? `album,single` : type;
+  try {
+    await Promise.all(
+      artists.map(async (id) => {
+        const albums: { items: Album[] } = await getData(
+          userData.accessToken,
+          ENDPOINTS.ARTISTS_RELEASES(id, releaseType),
+          TYPES.GET,
+          controller
+        );
+        albums?.items.forEach((album) => {
+          const a = recentReleases.get(album.name);
+          if (!a || a.release_date !== album.release_date)
+            recentReleases.set(album.name, album);
+        });
+      })
+    );
+  } catch (e) {
+    Promise.reject(new Error("Something went wrong"));
+    controller?.abort();
+    console.log(e);
+  }
 
-  return recentReleases;
+  return Array.from(recentReleases.values());
 };

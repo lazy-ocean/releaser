@@ -25,6 +25,7 @@ export interface Artist {
   id: string;
   name: string;
   external_urls: { spotify: string };
+  uri: string;
 }
 
 export interface ReleasesInterface {
@@ -38,7 +39,8 @@ export interface HomeData {
 
 export interface IndexData {
   user: User | null;
-  releases: { albums: ReleasesInterface; location: string };
+  releases: { albums: ReleasesInterface };
+  baseAccessToken: string;
 }
 
 export interface Playlist {
