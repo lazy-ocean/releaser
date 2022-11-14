@@ -10,7 +10,13 @@ import {
   chooseRecentReleases,
   groupAlbumsByDate,
 } from "~/shared/functions";
-import { Header, AlbumsTile, FiltersPanel, Footer } from "~/shared/features";
+import {
+  Header,
+  AlbumsTile,
+  FiltersPanel,
+  Footer,
+  AnchorButton,
+} from "~/shared/features";
 import {
   HomePageContainer,
   LoaderWrapper,
@@ -117,6 +123,7 @@ export default function HomePage() {
       >
         <Header user={user?.user} />
         <main style={{ position: "relative" }}>
+          <AnchorButton />
           {period && (
             <FiltersPanel
               type={type}
