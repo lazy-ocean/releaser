@@ -10,7 +10,6 @@ import {
 } from "./Card.styled";
 import AddToLibrary from "../addToLibrary/AddToLibrary";
 import UserContext from "~/shared/contexts/userContext";
-import { Link } from "@remix-run/react";
 
 const AlbumCard = ({ release }: { release: Album }) => {
   const { user } = useContext(UserContext);
@@ -41,7 +40,7 @@ const AlbumCard = ({ release }: { release: Album }) => {
 
   return (
     <Card>
-      <Link to={uri} aria-label={altText}>
+      <a href={uri} aria-label={altText}>
         <Cover src={images[1].url} alt={altText} role="presentation" />
         <Info>
           <AlbumName>{name}</AlbumName>
@@ -51,7 +50,7 @@ const AlbumCard = ({ release }: { release: Album }) => {
             <p>{`${tracksNum} track(s)`}</p>
           </AdditionalInfo>
         </Info>
-      </Link>
+      </a>
       {user && <AddToLibrary liked={liked} albumId={id} albumName={name} />}
     </Card>
   );
