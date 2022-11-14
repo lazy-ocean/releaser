@@ -1,4 +1,4 @@
-import { useContext, useState, useRef } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { PlaylistButton, IconButton, Wrapper } from "./AddToLibrary.styled";
 import UserContext from "~/shared/contexts/userContext";
 import { getData, ENDPOINTS, TYPES } from "~/shared/utils/getData";
@@ -8,7 +8,6 @@ import AlertContext from "~/shared/contexts/alertContext";
 import { AlertType } from "~/shared/components/alert/Alert.interface";
 import ModalContext from "~/shared/contexts/modalContext";
 import PlaylistErrorModal from "./PlaylistErrorModal";
-import useKeyboard from "~/shared/utils/hooks/useKeyboard";
 
 const AddToPlaylist = ({
   albumId,
@@ -17,7 +16,7 @@ const AddToPlaylist = ({
   albumId: string;
   albumName: string;
 }) => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
   const [playlists, setPlaylists] = useState<Playlist[]>([]);
   const [name, setName] = useState<string>("");
   const [id, setId] = useState<string>("");
@@ -25,17 +24,18 @@ const AddToPlaylist = ({
   const [songsInPlaylist, setSongsInPlaylist] = useState<string[]>([]);
   const { isModalOpen, setIsModalOpen } = useContext(ModalContext);
   const { user } = useContext(UserContext);
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLButtonElement>(null);
   const { setAlertIsOpen, setAlertText } = useContext(AlertContext);
 
-  const handleClick = async () => {
+  const handleClick = async (e: React.MouseEvent) => {
+    e.preventDefault();
     try {
       const { items } = await getData(
         user?.accessToken as string,
         ENDPOINTS.GET_PLAYLISTS
       );
       setPlaylists(items);
-      setMenuOpen(true);
+      setAnchorEl(e.target as HTMLButtonElement);
     } catch (e) {
       setAlertText("Something went wrong");
       setAlertIsOpen(AlertType.ERROR);
@@ -88,10 +88,10 @@ const AddToPlaylist = ({
           ? inPlaylist.push(item.uri)
           : toAdd.push(item.uri);
       });
-
       setSongsInPlaylist(inPlaylist);
       setSongsToAdd(toAdd);
-      setMenuOpen(false);
+      setAnchorEl(null);
+      if (ref && ref.current) ref.current.focus();
       if (inPlaylist.length) {
         setIsModalOpen(id);
       } else {
@@ -104,25 +104,27 @@ const AddToPlaylist = ({
     }
   };
 
-  useKeyboard({ escape: () => setMenuOpen(false) });
+  const handleClose = () => {
+    setAnchorEl(null);
+    if (ref && ref.current) ref.current.focus();
+  };
 
   return (
-    <Wrapper ref={ref}>
+    <Wrapper>
       <IconButton
         aria-label={`Add ${albumName} to your playlists`}
-        onClick={handleClick}
+        onClick={(e: React.MouseEvent) => handleClick(e)}
+        ref={ref}
       >
         <PlaylistButton aria-hidden={true} />
       </IconButton>
-      {menuOpen && (
-        <Dropdown
-          items={playlists}
-          ref={ref}
-          toggle={setMenuOpen}
-          action={handleAlbumAdd}
-          ariaLabel={`Add ${albumName} to `}
-        />
-      )}
+      <Dropdown
+        items={playlists}
+        action={handleAlbumAdd}
+        ariaLabel={`Add ${albumName} to `}
+        anchorEl={anchorEl}
+        handleClose={handleClose}
+      />
       <PlaylistErrorModal
         id={id}
         onAccept={() =>
