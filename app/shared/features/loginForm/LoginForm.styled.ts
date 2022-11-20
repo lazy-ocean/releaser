@@ -16,3 +16,18 @@ export const Header = styled.h2`
   text-align: center;
   margin-bottom: var(--spacing-s);
 `;
+
+export const Subtext = styled.p`
+  color: var(--text-faded);
+  text-align: center;
+
+  & a {
+    color: var(--brand-green);
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
