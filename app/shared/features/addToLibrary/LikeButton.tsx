@@ -4,6 +4,7 @@ import UserContext from "~/shared/contexts/userContext";
 import { EmptyHeart, FullHeart, IconButton } from "./AddToLibrary.styled";
 import AlertContext from "~/shared/contexts/alertContext";
 import { AlertType } from "~/shared/components/alert/Alert.interface";
+import { UserType } from "~/shared/types/types";
 
 const LikeButton = ({
   liked,
@@ -21,20 +22,24 @@ const LikeButton = ({
   const handleClick = async () => {
     try {
       if (isLiked) {
-        await getData(
-          user?.accessToken as string,
-          ENDPOINTS.ADD_ALBUM(albumId),
-          TYPES.DELETE
-        );
+        if (user?.type === UserType.registered) {
+          await getData(
+            user?.accessToken as string,
+            ENDPOINTS.ADD_ALBUM(albumId),
+            TYPES.DELETE
+          );
+        }
         setIsLiked(false);
         setAlertText("Removed from your library");
         setAlertIsOpen(AlertType.SUCCESS);
       } else {
-        await getData(
-          user?.accessToken as string,
-          ENDPOINTS.ADD_ALBUM(albumId),
-          TYPES.PUT
-        );
+        if (user?.type === UserType.registered) {
+          await getData(
+            user?.accessToken as string,
+            ENDPOINTS.ADD_ALBUM(albumId),
+            TYPES.PUT
+          );
+        }
         setIsLiked(true);
         setAlertText("Added to your library");
         setAlertIsOpen(AlertType.SUCCESS);

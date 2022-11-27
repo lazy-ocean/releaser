@@ -1,13 +1,23 @@
 import type { Session, User } from "remix-auth-spotify";
 
+export enum UserType {
+  registered = "registered",
+  demo = "demo",
+}
+
+export interface UserProfile extends Session {
+  type: UserType;
+}
+
 interface AlbumImage {
   url: string;
 }
+
 export interface Album {
   album_group: string;
   album_type: string;
   artists: Artist[];
-  available_markets: string[];
+  available_markets?: string[];
   external_urls: { spotify: string };
   href: string;
   id: string;
@@ -33,7 +43,7 @@ export interface ReleasesInterface {
 }
 
 export interface HomeData {
-  user: Session | null;
+  user: UserProfile | null;
   releases: Album[];
 }
 

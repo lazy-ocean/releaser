@@ -4,10 +4,18 @@ import UserContext from "~/shared/contexts/userContext";
 import { getData, ENDPOINTS, TYPES } from "~/shared/utils/getData";
 import { Dropdown } from "~/shared/components";
 import type { Playlist, Track } from "~/shared/types/types";
+import { UserType } from "~/shared/types/types";
 import AlertContext from "~/shared/contexts/alertContext";
 import { AlertType } from "~/shared/components/alert/Alert.interface";
 import ModalContext from "~/shared/contexts/modalContext";
 import PlaylistErrorModal from "./PlaylistErrorModal";
+import demoPlaylists from "../../../mocks/playlists.json";
+import {
+  readFromLocalStorage,
+  setLocalStorageItem,
+} from "~/shared/utils/hooks/useLocalStorage";
+
+const STORED_PLAYLISTS_KEY = "playlists";
 
 const AddToPlaylist = ({
   albumId,
@@ -30,11 +38,13 @@ const AddToPlaylist = ({
   const handleClick = async (e: React.MouseEvent) => {
     e.preventDefault();
     try {
-      const { items } = await getData(
-        user?.accessToken as string,
-        ENDPOINTS.GET_PLAYLISTS
-      );
-      setPlaylists(items);
+      if (user?.type === UserType.registered) {
+        const { items } = await getData(
+          user?.accessToken as string,
+          ENDPOINTS.GET_PLAYLISTS
+        );
+        setPlaylists(items);
+      } else setPlaylists(demoPlaylists);
       setAnchorEl(e.target as HTMLButtonElement);
     } catch (e) {
       setAlertText("Something went wrong");
@@ -49,20 +59,32 @@ const AddToPlaylist = ({
     name: string
   ) => {
     const uris = songs.join(",");
-    if (uris)
-      try {
-        await getData(
-          user?.accessToken as string,
-          ENDPOINTS.ADD_TO_PLAYLIST(id as string, uris),
-          TYPES.POST
-        );
-      } catch (e) {
-        setAlertText("Something went wrong");
-        setAlertIsOpen(AlertType.ERROR);
-        console.log(e);
+    if (uris) {
+      if (user?.type === UserType.registered) {
+        try {
+          await getData(
+            user?.accessToken as string,
+            ENDPOINTS.ADD_TO_PLAYLIST(id as string, uris),
+            TYPES.POST
+          );
+          setAlertText(`Added to a playlist ${name}`);
+          setAlertIsOpen(AlertType.SUCCESS);
+        } catch (e) {
+          setAlertText("Something went wrong");
+          setAlertIsOpen(AlertType.ERROR);
+          console.log(e);
+        }
+      } else {
+        const saved = readFromLocalStorage(STORED_PLAYLISTS_KEY) || {};
+        if (saved[id]) {
+          if (!saved[id].includes(albumId)) saved[id] = [...saved[id], albumId];
+        } else saved[id] = [albumId];
+        setLocalStorageItem("playlists", saved);
+        setAlertText(`Added to a playlist ${name}`);
+        setAlertIsOpen(AlertType.SUCCESS);
       }
-    setAlertText(`Added to a playlist ${name}`);
-    setAlertIsOpen(AlertType.SUCCESS);
+    }
+
     if (isModalOpen) setIsModalOpen(false);
   };
 
@@ -72,22 +94,29 @@ const AddToPlaylist = ({
     try {
       const inPlaylist: string[] = [];
       const toAdd: string[] = [];
-      const { items } = await getData(
-        user?.accessToken as string,
-        ENDPOINTS.GET_ALBUM_TRACKS(albumId)
-      );
-      const playlistItems = await getData(
-        user?.accessToken as string,
-        ENDPOINTS.GET_PLAYLIST_TRACKS(id)
-      );
-      const playlistIds = playlistItems.items.map(
-        (item: { track: Track }) => item.track.id
-      );
-      items.forEach((item: Track) => {
-        playlistIds.includes(item.id)
-          ? inPlaylist.push(item.uri)
-          : toAdd.push(item.uri);
-      });
+      if (user?.type === UserType.registered) {
+        const { items } = await getData(
+          user?.accessToken as string,
+          ENDPOINTS.GET_ALBUM_TRACKS(albumId)
+        );
+        const playlistItems = await getData(
+          user?.accessToken as string,
+          ENDPOINTS.GET_PLAYLIST_TRACKS(id)
+        );
+        const playlistIds = playlistItems.items.map(
+          (item: { track: Track }) => item.track.id
+        );
+        items.forEach((item: Track) => {
+          playlistIds.includes(item.id)
+            ? inPlaylist.push(item.uri)
+            : toAdd.push(item.uri);
+        });
+      } else {
+        const added = readFromLocalStorage(STORED_PLAYLISTS_KEY);
+        if (added && added[id] && added[id].includes(albumId)) {
+          inPlaylist.push(albumId);
+        } else toAdd.push(albumId);
+      }
       setSongsInPlaylist(inPlaylist);
       setSongsToAdd(toAdd);
       setAnchorEl(null);

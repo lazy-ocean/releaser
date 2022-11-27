@@ -31,3 +31,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
+export const CTARow = styled.div`
+  display: flex;
+  gap: var(--spacing-xs);
+`;

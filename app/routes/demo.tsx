@@ -1,16 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { spotifyStrategy } from "~/services/auth.server";
-import { ENDPOINTS } from "~/shared/utils/getData";
 import type { Album, HomeData } from "~/shared/types/types";
 import { UserType } from "~/shared/types/types";
-import {
-  getFollowedArtists,
-  getRecentReleases,
-  chooseRecentReleases,
-  groupAlbumsByDate,
-} from "~/shared/functions";
+import { chooseRecentReleases, groupAlbumsByDate } from "~/shared/functions";
 import {
   Header,
   AlbumsTile,
@@ -31,26 +24,16 @@ import UserContext from "~/shared/contexts/userContext";
 import AlertContext from "~/shared/contexts/alertContext";
 import type { AlertType } from "~/shared/components/alert/Alert.interface";
 import { Alert } from "~/shared/components";
-import getArtistsFromLikedSongs from "~/shared/functions/getArtistsFromLikedSongs";
 import Loader from "~/shared/features/loader/Loader";
+import newReleases from "../mocks/releases.json";
 
 export const loader: LoaderFunction = async ({ request }) => {
-  const userData = await spotifyStrategy.getSession(request);
   let recentReleases: Album[] = [];
 
-  if (userData?.user) {
-    const followedArtists = await getFollowedArtists(
-      ENDPOINTS.FOLLOWED_ARTISTS_API,
-      userData
-    );
-    recentReleases = await getRecentReleases(followedArtists, userData);
-  }
+  recentReleases = newReleases;
 
   const res = {
-    user: {
-      ...userData,
-      type: userData?.user ? UserType.registered : UserType.demo,
-    },
+    user: { type: UserType.demo },
     releases: recentReleases,
   };
   return res;
@@ -68,8 +51,6 @@ export default function HomePage() {
   const [alertIsOpen, setAlertIsOpen] = useState<AlertType | false>(false);
   const [alertText, setAlertText] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [count, setCount] = useState(0);
-  const [total, setTotal] = useState(0);
   const songsControllerRef = useRef<AbortController | null>(null);
   const releasesControllerRef = useRef<AbortController | null>(null);
 
@@ -85,24 +66,11 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    if (period && user && user.type === UserType.registered) {
+    if (period) {
       setIsLoading(true);
       const getAlbums = async () => {
         let allReleases = releases;
         if (libraryAccess === LibraryAccessType.Songs) {
-          const likedArtists = await getArtistsFromLikedSongs(
-            user?.accessToken,
-            setCount,
-            total,
-            setTotal,
-            songsControllerRef?.current?.signal as AbortSignal
-          );
-          allReleases = await getRecentReleases(
-            likedArtists,
-            user,
-            releasesControllerRef.current as AbortController,
-            type
-          );
           songsControllerRef.current = new AbortController();
         }
         const data = await chooseRecentReleases(
@@ -140,14 +108,14 @@ export default function HomePage() {
           )}
           {isLoading ? (
             <Loader
-              total={total}
+              total={0}
               libraryAccess={libraryAccess}
-              count={count}
+              count={0}
               controller={songsControllerRef}
             />
           ) : albums.length ? (
             <HomePageContainer id="main">
-              {user && <AlbumsTile releases={groupAlbumsByDate(albums)} />}
+              <AlbumsTile releases={groupAlbumsByDate(albums)} />
             </HomePageContainer>
           ) : (
             <LoaderWrapper>
