@@ -34,6 +34,7 @@ const Dropdown = (props: DropdownProps) => {
           tabIndex={0}
           role="option"
           aria-selected={false}
+          style={{ cursor: "pointer" }}
         >
           {name}
         </MenuItemUnstyled>

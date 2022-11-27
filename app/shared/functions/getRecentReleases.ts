@@ -30,9 +30,15 @@ export const getRecentReleases = async (
           controller
         );
         albums?.items.forEach((album) => {
-          const a = recentReleases.get(album.id);
-          if (!a || a.release_date !== album.release_date)
-            recentReleases.set(album.id, album);
+          const a = recentReleases.get(album.name);
+          if (!a) {
+            recentReleases.set(album.name, album);
+          } else if (
+            a.release_date !== album.release_date &&
+            album.total_tracks !== a.total_tracks
+          ) {
+            recentReleases.set(`${album.name}_${album.id}`, album);
+          }
         });
       })
     );
