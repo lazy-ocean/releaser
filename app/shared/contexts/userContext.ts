@@ -1,8 +1,8 @@
 import { createContext } from "react";
-import type { Session } from "remix-auth-spotify";
+import type { UserProfile } from "../types/types";
 
 interface UserContextInterface {
-  user: Session | null;
+  user: UserProfile | null;
 }
 
 const UserContext = createContext<UserContextInterface>({

@@ -39,7 +39,31 @@ export const DropdownStyles = css`
 `;
 
 export const Dropdown = styled.select`
-  ${DropdownStyles}
+  ${DropdownStyles};
+`;
+
+export const TooltipWrapper = styled.div<{ disabled: boolean }>`
+  position: relative;
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      &:hover {
+        &:after {
+          position: absolute;
+          left: 100%;
+          top: -100%;
+          content: "Not available in demo version";
+          font-weight: 100;
+          font-size: 13px;
+          padding: 0.5rem;
+          background-color: var(--bg-elevation-hover);
+          border-radius: 5px;
+          width: max-content;
+          filter: brightness(0.7);
+        }
+      }
+    `}
 `;
 
 export const FiltersButton = styled.button<{ active: boolean }>`

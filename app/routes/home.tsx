@@ -4,6 +4,7 @@ import { useLoaderData } from "@remix-run/react";
 import { spotifyStrategy } from "~/services/auth.server";
 import { ENDPOINTS } from "~/shared/utils/getData";
 import type { Album, HomeData } from "~/shared/types/types";
+import { UserType } from "~/shared/types/types";
 import {
   getFollowedArtists,
   getRecentReleases,
@@ -46,7 +47,10 @@ export const loader: LoaderFunction = async ({ request }) => {
   }
 
   const res = {
-    user: userData,
+    user: {
+      ...userData,
+      type: userData?.user ? UserType.registered : UserType.demo,
+    },
     releases: recentReleases,
   };
   return res;
@@ -81,7 +85,7 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    if (period && user) {
+    if (period && user && user.type === UserType.registered) {
       setIsLoading(true);
       const getAlbums = async () => {
         let allReleases = releases;
