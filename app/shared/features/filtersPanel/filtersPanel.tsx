@@ -4,6 +4,7 @@ import {
   Dropdown,
   FiltersButton,
   FiltersWrapper,
+  TooltipWrapper,
 } from "./filtersPanel.styled";
 import { FaFilter } from "react-icons/fa";
 import React, {
@@ -19,6 +20,8 @@ import { setLocalStorageItem } from "~/shared/utils/hooks/useLocalStorage";
 import LikedSongsWarningModal from "./LikedSongsWarningModal";
 import ModalContext from "~/shared/contexts/modalContext";
 import useKeyboard from "~/shared/utils/hooks/useKeyboard";
+import UserContext from "~/shared/contexts/userContext";
+import { UserType } from "~/shared/types/types";
 
 const PERIOD_VALUES: {
   value: number;
@@ -51,6 +54,7 @@ const FiltersPanel = ({
   libraryAccess,
   setLibraryAccess,
 }: FiltersPanelProps) => {
+  const { user } = useContext(UserContext);
   const isInitialMount = useRef(true);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [focused, setFocused] = useState("period");
@@ -197,7 +201,7 @@ const FiltersPanel = ({
                 ))}
               </Dropdown>
             </div>
-            <div>
+            <TooltipWrapper disabled={user?.type === UserType.demo}>
               <FilterLabel htmlFor="library">Show releases from </FilterLabel>
               <Dropdown
                 id="library"
@@ -205,6 +209,7 @@ const FiltersPanel = ({
                 defaultValue={libraryAccess}
                 role="listbox"
                 aria-multiselectable="false"
+                disabled={user?.type === UserType.demo}
               >
                 {Object.entries(LIBRARY_ACCESS).map(([key, value], i) => (
                   <option
@@ -216,7 +221,7 @@ const FiltersPanel = ({
                   </option>
                 ))}
               </Dropdown>
-            </div>
+            </TooltipWrapper>
           </>
         ) : (
           <>
