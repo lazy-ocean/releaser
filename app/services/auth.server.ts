@@ -40,10 +40,14 @@ export const spotifyStrategy = new SpotifyStrategy(
     expiresAt: Date.now() + extraParams.expiresIn * 1000,
     tokenType: extraParams.tokenType,
     user: {
-      id: profile.id,
-      email: profile.emails[0].value,
-      name: profile.displayName,
-      image: profile.__json.images?.[0].url,
+      id: profile?.id,
+      email: profile?.emails[0]?.value,
+      name: profile?.displayName,
+      image:
+        profile.__json.images?.[0]?.url ||
+        `https://ui-avatars.com/api/?name=${
+          profile?.displayName?.replace(" ", "+") || "incognito"
+        }`,
     },
   })
 );
