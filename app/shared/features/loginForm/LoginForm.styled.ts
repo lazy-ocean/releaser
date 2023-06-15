@@ -35,4 +35,5 @@ export const Wrapper = styled.div`
 export const CTARow = styled.div`
   display: flex;
   gap: var(--spacing-xs);
+  justify-content: center;
 `;

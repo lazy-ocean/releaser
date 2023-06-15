@@ -48,7 +48,7 @@ export const HomePageContainer = styled.section`
 `;
 
 export const LoaderWrapper = styled.div`
-  margin-top: var(--spacing-s);
+  margin: var(--spacing-s);
   text-align: center;
 
   & h3 {
@@ -56,6 +56,10 @@ export const LoaderWrapper = styled.div`
   }
 
   & span {
+    color: var(--brand-green);
+  }
+
+  & a {
     color: var(--brand-green);
   }
 `;
