@@ -1,6 +1,1440 @@
 [
   {
     "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/5M50Jray1eYGOW5gkTzUjT"
+    },
+    "href": "https://api.spotify.com/v1/albums/5M50Jray1eYGOW5gkTzUjT",
+    "id": "5M50Jray1eYGOW5gkTzUjT",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732640490a2d392eca6f6790f1",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022640490a2d392eca6f6790f1",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512640490a2d392eca6f6790f1",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Desert Snow / Hourglass",
+    "release_date": "2022-07-22",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:5M50Jray1eYGOW5gkTzUjT",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
+        "id": "75dQReiBOHN37fQgWQrIAJ",
+        "name": "Local Natives",
+        "type": "artist",
+        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/6xfQHjndhrWjgENyEK0z7x"
+    },
+    "href": "https://api.spotify.com/v1/albums/6xfQHjndhrWjgENyEK0z7x",
+    "id": "6xfQHjndhrWjgENyEK0z7x",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732c97d5f81245b803825e39e6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022c97d5f81245b803825e39e6",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512c97d5f81245b803825e39e6",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Just Before The Morning",
+    "release_date": "2022-10-12",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:6xfQHjndhrWjgENyEK0z7x",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
+        "id": "75dQReiBOHN37fQgWQrIAJ",
+        "name": "Local Natives",
+        "type": "artist",
+        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/38eDwkclzfH6azFfDE1H2X"
+    },
+    "href": "https://api.spotify.com/v1/albums/38eDwkclzfH6azFfDE1H2X",
+    "id": "38eDwkclzfH6azFfDE1H2X",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733fef35ac1ae92831ba3d86a4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023fef35ac1ae92831ba3d86a4",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513fef35ac1ae92831ba3d86a4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Just Before The Morning (Acoustic Version)",
+    "release_date": "2022-12-01",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:38eDwkclzfH6azFfDE1H2X",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
+        "id": "75dQReiBOHN37fQgWQrIAJ",
+        "name": "Local Natives",
+        "type": "artist",
+        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/5O2lqoWn0U7HzB7YFX4j8t"
+    },
+    "href": "https://api.spotify.com/v1/albums/5O2lqoWn0U7HzB7YFX4j8t",
+    "id": "5O2lqoWn0U7HzB7YFX4j8t",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2730367d41594cedbfe89a76f0b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e020367d41594cedbfe89a76f0b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048510367d41594cedbfe89a76f0b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Just Before The Morning (Danny L Harle Remix)",
+    "release_date": "2023-02-16",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:5O2lqoWn0U7HzB7YFX4j8t",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
+        "id": "75dQReiBOHN37fQgWQrIAJ",
+        "name": "Local Natives",
+        "type": "artist",
+        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 4,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/0xIg9hAbN6BYXXoEVoMwqX"
+    },
+    "href": "https://api.spotify.com/v1/albums/0xIg9hAbN6BYXXoEVoMwqX",
+    "id": "0xIg9hAbN6BYXXoEVoMwqX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738d6b970d163757ab45696db2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028d6b970d163757ab45696db2",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518d6b970d163757ab45696db2",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "NYE",
+    "release_date": "2023-05-09",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:0xIg9hAbN6BYXXoEVoMwqX",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
+        "id": "75dQReiBOHN37fQgWQrIAJ",
+        "name": "Local Natives",
+        "type": "artist",
+        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 5,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/5J8h5p90HLJbyMvIhGRi5H"
+    },
+    "href": "https://api.spotify.com/v1/albums/5J8h5p90HLJbyMvIhGRi5H",
+    "id": "5J8h5p90HLJbyMvIhGRi5H",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cb583faf2aad75cbee877846",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cb583faf2aad75cbee877846",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851cb583faf2aad75cbee877846",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Paradise",
+    "release_date": "2023-06-27",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:5J8h5p90HLJbyMvIhGRi5H",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
+        "id": "75dQReiBOHN37fQgWQrIAJ",
+        "name": "Local Natives",
+        "type": "artist",
+        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
+      }
+    ]
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 10,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/26sOnKsHrZqqo9agigUH4y"
+    },
+    "href": "https://api.spotify.com/v1/albums/26sOnKsHrZqqo9agigUH4y",
+    "id": "26sOnKsHrZqqo9agigUH4y",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27396d59bb23151b05c1313355a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0296d59bb23151b05c1313355a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485196d59bb23151b05c1313355a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Time Will Wait For No One",
+    "release_date": "2023-07-07",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:26sOnKsHrZqqo9agigUH4y",
+    "album_group": "album",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
+        "id": "75dQReiBOHN37fQgWQrIAJ",
+        "name": "Local Natives",
+        "type": "artist",
+        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/5Os5j39zKEfpvKL11TtfYE"
+    },
+    "href": "https://api.spotify.com/v1/albums/5Os5j39zKEfpvKL11TtfYE",
+    "id": "5Os5j39zKEfpvKL11TtfYE",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27367b6e438b2d1dfec09918926",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0267b6e438b2d1dfec09918926",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485167b6e438b2d1dfec09918926",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Welcome to the DCC",
+    "release_date": "2023-03-15",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:5Os5j39zKEfpvKL11TtfYE",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1kDGbuxWknIKx4FlgWxiSp",
+        "id": "1kDGbuxWknIKx4FlgWxiSp",
+        "name": "Nothing But Thieves",
+        "type": "artist",
+        "uri": "spotify:artist:1kDGbuxWknIKx4FlgWxiSp"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/5ZnUe6eIvTc22D1HdF8F1K"
+    },
+    "href": "https://api.spotify.com/v1/albums/5ZnUe6eIvTc22D1HdF8F1K",
+    "id": "5ZnUe6eIvTc22D1HdF8F1K",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731705760cb37fab9540263b77",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021705760cb37fab9540263b77",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511705760cb37fab9540263b77",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Welcome to the DCC (Fred Falke Remix)",
+    "release_date": "2023-05-05",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:5ZnUe6eIvTc22D1HdF8F1K",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1kDGbuxWknIKx4FlgWxiSp",
+        "id": "1kDGbuxWknIKx4FlgWxiSp",
+        "name": "Nothing But Thieves",
+        "type": "artist",
+        "uri": "spotify:artist:1kDGbuxWknIKx4FlgWxiSp"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0AfNNw1LS2i9KW4icd7inD"
+        },
+        "href": "https://api.spotify.com/v1/artists/0AfNNw1LS2i9KW4icd7inD",
+        "id": "0AfNNw1LS2i9KW4icd7inD",
+        "name": "Fred Falke",
+        "type": "artist",
+        "uri": "spotify:artist:0AfNNw1LS2i9KW4icd7inD"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/24nlaQLa3nx87nBaS9j35W"
+    },
+    "href": "https://api.spotify.com/v1/albums/24nlaQLa3nx87nBaS9j35W",
+    "id": "24nlaQLa3nx87nBaS9j35W",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a780172ebf95c8797dca891c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a780172ebf95c8797dca891c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a780172ebf95c8797dca891c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Overcome",
+    "release_date": "2023-05-10",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:24nlaQLa3nx87nBaS9j35W",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1kDGbuxWknIKx4FlgWxiSp",
+        "id": "1kDGbuxWknIKx4FlgWxiSp",
+        "name": "Nothing But Thieves",
+        "type": "artist",
+        "uri": "spotify:artist:1kDGbuxWknIKx4FlgWxiSp"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/1DB7wnOG1yxjsHnOVfaWCa"
+    },
+    "href": "https://api.spotify.com/v1/albums/1DB7wnOG1yxjsHnOVfaWCa",
+    "id": "1DB7wnOG1yxjsHnOVfaWCa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273426b12590e146e446562debe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02426b12590e146e446562debe",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851426b12590e146e446562debe",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Overcome (Paul Woolford Remix)",
+    "release_date": "2023-06-09",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:1DB7wnOG1yxjsHnOVfaWCa",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1kDGbuxWknIKx4FlgWxiSp",
+        "id": "1kDGbuxWknIKx4FlgWxiSp",
+        "name": "Nothing But Thieves",
+        "type": "artist",
+        "uri": "spotify:artist:1kDGbuxWknIKx4FlgWxiSp"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4CA8PTrbq1l5IgyvBA2JSV"
+        },
+        "href": "https://api.spotify.com/v1/artists/4CA8PTrbq1l5IgyvBA2JSV",
+        "id": "4CA8PTrbq1l5IgyvBA2JSV",
+        "name": "Paul Woolford",
+        "type": "artist",
+        "uri": "spotify:artist:4CA8PTrbq1l5IgyvBA2JSV"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 3,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/2TfpDzHgJVR1MgSOQyLjNa"
+    },
+    "href": "https://api.spotify.com/v1/albums/2TfpDzHgJVR1MgSOQyLjNa",
+    "id": "2TfpDzHgJVR1MgSOQyLjNa",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ce3ad06123e859945bdda445",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ce3ad06123e859945bdda445",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ce3ad06123e859945bdda445",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Keeping You Around",
+    "release_date": "2023-06-23",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:2TfpDzHgJVR1MgSOQyLjNa",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1kDGbuxWknIKx4FlgWxiSp",
+        "id": "1kDGbuxWknIKx4FlgWxiSp",
+        "name": "Nothing But Thieves",
+        "type": "artist",
+        "uri": "spotify:artist:1kDGbuxWknIKx4FlgWxiSp"
+      }
+    ]
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 11,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/0kqOkJ9HCUD4AXKvvR6lb7"
+    },
+    "href": "https://api.spotify.com/v1/albums/0kqOkJ9HCUD4AXKvvR6lb7",
+    "id": "0kqOkJ9HCUD4AXKvvR6lb7",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2735340930dd48fb071fe422510",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e025340930dd48fb071fe422510",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048515340930dd48fb071fe422510",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Dead Club City",
+    "release_date": "2023-06-30",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:0kqOkJ9HCUD4AXKvvR6lb7",
+    "album_group": "album",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1kDGbuxWknIKx4FlgWxiSp",
+        "id": "1kDGbuxWknIKx4FlgWxiSp",
+        "name": "Nothing But Thieves",
+        "type": "artist",
+        "uri": "spotify:artist:1kDGbuxWknIKx4FlgWxiSp"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/6XqbzujsQpFewramig6kUM"
+    },
+    "href": "https://api.spotify.com/v1/albums/6XqbzujsQpFewramig6kUM",
+    "id": "6XqbzujsQpFewramig6kUM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e2948c1d4cf0e0db9072e406",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e2948c1d4cf0e0db9072e406",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e2948c1d4cf0e0db9072e406",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Dummy – Chris Lake Remix",
+    "release_date": "2023-03-31",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:6XqbzujsQpFewramig6kUM",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "name": "Portugal. The Man",
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5Igpc9iLZ3YGtKeYfSrrOE"
+        },
+        "href": "https://api.spotify.com/v1/artists/5Igpc9iLZ3YGtKeYfSrrOE",
+        "id": "5Igpc9iLZ3YGtKeYfSrrOE",
+        "name": "Chris Lake",
+        "type": "artist",
+        "uri": "spotify:artist:5Igpc9iLZ3YGtKeYfSrrOE"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/53Ss7QGhX8hDfymNXdSRtd"
+    },
+    "href": "https://api.spotify.com/v1/albums/53Ss7QGhX8hDfymNXdSRtd",
+    "id": "53Ss7QGhX8hDfymNXdSRtd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2734c8f938f1410783c517f078c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e024c8f938f1410783c517f078c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048514c8f938f1410783c517f078c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Champ (feat. Edgar Winter)",
+    "release_date": "2023-04-14",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:53Ss7QGhX8hDfymNXdSRtd",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "name": "Portugal. The Man",
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3UNrI3SG1l2ezKikxQ2zuk"
+        },
+        "href": "https://api.spotify.com/v1/artists/3UNrI3SG1l2ezKikxQ2zuk",
+        "id": "3UNrI3SG1l2ezKikxQ2zuk",
+        "name": "Edgar Winter",
+        "type": "artist",
+        "uri": "spotify:artist:3UNrI3SG1l2ezKikxQ2zuk"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/1evFsTho9g2jaaIBwX5i5L"
+    },
+    "href": "https://api.spotify.com/v1/albums/1evFsTho9g2jaaIBwX5i5L",
+    "id": "1evFsTho9g2jaaIBwX5i5L",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736ba288764c52db0de7651aba",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026ba288764c52db0de7651aba",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516ba288764c52db0de7651aba",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Dummy – Chrome Sparks Remix",
+    "release_date": "2023-04-28",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:1evFsTho9g2jaaIBwX5i5L",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "name": "Portugal. The Man",
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2pTCZ9C1fXdaVlv6d5EIXM"
+        },
+        "href": "https://api.spotify.com/v1/artists/2pTCZ9C1fXdaVlv6d5EIXM",
+        "id": "2pTCZ9C1fXdaVlv6d5EIXM",
+        "name": "Chrome Sparks",
+        "type": "artist",
+        "uri": "spotify:artist:2pTCZ9C1fXdaVlv6d5EIXM"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/51uooEnqVtqGx2K0lscvqr"
+    },
+    "href": "https://api.spotify.com/v1/albums/51uooEnqVtqGx2K0lscvqr",
+    "id": "51uooEnqVtqGx2K0lscvqr",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2735eda88d8999641ab81422317",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e025eda88d8999641ab81422317",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048515eda88d8999641ab81422317",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Thunderdome [W.T.A.] (feat. Black Thought & Natalia Lafourcade)",
+    "release_date": "2023-05-12",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:51uooEnqVtqGx2K0lscvqr",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "name": "Portugal. The Man",
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6DJEUXZm0e2rAohdoZ5Voo"
+        },
+        "href": "https://api.spotify.com/v1/artists/6DJEUXZm0e2rAohdoZ5Voo",
+        "id": "6DJEUXZm0e2rAohdoZ5Voo",
+        "name": "Black Thought",
+        "type": "artist",
+        "uri": "spotify:artist:6DJEUXZm0e2rAohdoZ5Voo"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1hcdI2N1023RvSwLzTtdsp"
+        },
+        "href": "https://api.spotify.com/v1/artists/1hcdI2N1023RvSwLzTtdsp",
+        "id": "1hcdI2N1023RvSwLzTtdsp",
+        "name": "Natalia Lafourcade",
+        "type": "artist",
+        "uri": "spotify:artist:1hcdI2N1023RvSwLzTtdsp"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/7xvecR0lQHuMtwxErfq2JA"
+    },
+    "href": "https://api.spotify.com/v1/albums/7xvecR0lQHuMtwxErfq2JA",
+    "id": "7xvecR0lQHuMtwxErfq2JA",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273fce556366fec89d746598310",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02fce556366fec89d746598310",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851fce556366fec89d746598310",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Summer of Luv (feat. Unknown Mortal Orchestra)",
+    "release_date": "2023-05-24",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:7xvecR0lQHuMtwxErfq2JA",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "name": "Portugal. The Man",
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 5,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/1z5LdevUqkMqghyib0eLJC"
+    },
+    "href": "https://api.spotify.com/v1/albums/1z5LdevUqkMqghyib0eLJC",
+    "id": "1z5LdevUqkMqghyib0eLJC",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a097a5aedce43417ffc2dd9a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a097a5aedce43417ffc2dd9a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a097a5aedce43417ffc2dd9a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Plastic Island",
+    "release_date": "2023-06-09",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:1z5LdevUqkMqghyib0eLJC",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "name": "Portugal. The Man",
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      }
+    ]
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 11,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/6A7Q0GFiU2ckojqk5QsXWX"
+    },
+    "href": "https://api.spotify.com/v1/albums/6A7Q0GFiU2ckojqk5QsXWX",
+    "id": "6A7Q0GFiU2ckojqk5QsXWX",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27327e49a37460c4445053eeb4f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0227e49a37460c4445053eeb4f",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485127e49a37460c4445053eeb4f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Chris Black Changed My Life",
+    "release_date": "2023-06-23",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:6A7Q0GFiU2ckojqk5QsXWX",
+    "album_group": "album",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
+        },
+        "href": "https://api.spotify.com/v1/artists/4kI8Ie27vjvonwaB2ePh8T",
+        "id": "4kI8Ie27vjvonwaB2ePh8T",
+        "name": "Portugal. The Man",
+        "type": "artist",
+        "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/3dTSDhT6cUg4YxQTMRgf6S"
+    },
+    "href": "https://api.spotify.com/v1/albums/3dTSDhT6cUg4YxQTMRgf6S",
+    "id": "3dTSDhT6cUg4YxQTMRgf6S",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b60d2e2e459d09aea6205ecf",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b60d2e2e459d09aea6205ecf",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b60d2e2e459d09aea6205ecf",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Emotion Sickness",
+    "release_date": "2023-05-11",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:3dTSDhT6cUg4YxQTMRgf6S",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4pejUc4iciQfgdX6OKulQn"
+        },
+        "href": "https://api.spotify.com/v1/artists/4pejUc4iciQfgdX6OKulQn",
+        "id": "4pejUc4iciQfgdX6OKulQn",
+        "name": "Queens of the Stone Age",
+        "type": "artist",
+        "uri": "spotify:artist:4pejUc4iciQfgdX6OKulQn"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/2UB1sEIK8wEhikbkcsIcIn"
+    },
+    "href": "https://api.spotify.com/v1/albums/2UB1sEIK8wEhikbkcsIcIn",
+    "id": "2UB1sEIK8wEhikbkcsIcIn",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ac65fae0afe49658e9f83a44",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ac65fae0afe49658e9f83a44",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ac65fae0afe49658e9f83a44",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Carnavoyeur",
+    "release_date": "2023-05-31",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:2UB1sEIK8wEhikbkcsIcIn",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4pejUc4iciQfgdX6OKulQn"
+        },
+        "href": "https://api.spotify.com/v1/artists/4pejUc4iciQfgdX6OKulQn",
+        "id": "4pejUc4iciQfgdX6OKulQn",
+        "name": "Queens of the Stone Age",
+        "type": "artist",
+        "uri": "spotify:artist:4pejUc4iciQfgdX6OKulQn"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 3,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/2ec7VED8zxmb93zpjdFYBM"
+    },
+    "href": "https://api.spotify.com/v1/albums/2ec7VED8zxmb93zpjdFYBM",
+    "id": "2ec7VED8zxmb93zpjdFYBM",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273df3b0e54d98071aa775b7f17",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02df3b0e54d98071aa775b7f17",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851df3b0e54d98071aa775b7f17",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Paper Machete",
+    "release_date": "2023-06-14",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:2ec7VED8zxmb93zpjdFYBM",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4pejUc4iciQfgdX6OKulQn"
+        },
+        "href": "https://api.spotify.com/v1/artists/4pejUc4iciQfgdX6OKulQn",
+        "id": "4pejUc4iciQfgdX6OKulQn",
+        "name": "Queens of the Stone Age",
+        "type": "artist",
+        "uri": "spotify:artist:4pejUc4iciQfgdX6OKulQn"
+      }
+    ]
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 10,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/2ZTDmH94OLjeNaOvT7Ngwk"
+    },
+    "href": "https://api.spotify.com/v1/albums/2ZTDmH94OLjeNaOvT7Ngwk",
+    "id": "2ZTDmH94OLjeNaOvT7Ngwk",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273df1999f84b4c1981ba570d17",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02df1999f84b4c1981ba570d17",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851df1999f84b4c1981ba570d17",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "In Times New Roman...",
+    "release_date": "2023-06-16",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:2ZTDmH94OLjeNaOvT7Ngwk",
+    "album_group": "album",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4pejUc4iciQfgdX6OKulQn"
+        },
+        "href": "https://api.spotify.com/v1/artists/4pejUc4iciQfgdX6OKulQn",
+        "id": "4pejUc4iciQfgdX6OKulQn",
+        "name": "Queens of the Stone Age",
+        "type": "artist",
+        "uri": "spotify:artist:4pejUc4iciQfgdX6OKulQn"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/7x4nXw3hbF9h5GORc16WSV"
+    },
+    "href": "https://api.spotify.com/v1/albums/7x4nXw3hbF9h5GORc16WSV",
+    "id": "7x4nXw3hbF9h5GORc16WSV",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273c376c7e30bf3c90ec58308b3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02c376c7e30bf3c90ec58308b3",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851c376c7e30bf3c90ec58308b3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Couldn't Make It Up",
+    "release_date": "2023-04-20",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:7x4nXw3hbF9h5GORc16WSV",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5schNIzWdI9gJ1QRK8SBnc"
+        },
+        "href": "https://api.spotify.com/v1/artists/5schNIzWdI9gJ1QRK8SBnc",
+        "id": "5schNIzWdI9gJ1QRK8SBnc",
+        "name": "Ben Howard",
+        "type": "artist",
+        "uri": "spotify:artist:5schNIzWdI9gJ1QRK8SBnc"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/1HeTs1M70blCYgELW08khg"
+    },
+    "href": "https://api.spotify.com/v1/albums/1HeTs1M70blCYgELW08khg",
+    "id": "1HeTs1M70blCYgELW08khg",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736fbe28f47184b7cf4304b068",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026fbe28f47184b7cf4304b068",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516fbe28f47184b7cf4304b068",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Walking Backwards",
+    "release_date": "2023-05-19",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:1HeTs1M70blCYgELW08khg",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5schNIzWdI9gJ1QRK8SBnc"
+        },
+        "href": "https://api.spotify.com/v1/artists/5schNIzWdI9gJ1QRK8SBnc",
+        "id": "5schNIzWdI9gJ1QRK8SBnc",
+        "name": "Ben Howard",
+        "type": "artist",
+        "uri": "spotify:artist:5schNIzWdI9gJ1QRK8SBnc"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 3,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/30r6TlQJHRQOeC1iq8rAWS"
+    },
+    "href": "https://api.spotify.com/v1/albums/30r6TlQJHRQOeC1iq8rAWS",
+    "id": "30r6TlQJHRQOeC1iq8rAWS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b0cbc75c77a3b8e3bc3d1654",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b0cbc75c77a3b8e3bc3d1654",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b0cbc75c77a3b8e3bc3d1654",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Life In The Time",
+    "release_date": "2023-06-07",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:30r6TlQJHRQOeC1iq8rAWS",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5schNIzWdI9gJ1QRK8SBnc"
+        },
+        "href": "https://api.spotify.com/v1/artists/5schNIzWdI9gJ1QRK8SBnc",
+        "id": "5schNIzWdI9gJ1QRK8SBnc",
+        "name": "Ben Howard",
+        "type": "artist",
+        "uri": "spotify:artist:5schNIzWdI9gJ1QRK8SBnc"
+      }
+    ]
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 10,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/11ROhDfHSfUYDlqdPbL5v8"
+    },
+    "href": "https://api.spotify.com/v1/albums/11ROhDfHSfUYDlqdPbL5v8",
+    "id": "11ROhDfHSfUYDlqdPbL5v8",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27342586c7583f550ba8ca480e2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0242586c7583f550ba8ca480e2",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485142586c7583f550ba8ca480e2",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Is It?",
+    "release_date": "2023-06-16",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:11ROhDfHSfUYDlqdPbL5v8",
+    "album_group": "album",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5schNIzWdI9gJ1QRK8SBnc"
+        },
+        "href": "https://api.spotify.com/v1/artists/5schNIzWdI9gJ1QRK8SBnc",
+        "id": "5schNIzWdI9gJ1QRK8SBnc",
+        "name": "Ben Howard",
+        "type": "artist",
+        "uri": "spotify:artist:5schNIzWdI9gJ1QRK8SBnc"
+      }
+    ]
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 12,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/3hWTXO0w02D6YpVRyLRmQz"
+    },
+    "href": "https://api.spotify.com/v1/albums/3hWTXO0w02D6YpVRyLRmQz",
+    "id": "3hWTXO0w02D6YpVRyLRmQz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273c3eedff14af24fdd988ed1a7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02c3eedff14af24fdd988ed1a7",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851c3eedff14af24fdd988ed1a7",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "The End, So Far",
+    "release_date": "2022-09-30",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:3hWTXO0w02D6YpVRyLRmQz",
+    "album_group": "album",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8"
+        },
+        "href": "https://api.spotify.com/v1/artists/05fG473iIaoy82BF1aGhL8",
+        "id": "05fG473iIaoy82BF1aGhL8",
+        "name": "Slipknot",
+        "type": "artist",
+        "uri": "spotify:artist:05fG473iIaoy82BF1aGhL8"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/3YfWgkwUS52CmKJeOpBACz"
+    },
+    "href": "https://api.spotify.com/v1/albums/3YfWgkwUS52CmKJeOpBACz",
+    "id": "3YfWgkwUS52CmKJeOpBACz",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273abb13287b483c18ded4c0cfc",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02abb13287b483c18ded4c0cfc",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851abb13287b483c18ded4c0cfc",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Bone Church",
+    "release_date": "2023-02-02",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:3YfWgkwUS52CmKJeOpBACz",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8"
+        },
+        "href": "https://api.spotify.com/v1/artists/05fG473iIaoy82BF1aGhL8",
+        "id": "05fG473iIaoy82BF1aGhL8",
+        "name": "Slipknot",
+        "type": "artist",
+        "uri": "spotify:artist:05fG473iIaoy82BF1aGhL8"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
+    "total_tracks": 6,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/0E3OlFC9aoCO37szpGrqfH"
+    },
+    "href": "https://api.spotify.com/v1/albums/0E3OlFC9aoCO37szpGrqfH",
+    "id": "0E3OlFC9aoCO37szpGrqfH",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273f9a07816b50b2ecd03d38a0b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02f9a07816b50b2ecd03d38a0b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851f9a07816b50b2ecd03d38a0b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Adderall",
+    "release_date": "2023-06-09",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:0E3OlFC9aoCO37szpGrqfH",
+    "album_group": "single",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8"
+        },
+        "href": "https://api.spotify.com/v1/artists/05fG473iIaoy82BF1aGhL8",
+        "id": "05fG473iIaoy82BF1aGhL8",
+        "name": "Slipknot",
+        "type": "artist",
+        "uri": "spotify:artist:05fG473iIaoy82BF1aGhL8"
+      }
+    ]
+  },
+  {
+    "album_type": "single",
     "total_tracks": 1,
     "external_urls": {
       "spotify": "https://open.spotify.com/album/42PzjjlMNrWtKbZW7gseqr"
@@ -3127,61 +4561,6 @@
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb"
-        },
-        "href": "https://api.spotify.com/v1/artists/0cmWgDlu9CwTgxPhf403hb",
-        "id": "0cmWgDlu9CwTgxPhf403hb",
-        "name": "Bonobo",
-        "type": "artist",
-        "uri": "spotify:artist:0cmWgDlu9CwTgxPhf403hb"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/24icoQNJSEWNu3XvqKBR68"
-        },
-        "href": "https://api.spotify.com/v1/artists/24icoQNJSEWNu3XvqKBR68",
-        "id": "24icoQNJSEWNu3XvqKBR68",
-        "name": "Jordan Rakei",
-        "type": "artist",
-        "uri": "spotify:artist:24icoQNJSEWNu3XvqKBR68"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/62qsqtnaiVv09V1yjxfLx0"
-    },
-    "href": "https://api.spotify.com/v1/albums/62qsqtnaiVv09V1yjxfLx0",
-    "id": "62qsqtnaiVv09V1yjxfLx0",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2738a89a7c73827e7ff2d2eeee4",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e028a89a7c73827e7ff2d2eeee4",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048518a89a7c73827e7ff2d2eeee4",
-        "width": 64
-      }
-    ],
-    "name": "Shadows",
-    "release_date": "2021-12-01",
-    "release_date_precision": "day",
-    "total_tracks": 4,
-    "type": "album",
-    "uri": "spotify:album:62qsqtnaiVv09V1yjxfLx0",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
           "spotify": "https://open.spotify.com/artist/7vNNmjV14SKQzlQAEg0BXP"
         },
         "href": "https://api.spotify.com/v1/artists/7vNNmjV14SKQzlQAEg0BXP",
@@ -3229,116 +4608,6 @@
     "total_tracks": 1,
     "type": "album",
     "uri": "spotify:album:0DaFDCbk5qUOgQdLfSF1eQ",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3A5tHz1SfngyOZM2gItYKu"
-        },
-        "href": "https://api.spotify.com/v1/artists/3A5tHz1SfngyOZM2gItYKu",
-        "id": "3A5tHz1SfngyOZM2gItYKu",
-        "name": "Earl Sweatshirt",
-        "type": "artist",
-        "uri": "spotify:artist:3A5tHz1SfngyOZM2gItYKu"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3SCI7sXHUZIeDKMWC5NT9C"
-        },
-        "href": "https://api.spotify.com/v1/artists/3SCI7sXHUZIeDKMWC5NT9C",
-        "id": "3SCI7sXHUZIeDKMWC5NT9C",
-        "name": "Armand Hammer",
-        "type": "artist",
-        "uri": "spotify:artist:3SCI7sXHUZIeDKMWC5NT9C"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4UvC1cEP1VmZeFMvbCtHkw"
-    },
-    "href": "https://api.spotify.com/v1/albums/4UvC1cEP1VmZeFMvbCtHkw",
-    "id": "4UvC1cEP1VmZeFMvbCtHkw",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273dc824d9723a775644d711ed5",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02dc824d9723a775644d711ed5",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851dc824d9723a775644d711ed5",
-        "width": 64
-      }
-    ],
-    "name": "Tabula Rasa (feat. Armand Hammer)",
-    "release_date": "2021-12-10",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:4UvC1cEP1VmZeFMvbCtHkw",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/16oZKvXb6WkQlVAjwo2Wbg"
-        },
-        "href": "https://api.spotify.com/v1/artists/16oZKvXb6WkQlVAjwo2Wbg",
-        "id": "16oZKvXb6WkQlVAjwo2Wbg",
-        "name": "The Lumineers",
-        "type": "artist",
-        "uri": "spotify:artist:16oZKvXb6WkQlVAjwo2Wbg"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/57Wn64RH6FvI5gu9bdbXIp"
-        },
-        "href": "https://api.spotify.com/v1/artists/57Wn64RH6FvI5gu9bdbXIp",
-        "id": "57Wn64RH6FvI5gu9bdbXIp",
-        "name": "Daniel Rodriguez",
-        "type": "artist",
-        "uri": "spotify:artist:57Wn64RH6FvI5gu9bdbXIp"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/0KKT9451Zua4X0qRdjMqNU"
-    },
-    "href": "https://api.spotify.com/v1/albums/0KKT9451Zua4X0qRdjMqNU",
-    "id": "0KKT9451Zua4X0qRdjMqNU",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27345792ceb4226df0f5fb06ff7",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0245792ceb4226df0f5fb06ff7",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485145792ceb4226df0f5fb06ff7",
-        "width": 64
-      }
-    ],
-    "name": "This Is Life (Merry Christmas) [feat. Daniel Rodriguez]",
-    "release_date": "2021-12-01",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:0KKT9451Zua4X0qRdjMqNU",
     "liked": false
   },
   {
@@ -3997,51 +5266,6 @@
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"
-        },
-        "href": "https://api.spotify.com/v1/artists/0L8ExT028jH3ddEcZwqJJ5",
-        "id": "0L8ExT028jH3ddEcZwqJJ5",
-        "name": "Red Hot Chili Peppers",
-        "type": "artist",
-        "uri": "spotify:artist:0L8ExT028jH3ddEcZwqJJ5"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4k2RZA376JAZ9XOIQlyzae"
-    },
-    "href": "https://api.spotify.com/v1/albums/4k2RZA376JAZ9XOIQlyzae",
-    "id": "4k2RZA376JAZ9XOIQlyzae",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27312b15b5670c6c56766daa6cb",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0212b15b5670c6c56766daa6cb",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485112b15b5670c6c56766daa6cb",
-        "width": 64
-      }
-    ],
-    "name": "Nerve Flip",
-    "release_date": "2022-06-03",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:4k2RZA376JAZ9XOIQlyzae",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
           "spotify": "https://open.spotify.com/artist/1HOeqtP7tHkKNJNLzQ2tnr"
         },
         "href": "https://api.spotify.com/v1/artists/1HOeqtP7tHkKNJNLzQ2tnr",
@@ -4089,96 +5313,6 @@
     "total_tracks": 1,
     "type": "album",
     "uri": "spotify:album:41I7nSRXcoGU23zZFK4XVk",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
-        },
-        "href": "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
-        "id": "246dkjvS1zLTtiykXe5h60",
-        "name": "Post Malone",
-        "type": "artist",
-        "uri": "spotify:artist:246dkjvS1zLTtiykXe5h60"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/50MzJhO0pMjTsfpeOmZ1so"
-    },
-    "href": "https://api.spotify.com/v1/albums/50MzJhO0pMjTsfpeOmZ1so",
-    "id": "50MzJhO0pMjTsfpeOmZ1so",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27349081408213aac8b6e75e016",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0249081408213aac8b6e75e016",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485149081408213aac8b6e75e016",
-        "width": 64
-      }
-    ],
-    "name": "Twelve Carat Toothache (Deluxe)",
-    "release_date": "2022-06-07",
-    "release_date_precision": "day",
-    "total_tracks": 16,
-    "type": "album",
-    "uri": "spotify:album:50MzJhO0pMjTsfpeOmZ1so",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
-        },
-        "href": "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
-        "id": "246dkjvS1zLTtiykXe5h60",
-        "name": "Post Malone",
-        "type": "artist",
-        "uri": "spotify:artist:246dkjvS1zLTtiykXe5h60"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3HHNR44YbP7XogMVwzbodx"
-    },
-    "href": "https://api.spotify.com/v1/albums/3HHNR44YbP7XogMVwzbodx",
-    "id": "3HHNR44YbP7XogMVwzbodx",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27334362676667a4322838ccc97",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0234362676667a4322838ccc97",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485134362676667a4322838ccc97",
-        "width": 64
-      }
-    ],
-    "name": "Twelve Carat Toothache",
-    "release_date": "2022-06-03",
-    "release_date_precision": "day",
-    "total_tracks": 14,
-    "type": "album",
-    "uri": "spotify:album:3HHNR44YbP7XogMVwzbodx",
     "liked": false
   },
   {
@@ -6204,51 +7338,6 @@
     "total_tracks": 3,
     "type": "album",
     "uri": "spotify:album:27Csqhuwc1GrVvMvh169mF",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU"
-        },
-        "href": "https://api.spotify.com/v1/artists/1xU878Z1QtBldR7ru9owdU",
-        "id": "1xU878Z1QtBldR7ru9owdU",
-        "name": "Phoenix",
-        "type": "artist",
-        "uri": "spotify:artist:1xU878Z1QtBldR7ru9owdU"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4kLWiOcd9HWMx4VhRR1XHV"
-    },
-    "href": "https://api.spotify.com/v1/albums/4kLWiOcd9HWMx4VhRR1XHV",
-    "id": "4kLWiOcd9HWMx4VhRR1XHV",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273f1741ef093cf4d62b0b4a94d",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02f1741ef093cf4d62b0b4a94d",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851f1741ef093cf4d62b0b4a94d",
-        "width": 64
-      }
-    ],
-    "name": "Alpha Zulu",
-    "release_date": "2022-06-01",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:4kLWiOcd9HWMx4VhRR1XHV",
     "liked": false
   },
   {
