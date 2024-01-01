@@ -3,138 +3,6 @@
     "album_type": "single",
     "total_tracks": 2,
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/5M50Jray1eYGOW5gkTzUjT"
-    },
-    "href": "https://api.spotify.com/v1/albums/5M50Jray1eYGOW5gkTzUjT",
-    "id": "5M50Jray1eYGOW5gkTzUjT",
-    "images": [
-      {
-        "url": "https://i.scdn.co/image/ab67616d0000b2732640490a2d392eca6f6790f1",
-        "height": 640,
-        "width": 640
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d00001e022640490a2d392eca6f6790f1",
-        "height": 300,
-        "width": 300
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d000048512640490a2d392eca6f6790f1",
-        "height": 64,
-        "width": 64
-      }
-    ],
-    "name": "Desert Snow / Hourglass",
-    "release_date": "2022-07-22",
-    "release_date_precision": "day",
-    "type": "album",
-    "uri": "spotify:album:5M50Jray1eYGOW5gkTzUjT",
-    "album_group": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
-        },
-        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
-        "id": "75dQReiBOHN37fQgWQrIAJ",
-        "name": "Local Natives",
-        "type": "artist",
-        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
-      }
-    ]
-  },
-  {
-    "album_type": "single",
-    "total_tracks": 1,
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6xfQHjndhrWjgENyEK0z7x"
-    },
-    "href": "https://api.spotify.com/v1/albums/6xfQHjndhrWjgENyEK0z7x",
-    "id": "6xfQHjndhrWjgENyEK0z7x",
-    "images": [
-      {
-        "url": "https://i.scdn.co/image/ab67616d0000b2732c97d5f81245b803825e39e6",
-        "height": 640,
-        "width": 640
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d00001e022c97d5f81245b803825e39e6",
-        "height": 300,
-        "width": 300
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d000048512c97d5f81245b803825e39e6",
-        "height": 64,
-        "width": 64
-      }
-    ],
-    "name": "Just Before The Morning",
-    "release_date": "2022-10-12",
-    "release_date_precision": "day",
-    "type": "album",
-    "uri": "spotify:album:6xfQHjndhrWjgENyEK0z7x",
-    "album_group": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
-        },
-        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
-        "id": "75dQReiBOHN37fQgWQrIAJ",
-        "name": "Local Natives",
-        "type": "artist",
-        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
-      }
-    ]
-  },
-  {
-    "album_type": "single",
-    "total_tracks": 2,
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/38eDwkclzfH6azFfDE1H2X"
-    },
-    "href": "https://api.spotify.com/v1/albums/38eDwkclzfH6azFfDE1H2X",
-    "id": "38eDwkclzfH6azFfDE1H2X",
-    "images": [
-      {
-        "url": "https://i.scdn.co/image/ab67616d0000b2733fef35ac1ae92831ba3d86a4",
-        "height": 640,
-        "width": 640
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d00001e023fef35ac1ae92831ba3d86a4",
-        "height": 300,
-        "width": 300
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d000048513fef35ac1ae92831ba3d86a4",
-        "height": 64,
-        "width": 64
-      }
-    ],
-    "name": "Just Before The Morning (Acoustic Version)",
-    "release_date": "2022-12-01",
-    "release_date_precision": "day",
-    "type": "album",
-    "uri": "spotify:album:38eDwkclzfH6azFfDE1H2X",
-    "album_group": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/75dQReiBOHN37fQgWQrIAJ"
-        },
-        "href": "https://api.spotify.com/v1/artists/75dQReiBOHN37fQgWQrIAJ",
-        "id": "75dQReiBOHN37fQgWQrIAJ",
-        "name": "Local Natives",
-        "type": "artist",
-        "uri": "spotify:artist:75dQReiBOHN37fQgWQrIAJ"
-      }
-    ]
-  },
-  {
-    "album_type": "single",
-    "total_tracks": 2,
-    "external_urls": {
       "spotify": "https://open.spotify.com/album/5O2lqoWn0U7HzB7YFX4j8t"
     },
     "href": "https://api.spotify.com/v1/albums/5O2lqoWn0U7HzB7YFX4j8t",
@@ -1298,50 +1166,6 @@
         "name": "Ben Howard",
         "type": "artist",
         "uri": "spotify:artist:5schNIzWdI9gJ1QRK8SBnc"
-      }
-    ]
-  },
-  {
-    "album_type": "album",
-    "total_tracks": 12,
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3hWTXO0w02D6YpVRyLRmQz"
-    },
-    "href": "https://api.spotify.com/v1/albums/3hWTXO0w02D6YpVRyLRmQz",
-    "id": "3hWTXO0w02D6YpVRyLRmQz",
-    "images": [
-      {
-        "url": "https://i.scdn.co/image/ab67616d0000b273c3eedff14af24fdd988ed1a7",
-        "height": 640,
-        "width": 640
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d00001e02c3eedff14af24fdd988ed1a7",
-        "height": 300,
-        "width": 300
-      },
-      {
-        "url": "https://i.scdn.co/image/ab67616d00004851c3eedff14af24fdd988ed1a7",
-        "height": 64,
-        "width": 64
-      }
-    ],
-    "name": "The End, So Far",
-    "release_date": "2022-09-30",
-    "release_date_precision": "day",
-    "type": "album",
-    "uri": "spotify:album:3hWTXO0w02D6YpVRyLRmQz",
-    "album_group": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8"
-        },
-        "href": "https://api.spotify.com/v1/artists/05fG473iIaoy82BF1aGhL8",
-        "id": "05fG473iIaoy82BF1aGhL8",
-        "name": "Slipknot",
-        "type": "artist",
-        "uri": "spotify:artist:05fG473iIaoy82BF1aGhL8"
       }
     ]
   },
@@ -3719,50 +3543,6 @@
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/63MQldklfxkjYDoUE4Tppz"
-        },
-        "href": "https://api.spotify.com/v1/artists/63MQldklfxkjYDoUE4Tppz",
-        "id": "63MQldklfxkjYDoUE4Tppz",
-        "name": "M83",
-        "type": "artist",
-        "uri": "spotify:artist:63MQldklfxkjYDoUE4Tppz"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/1Pyu7uKUDKNhdsYDL82Wkg"
-    },
-    "href": "https://api.spotify.com/v1/albums/1Pyu7uKUDKNhdsYDL82Wkg",
-    "id": "1Pyu7uKUDKNhdsYDL82Wkg",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273d6e19f60738af1f9d4e1d09f",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02d6e19f60738af1f9d4e1d09f",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851d6e19f60738af1f9d4e1d09f",
-        "width": 64
-      }
-    ],
-    "name": "DSVII",
-    "release_date": "2019-09-20",
-    "release_date_precision": "day",
-    "total_tracks": 15,
-    "type": "album",
-    "uri": "spotify:album:1Pyu7uKUDKNhdsYDL82Wkg"
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
           "spotify": "https://open.spotify.com/artist/3r1XkJ7vCs8kHBSzGvPLdP"
         },
         "href": "https://api.spotify.com/v1/artists/3r1XkJ7vCs8kHBSzGvPLdP",
@@ -4331,3463 +4111,853 @@
     "liked": false
   },
   {
-    "album_group": "album",
     "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
-        },
-        "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
-        "id": "06HL4z0CvFAxyc27GXpf02",
-        "name": "Taylor Swift",
-        "type": "artist",
-        "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3lS1y25WAhcqJDATJK70Mq"
-    },
-    "href": "https://api.spotify.com/v1/albums/3lS1y25WAhcqJDATJK70Mq",
-    "id": "3lS1y25WAhcqJDATJK70Mq",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273e0b60c608586d88252b8fbc0",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02e0b60c608586d88252b8fbc0",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851e0b60c608586d88252b8fbc0",
-        "width": 64
-      }
-    ],
-    "name": "Midnights (3am Edition)",
-    "release_date": "2022-10-22",
-    "release_date_precision": "day",
-    "total_tracks": 20,
-    "type": "album",
-    "uri": "spotify:album:3lS1y25WAhcqJDATJK70Mq",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
-        },
-        "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
-        "id": "06HL4z0CvFAxyc27GXpf02",
-        "name": "Taylor Swift",
-        "type": "artist",
-        "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/151w1FgRZfnKZA9FEcg9Z3"
-    },
-    "href": "https://api.spotify.com/v1/albums/151w1FgRZfnKZA9FEcg9Z3",
-    "id": "151w1FgRZfnKZA9FEcg9Z3",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02bb54dde68cd23e2a268ae0f5",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851bb54dde68cd23e2a268ae0f5",
-        "width": 64
-      }
-    ],
-    "name": "Midnights",
-    "release_date": "2022-10-21",
-    "release_date_precision": "day",
     "total_tracks": 13,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/7CBqMgvdiE5mUADbWrmxTS"
+    },
+    "href": "https://api.spotify.com/v1/albums/7CBqMgvdiE5mUADbWrmxTS",
+    "id": "7CBqMgvdiE5mUADbWrmxTS",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e7fccac62be1f5f6bf329b24",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e7fccac62be1f5f6bf329b24",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e7fccac62be1f5f6bf329b24",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Faces From The Masquerade",
+    "release_date": "2023-12-08",
+    "release_date_precision": "day",
     "type": "album",
-    "uri": "spotify:album:151w1FgRZfnKZA9FEcg9Z3",
-    "liked": false
-  },
-  {
+    "uri": "spotify:album:7CBqMgvdiE5mUADbWrmxTS",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5PbpKlxQE0Ktl5lcNABoFf"
+        },
+        "href": "https://api.spotify.com/v1/artists/5PbpKlxQE0Ktl5lcNABoFf",
+        "id": "5PbpKlxQE0Ktl5lcNABoFf",
+        "name": "Car Seat Headrest",
+        "type": "artist",
+        "uri": "spotify:artist:5PbpKlxQE0Ktl5lcNABoFf"
+      }
+    ],
     "album_group": "album",
+    "is_playable": true
+  },
+  {
     "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
-        },
-        "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
-        "id": "06HL4z0CvFAxyc27GXpf02",
-        "name": "Taylor Swift",
-        "type": "artist",
-        "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4moVP48t9bji7djUc5VOvi"
-    },
-    "href": "https://api.spotify.com/v1/albums/4moVP48t9bji7djUc5VOvi",
-    "id": "4moVP48t9bji7djUc5VOvi",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273427ee2ecbd5e20c63e88c9d2",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02427ee2ecbd5e20c63e88c9d2",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851427ee2ecbd5e20c63e88c9d2",
-        "width": 64
-      }
-    ],
-    "name": "Midnights",
-    "release_date": "2022-10-21",
-    "release_date_precision": "day",
     "total_tracks": 13,
-    "type": "album",
-    "uri": "spotify:album:4moVP48t9bji7djUc5VOvi",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb"
-        },
-        "href": "https://api.spotify.com/v1/artists/0cmWgDlu9CwTgxPhf403hb",
-        "id": "0cmWgDlu9CwTgxPhf403hb",
-        "name": "Bonobo",
-        "type": "artist",
-        "uri": "spotify:artist:0cmWgDlu9CwTgxPhf403hb"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/76up5uRogXO3CPwA2OO6Wy"
+      "spotify": "https://open.spotify.com/album/3bu72kr0HlzSAAEIXX8kmq"
     },
-    "href": "https://api.spotify.com/v1/albums/76up5uRogXO3CPwA2OO6Wy",
-    "id": "76up5uRogXO3CPwA2OO6Wy",
+    "href": "https://api.spotify.com/v1/albums/3bu72kr0HlzSAAEIXX8kmq",
+    "id": "3bu72kr0HlzSAAEIXX8kmq",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b27397db23030a24571ecdc82323",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27302d2cd48d34dfb48919ecc72",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e0297db23030a24571ecdc82323",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0202d2cd48d34dfb48919ecc72",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d0000485197db23030a24571ecdc82323",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485102d2cd48d34dfb48919ecc72",
         "width": 64
       }
     ],
-    "name": "Defender",
-    "release_date": "2022-10-19",
+    "name": "Life Is Infinite",
+    "release_date": "2023-12-08",
     "release_date_precision": "day",
-    "total_tracks": 2,
     "type": "album",
-    "uri": "spotify:album:76up5uRogXO3CPwA2OO6Wy",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
+    "uri": "spotify:album:3bu72kr0HlzSAAEIXX8kmq",
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb"
+          "spotify": "https://open.spotify.com/artist/1M684BN2C8BO9WwB0xeXJo"
         },
-        "href": "https://api.spotify.com/v1/artists/0cmWgDlu9CwTgxPhf403hb",
-        "id": "0cmWgDlu9CwTgxPhf403hb",
-        "name": "Bonobo",
+        "href": "https://api.spotify.com/v1/artists/1M684BN2C8BO9WwB0xeXJo",
+        "id": "1M684BN2C8BO9WwB0xeXJo",
+        "name": "Wings of Desire",
         "type": "artist",
-        "uri": "spotify:artist:0cmWgDlu9CwTgxPhf403hb"
+        "uri": "spotify:artist:1M684BN2C8BO9WwB0xeXJo"
       }
     ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 8,
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/1x8w8WymEDZWQ60O7qKGbH"
+      "spotify": "https://open.spotify.com/album/6HYZUqe4sXwIu5VWlfaV2E"
     },
-    "href": "https://api.spotify.com/v1/albums/1x8w8WymEDZWQ60O7qKGbH",
-    "id": "1x8w8WymEDZWQ60O7qKGbH",
+    "href": "https://api.spotify.com/v1/albums/6HYZUqe4sXwIu5VWlfaV2E",
+    "id": "6HYZUqe4sXwIu5VWlfaV2E",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738c8e26bbe44ea47da2080cc3",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2730ac2e17038c8f4cb691621b3",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e028c8e26bbe44ea47da2080cc3",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e020ac2e17038c8f4cb691621b3",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d000048518c8e26bbe44ea47da2080cc3",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048510ac2e17038c8f4cb691621b3",
         "width": 64
       }
     ],
-    "name": "ATK",
-    "release_date": "2022-09-06",
+    "name": "Owl Song",
+    "release_date": "2023-12-15",
     "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:6HYZUqe4sXwIu5VWlfaV2E",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4ai53dgSBGhQwcFtGyY1bF"
+        },
+        "href": "https://api.spotify.com/v1/artists/4ai53dgSBGhQwcFtGyY1bF",
+        "id": "4ai53dgSBGhQwcFtGyY1bF",
+        "name": "Ambrose Akinmusire",
+        "type": "artist",
+        "uri": "spotify:artist:4ai53dgSBGhQwcFtGyY1bF"
+      }
+    ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 16,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/5DUDhwICpKGvnG6BZTCTcW"
+    },
+    "href": "https://api.spotify.com/v1/albums/5DUDhwICpKGvnG6BZTCTcW",
+    "id": "5DUDhwICpKGvnG6BZTCTcW",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273aeb53cca6489b93603312a96",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02aeb53cca6489b93603312a96",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851aeb53cca6489b93603312a96",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Beauty is Enough",
+    "release_date": "2023-06-23",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:5DUDhwICpKGvnG6BZTCTcW",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4ai53dgSBGhQwcFtGyY1bF"
+        },
+        "href": "https://api.spotify.com/v1/artists/4ai53dgSBGhQwcFtGyY1bF",
+        "id": "4ai53dgSBGhQwcFtGyY1bF",
+        "name": "Ambrose Akinmusire",
+        "type": "artist",
+        "uri": "spotify:artist:4ai53dgSBGhQwcFtGyY1bF"
+      }
+    ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 28,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/7ftJOwjB0RFR8i7uuqhdE6"
+    },
+    "href": "https://api.spotify.com/v1/albums/7ftJOwjB0RFR8i7uuqhdE6",
+    "id": "7ftJOwjB0RFR8i7uuqhdE6",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cebbedda8d7575d9b79dc46c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cebbedda8d7575d9b79dc46c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851cebbedda8d7575d9b79dc46c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Blindspotting (Music from the STARZ Original Series, Season 2)",
+    "release_date": "2023-05-26",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:7ftJOwjB0RFR8i7uuqhdE6",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4ai53dgSBGhQwcFtGyY1bF"
+        },
+        "href": "https://api.spotify.com/v1/artists/4ai53dgSBGhQwcFtGyY1bF",
+        "id": "4ai53dgSBGhQwcFtGyY1bF",
+        "name": "Ambrose Akinmusire",
+        "type": "artist",
+        "uri": "spotify:artist:4ai53dgSBGhQwcFtGyY1bF"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4Gx8e7bdRJdkdhGGF5TNwg"
+        },
+        "href": "https://api.spotify.com/v1/artists/4Gx8e7bdRJdkdhGGF5TNwg",
+        "id": "4Gx8e7bdRJdkdhGGF5TNwg",
+        "name": "Michael Yezerski",
+        "type": "artist",
+        "uri": "spotify:artist:4Gx8e7bdRJdkdhGGF5TNwg"
+      }
+    ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 10,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/31pmASRti6IjbYo67KbrJi"
+    },
+    "href": "https://api.spotify.com/v1/albums/31pmASRti6IjbYo67KbrJi",
+    "id": "31pmASRti6IjbYo67KbrJi",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736c2844f879a1be61e7a0580c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026c2844f879a1be61e7a0580c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516c2844f879a1be61e7a0580c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Songs of Silence",
+    "release_date": "2023-11-17",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:31pmASRti6IjbYo67KbrJi",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7zkGCcaPSB7nLCtaxEWWE1"
+        },
+        "href": "https://api.spotify.com/v1/artists/7zkGCcaPSB7nLCtaxEWWE1",
+        "id": "7zkGCcaPSB7nLCtaxEWWE1",
+        "name": "Vince Clarke",
+        "type": "artist",
+        "uri": "spotify:artist:7zkGCcaPSB7nLCtaxEWWE1"
+      }
+    ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "single",
     "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:1x8w8WymEDZWQ60O7qKGbH",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7vNNmjV14SKQzlQAEg0BXP"
-        },
-        "href": "https://api.spotify.com/v1/artists/7vNNmjV14SKQzlQAEg0BXP",
-        "id": "7vNNmjV14SKQzlQAEg0BXP",
-        "name": "Jean Dawson",
-        "type": "artist",
-        "uri": "spotify:artist:7vNNmjV14SKQzlQAEg0BXP"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3A5tHz1SfngyOZM2gItYKu"
-        },
-        "href": "https://api.spotify.com/v1/artists/3A5tHz1SfngyOZM2gItYKu",
-        "id": "3A5tHz1SfngyOZM2gItYKu",
-        "name": "Earl Sweatshirt",
-        "type": "artist",
-        "uri": "spotify:artist:3A5tHz1SfngyOZM2gItYKu"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/0DaFDCbk5qUOgQdLfSF1eQ"
+      "spotify": "https://open.spotify.com/album/0rFos3RIjQmfW1KIeTXgif"
     },
-    "href": "https://api.spotify.com/v1/albums/0DaFDCbk5qUOgQdLfSF1eQ",
-    "id": "0DaFDCbk5qUOgQdLfSF1eQ",
+    "href": "https://api.spotify.com/v1/albums/0rFos3RIjQmfW1KIeTXgif",
+    "id": "0rFos3RIjQmfW1KIeTXgif",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cdfafbbc3cb65af4fd2616c6",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27337a4ae2c1dccf772741a9aba",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cdfafbbc3cb65af4fd2616c6",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0237a4ae2c1dccf772741a9aba",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851cdfafbbc3cb65af4fd2616c6",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485137a4ae2c1dccf772741a9aba",
         "width": 64
       }
     ],
-    "name": "BAD FRUIT*",
-    "release_date": "2022-10-05",
+    "name": "White Rabbit",
+    "release_date": "2023-10-18",
     "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:0rFos3RIjQmfW1KIeTXgif",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7zkGCcaPSB7nLCtaxEWWE1"
+        },
+        "href": "https://api.spotify.com/v1/artists/7zkGCcaPSB7nLCtaxEWWE1",
+        "id": "7zkGCcaPSB7nLCtaxEWWE1",
+        "name": "Vince Clarke",
+        "type": "artist",
+        "uri": "spotify:artist:7zkGCcaPSB7nLCtaxEWWE1"
+      }
+    ],
+    "album_group": "single",
+    "is_playable": true
+  },
+  {
+    "album_type": "single",
     "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:0DaFDCbk5qUOgQdLfSF1eQ",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0Ya43ZKWHTKkAbkoJJkwIB"
-        },
-        "href": "https://api.spotify.com/v1/artists/0Ya43ZKWHTKkAbkoJJkwIB",
-        "id": "0Ya43ZKWHTKkAbkoJJkwIB",
-        "name": "The Wombats",
-        "type": "artist",
-        "uri": "spotify:artist:0Ya43ZKWHTKkAbkoJJkwIB"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/2YoatZbkNsBRrfmX0pq9Ay"
+      "spotify": "https://open.spotify.com/album/3ecTXOCMEBn8YDWs8t37KS"
     },
-    "href": "https://api.spotify.com/v1/albums/2YoatZbkNsBRrfmX0pq9Ay",
-    "id": "2YoatZbkNsBRrfmX0pq9Ay",
+    "href": "https://api.spotify.com/v1/albums/3ecTXOCMEBn8YDWs8t37KS",
+    "id": "3ecTXOCMEBn8YDWs8t37KS",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e4e3cbebae7bd3b24a92fcc7",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732507eb8a0fb202bcadaf2802",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e4e3cbebae7bd3b24a92fcc7",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e022507eb8a0fb202bcadaf2802",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851e4e3cbebae7bd3b24a92fcc7",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048512507eb8a0fb202bcadaf2802",
         "width": 64
       }
     ],
-    "name": "Is This What It Feels Like to Feel Like This?",
-    "release_date": "2022-11-18",
+    "name": "The Lamentations of Jeremiah",
+    "release_date": "2023-09-06",
     "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:3ecTXOCMEBn8YDWs8t37KS",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7zkGCcaPSB7nLCtaxEWWE1"
+        },
+        "href": "https://api.spotify.com/v1/artists/7zkGCcaPSB7nLCtaxEWWE1",
+        "id": "7zkGCcaPSB7nLCtaxEWWE1",
+        "name": "Vince Clarke",
+        "type": "artist",
+        "uri": "spotify:artist:7zkGCcaPSB7nLCtaxEWWE1"
+      }
+    ],
+    "album_group": "single",
+    "is_playable": true
+  },
+  {
+    "album_type": "album",
+    "total_tracks": 13,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/7IoWse45BGeUdQepWEUa3g"
+    },
+    "href": "https://api.spotify.com/v1/albums/7IoWse45BGeUdQepWEUa3g",
+    "id": "7IoWse45BGeUdQepWEUa3g",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27330025c7938b7a31631f77475",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0230025c7938b7a31631f77475",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485130025c7938b7a31631f77475",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Plain White T's",
+    "release_date": "2023-11-17",
+    "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:7IoWse45BGeUdQepWEUa3g",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1g1yxsNVPhMUl9GrMjEb2o"
+        },
+        "href": "https://api.spotify.com/v1/artists/1g1yxsNVPhMUl9GrMjEb2o",
+        "id": "1g1yxsNVPhMUl9GrMjEb2o",
+        "name": "Plain White T's",
+        "type": "artist",
+        "uri": "spotify:artist:1g1yxsNVPhMUl9GrMjEb2o"
+      }
+    ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "single",
     "total_tracks": 6,
-    "type": "album",
-    "uri": "spotify:album:2YoatZbkNsBRrfmX0pq9Ay",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0Ya43ZKWHTKkAbkoJJkwIB"
-        },
-        "href": "https://api.spotify.com/v1/artists/0Ya43ZKWHTKkAbkoJJkwIB",
-        "id": "0Ya43ZKWHTKkAbkoJJkwIB",
-        "name": "The Wombats",
-        "type": "artist",
-        "uri": "spotify:artist:0Ya43ZKWHTKkAbkoJJkwIB"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/1UZAqjMhQ3pt1SXbvlnuqr"
+      "spotify": "https://open.spotify.com/album/6nIJlsCVFIGUCf4xDxq2Ix"
     },
-    "href": "https://api.spotify.com/v1/albums/1UZAqjMhQ3pt1SXbvlnuqr",
-    "id": "1UZAqjMhQ3pt1SXbvlnuqr",
+    "href": "https://api.spotify.com/v1/albums/6nIJlsCVFIGUCf4xDxq2Ix",
+    "id": "6nIJlsCVFIGUCf4xDxq2Ix",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e171cba8a95cbc48c47d2753",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273066bfdc9c97c6a143e2fe569",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e171cba8a95cbc48c47d2753",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02066bfdc9c97c6a143e2fe569",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851e171cba8a95cbc48c47d2753",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851066bfdc9c97c6a143e2fe569",
         "width": 64
       }
     ],
-    "name": "Dressed to Kill",
-    "release_date": "2022-11-17",
+    "name": "Fired Up",
+    "release_date": "2023-10-20",
     "release_date_precision": "day",
-    "total_tracks": 1,
     "type": "album",
-    "uri": "spotify:album:1UZAqjMhQ3pt1SXbvlnuqr",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
+    "uri": "spotify:album:6nIJlsCVFIGUCf4xDxq2Ix",
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0Ya43ZKWHTKkAbkoJJkwIB"
+          "spotify": "https://open.spotify.com/artist/1g1yxsNVPhMUl9GrMjEb2o"
         },
-        "href": "https://api.spotify.com/v1/artists/0Ya43ZKWHTKkAbkoJJkwIB",
-        "id": "0Ya43ZKWHTKkAbkoJJkwIB",
-        "name": "The Wombats",
+        "href": "https://api.spotify.com/v1/artists/1g1yxsNVPhMUl9GrMjEb2o",
+        "id": "1g1yxsNVPhMUl9GrMjEb2o",
+        "name": "Plain White T's",
         "type": "artist",
-        "uri": "spotify:artist:0Ya43ZKWHTKkAbkoJJkwIB"
+        "uri": "spotify:artist:1g1yxsNVPhMUl9GrMjEb2o"
       }
     ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5PHg3laVWVohsOVpiehZQl"
-    },
-    "href": "https://api.spotify.com/v1/albums/5PHg3laVWVohsOVpiehZQl",
-    "id": "5PHg3laVWVohsOVpiehZQl",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27348dbda74a94db43247a70721",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0248dbda74a94db43247a70721",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485148dbda74a94db43247a70721",
-        "width": 64
-      }
-    ],
-    "name": "Running Up That Hill (triple j Like A Version)",
-    "release_date": "2022-11-04",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:5PHg3laVWVohsOVpiehZQl",
-    "liked": false
+    "album_group": "single",
+    "is_playable": true
   },
   {
-    "album_group": "single",
     "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0Ya43ZKWHTKkAbkoJJkwIB"
-        },
-        "href": "https://api.spotify.com/v1/artists/0Ya43ZKWHTKkAbkoJJkwIB",
-        "id": "0Ya43ZKWHTKkAbkoJJkwIB",
-        "name": "The Wombats",
-        "type": "artist",
-        "uri": "spotify:artist:0Ya43ZKWHTKkAbkoJJkwIB"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/1q132A3KkxRLRrEiWZXWqN"
-    },
-    "href": "https://api.spotify.com/v1/albums/1q132A3KkxRLRrEiWZXWqN",
-    "id": "1q132A3KkxRLRrEiWZXWqN",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27362d7f9c80672e77c2c0dc2d9",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0262d7f9c80672e77c2c0dc2d9",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485162d7f9c80672e77c2c0dc2d9",
-        "width": 64
-      }
-    ],
-    "name": "I Think My Mind Has Made Its Mind Up",
-    "release_date": "2022-10-07",
-    "release_date_precision": "day",
     "total_tracks": 2,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/7yxKIwASvMAr0e9sEjdE6u"
+    },
+    "href": "https://api.spotify.com/v1/albums/7yxKIwASvMAr0e9sEjdE6u",
+    "id": "7yxKIwASvMAr0e9sEjdE6u",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273209bcd94e32896a5ed4073e2",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02209bcd94e32896a5ed4073e2",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851209bcd94e32896a5ed4073e2",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "Jenn’s Terrific Vacation (feat. Kassa Overall)",
+    "release_date": "2023-11-14",
+    "release_date_precision": "day",
     "type": "album",
-    "uri": "spotify:album:1q132A3KkxRLRrEiWZXWqN",
-    "liked": false
-  },
-  {
+    "uri": "spotify:album:7yxKIwASvMAr0e9sEjdE6u",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7aA592KWirLsnfb5ulGWvU"
+        },
+        "href": "https://api.spotify.com/v1/artists/7aA592KWirLsnfb5ulGWvU",
+        "id": "7aA592KWirLsnfb5ulGWvU",
+        "name": "Danny Brown",
+        "type": "artist",
+        "uri": "spotify:artist:7aA592KWirLsnfb5ulGWvU"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7qzzcFzliEAHMlDA9qaRVf"
+        },
+        "href": "https://api.spotify.com/v1/artists/7qzzcFzliEAHMlDA9qaRVf",
+        "id": "7qzzcFzliEAHMlDA9qaRVf",
+        "name": "Kassa Overall",
+        "type": "artist",
+        "uri": "spotify:artist:7qzzcFzliEAHMlDA9qaRVf"
+      }
+    ],
     "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0Ya43ZKWHTKkAbkoJJkwIB"
-        },
-        "href": "https://api.spotify.com/v1/artists/0Ya43ZKWHTKkAbkoJJkwIB",
-        "id": "0Ya43ZKWHTKkAbkoJJkwIB",
-        "name": "The Wombats",
-        "type": "artist",
-        "uri": "spotify:artist:0Ya43ZKWHTKkAbkoJJkwIB"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6sxU6FxUwBONwo2zsbD2v8"
-    },
-    "href": "https://api.spotify.com/v1/albums/6sxU6FxUwBONwo2zsbD2v8",
-    "id": "6sxU6FxUwBONwo2zsbD2v8",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273297257dc7f4b7402743aa471",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02297257dc7f4b7402743aa471",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851297257dc7f4b7402743aa471",
-        "width": 64
-      }
-    ],
-    "name": "Is This What It Feels Like to Feel Like This?",
-    "release_date": "2022-08-16",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:6sxU6FxUwBONwo2zsbD2v8",
-    "liked": false
+    "is_playable": true
   },
   {
-    "album_group": "album",
     "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0bdfiayQAKewqEvaU6rXCv"
-        },
-        "href": "https://api.spotify.com/v1/artists/0bdfiayQAKewqEvaU6rXCv",
-        "id": "0bdfiayQAKewqEvaU6rXCv",
-        "name": "MØ",
-        "type": "artist",
-        "uri": "spotify:artist:0bdfiayQAKewqEvaU6rXCv"
-      }
-    ],
+    "total_tracks": 11,
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/2vU563bzpLxxCWc9X1ia4V"
+      "spotify": "https://open.spotify.com/album/2aswMmRN4vXGalI39pDsMb"
     },
-    "href": "https://api.spotify.com/v1/albums/2vU563bzpLxxCWc9X1ia4V",
-    "id": "2vU563bzpLxxCWc9X1ia4V",
+    "href": "https://api.spotify.com/v1/albums/2aswMmRN4vXGalI39pDsMb",
+    "id": "2aswMmRN4vXGalI39pDsMb",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e9dddb75e4b6844ad5f8b4e5",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27345047467a2e3536f9d1cbfcd",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e9dddb75e4b6844ad5f8b4e5",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0245047467a2e3536f9d1cbfcd",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851e9dddb75e4b6844ad5f8b4e5",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485145047467a2e3536f9d1cbfcd",
         "width": 64
       }
     ],
-    "name": "Motordrome (The Dødsdrom Edition)",
-    "release_date": "2022-08-12",
+    "name": "Quaranta",
+    "release_date": "2023-11-17",
     "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:2aswMmRN4vXGalI39pDsMb",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7aA592KWirLsnfb5ulGWvU"
+        },
+        "href": "https://api.spotify.com/v1/artists/7aA592KWirLsnfb5ulGWvU",
+        "id": "7aA592KWirLsnfb5ulGWvU",
+        "name": "Danny Brown",
+        "type": "artist",
+        "uri": "spotify:artist:7aA592KWirLsnfb5ulGWvU"
+      }
+    ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "album",
     "total_tracks": 14,
-    "type": "album",
-    "uri": "spotify:album:2vU563bzpLxxCWc9X1ia4V",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/2ZRQcIgzPCVaT9XKhXZIzh"
-        },
-        "href": "https://api.spotify.com/v1/artists/2ZRQcIgzPCVaT9XKhXZIzh",
-        "id": "2ZRQcIgzPCVaT9XKhXZIzh",
-        "name": "Gryffin",
-        "type": "artist",
-        "uri": "spotify:artist:2ZRQcIgzPCVaT9XKhXZIzh"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0bdfiayQAKewqEvaU6rXCv"
-        },
-        "href": "https://api.spotify.com/v1/artists/0bdfiayQAKewqEvaU6rXCv",
-        "id": "0bdfiayQAKewqEvaU6rXCv",
-        "name": "MØ",
-        "type": "artist",
-        "uri": "spotify:artist:0bdfiayQAKewqEvaU6rXCv"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/2Oy8FCMc08WhIBKRU9r79v"
+      "spotify": "https://open.spotify.com/album/6UIiIDQRhUcdGYUB6CbTZV"
     },
-    "href": "https://api.spotify.com/v1/albums/2Oy8FCMc08WhIBKRU9r79v",
-    "id": "2Oy8FCMc08WhIBKRU9r79v",
+    "href": "https://api.spotify.com/v1/albums/6UIiIDQRhUcdGYUB6CbTZV",
+    "id": "6UIiIDQRhUcdGYUB6CbTZV",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733e62b849a26a7f03a652327f",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27352424d123613fbcc89e5772f",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e023e62b849a26a7f03a652327f",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0252424d123613fbcc89e5772f",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d000048513e62b849a26a7f03a652327f",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485152424d123613fbcc89e5772f",
         "width": 64
       }
     ],
-    "name": "Reckless",
-    "release_date": "2022-06-29",
+    "name": "LARGER THAN LIFE (CHOPPED NOT SLOPPED)",
+    "release_date": "2023-12-15",
     "release_date_precision": "day",
-    "total_tracks": 4,
     "type": "album",
-    "uri": "spotify:album:2Oy8FCMc08WhIBKRU9r79v",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
+    "uri": "spotify:album:6UIiIDQRhUcdGYUB6CbTZV",
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0bdfiayQAKewqEvaU6rXCv"
+          "spotify": "https://open.spotify.com/artist/3tlXnStJ1fFhdScmQeLpuG"
         },
-        "href": "https://api.spotify.com/v1/artists/0bdfiayQAKewqEvaU6rXCv",
-        "id": "0bdfiayQAKewqEvaU6rXCv",
-        "name": "MØ",
+        "href": "https://api.spotify.com/v1/artists/3tlXnStJ1fFhdScmQeLpuG",
+        "id": "3tlXnStJ1fFhdScmQeLpuG",
+        "name": "Brent Faiyaz",
         "type": "artist",
-        "uri": "spotify:artist:0bdfiayQAKewqEvaU6rXCv"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/2oUN5vlr2v62mQ4lJTLJdT"
-    },
-    "href": "https://api.spotify.com/v1/albums/2oUN5vlr2v62mQ4lJTLJdT",
-    "id": "2oUN5vlr2v62mQ4lJTLJdT",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27364c863a8b299a2f9917f77f9",
-        "width": 640
+        "uri": "spotify:artist:3tlXnStJ1fFhdScmQeLpuG"
       },
       {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0264c863a8b299a2f9917f77f9",
-        "width": 300
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6rUez8y21xlLrYKExcXB1X"
+        },
+        "href": "https://api.spotify.com/v1/artists/6rUez8y21xlLrYKExcXB1X",
+        "id": "6rUez8y21xlLrYKExcXB1X",
+        "name": "ISO Supremacy",
+        "type": "artist",
+        "uri": "spotify:artist:6rUez8y21xlLrYKExcXB1X"
       },
       {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485164c863a8b299a2f9917f77f9",
-        "width": 64
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0Ld26D4Ya5Od7ZZpLanfQJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/0Ld26D4Ya5Od7ZZpLanfQJ",
+        "id": "0Ld26D4Ya5Od7ZZpLanfQJ",
+        "name": "DJ Candlestick",
+        "type": "artist",
+        "uri": "spotify:artist:0Ld26D4Ya5Od7ZZpLanfQJ"
       }
     ],
-    "name": "True Romance",
-    "release_date": "2022-06-17",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:2oUN5vlr2v62mQ4lJTLJdT",
-    "liked": false
-  },
-  {
     "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-        },
-        "href": "https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR",
-        "id": "5j4HeCoUlzhfWtjAfM1acR",
-        "name": "Stromae",
-        "type": "artist",
-        "uri": "spotify:artist:5j4HeCoUlzhfWtjAfM1acR"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6EwTLRHMROD853Kv1lAMex"
-    },
-    "href": "https://api.spotify.com/v1/albums/6EwTLRHMROD853Kv1lAMex",
-    "id": "6EwTLRHMROD853Kv1lAMex",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2736af3a93773dcb59a67ab2953",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e026af3a93773dcb59a67ab2953",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048516af3a93773dcb59a67ab2953",
-        "width": 64
-      }
-    ],
-    "name": "Multitude",
-    "release_date": "2022-07-27",
-    "release_date_precision": "day",
-    "total_tracks": 13,
-    "type": "album",
-    "uri": "spotify:album:6EwTLRHMROD853Kv1lAMex",
-    "liked": false
+    "is_playable": true
   },
   {
-    "album_group": "single",
     "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-        },
-        "href": "https://api.spotify.com/v1/artists/5j4HeCoUlzhfWtjAfM1acR",
-        "id": "5j4HeCoUlzhfWtjAfM1acR",
-        "name": "Stromae",
-        "type": "artist",
-        "uri": "spotify:artist:5j4HeCoUlzhfWtjAfM1acR"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/4nDoRrQiYLoBzwC5BhVJzF"
-        },
-        "href": "https://api.spotify.com/v1/artists/4nDoRrQiYLoBzwC5BhVJzF",
-        "id": "4nDoRrQiYLoBzwC5BhVJzF",
-        "name": "Camila Cabello",
-        "type": "artist",
-        "uri": "spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/1SCNpF3WeEMGvZSdV1nCGa"
-    },
-    "href": "https://api.spotify.com/v1/albums/1SCNpF3WeEMGvZSdV1nCGa",
-    "id": "1SCNpF3WeEMGvZSdV1nCGa",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273460934367f9d508255b9c456",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02460934367f9d508255b9c456",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851460934367f9d508255b9c456",
-        "width": 64
-      }
-    ],
-    "name": "Mon amour (with Camila Cabello)",
-    "release_date": "2022-07-27",
-    "release_date_precision": "day",
     "total_tracks": 1,
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/5qcDP5z7uGM9BPCUEE4KYd"
+    },
+    "href": "https://api.spotify.com/v1/albums/5qcDP5z7uGM9BPCUEE4KYd",
+    "id": "5qcDP5z7uGM9BPCUEE4KYd",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bc9621a29fb10ff43c809940",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bc9621a29fb10ff43c809940",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bc9621a29fb10ff43c809940",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "name": "WY@",
+    "release_date": "2023-09-19",
+    "release_date_precision": "day",
     "type": "album",
-    "uri": "spotify:album:1SCNpF3WeEMGvZSdV1nCGa",
-    "liked": false
-  },
-  {
+    "uri": "spotify:album:5qcDP5z7uGM9BPCUEE4KYd",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3tlXnStJ1fFhdScmQeLpuG"
+        },
+        "href": "https://api.spotify.com/v1/artists/3tlXnStJ1fFhdScmQeLpuG",
+        "id": "3tlXnStJ1fFhdScmQeLpuG",
+        "name": "Brent Faiyaz",
+        "type": "artist",
+        "uri": "spotify:artist:3tlXnStJ1fFhdScmQeLpuG"
+      }
+    ],
     "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6RZUqkomCmb8zCRqc9eznB"
-        },
-        "href": "https://api.spotify.com/v1/artists/6RZUqkomCmb8zCRqc9eznB",
-        "id": "6RZUqkomCmb8zCRqc9eznB",
-        "name": "Placebo",
-        "type": "artist",
-        "uri": "spotify:artist:6RZUqkomCmb8zCRqc9eznB"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6Lrv8P9AkkCIslHwyIN1TA"
-    },
-    "href": "https://api.spotify.com/v1/albums/6Lrv8P9AkkCIslHwyIN1TA",
-    "id": "6Lrv8P9AkkCIslHwyIN1TA",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27367793f95fe16826805b38be8",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0267793f95fe16826805b38be8",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485167793f95fe16826805b38be8",
-        "width": 64
-      }
-    ],
-    "name": "Shout",
-    "release_date": "2022-09-07",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:6Lrv8P9AkkCIslHwyIN1TA",
-    "liked": false
+    "is_playable": true
   },
   {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"
-        },
-        "href": "https://api.spotify.com/v1/artists/0L8ExT028jH3ddEcZwqJJ5",
-        "id": "0L8ExT028jH3ddEcZwqJJ5",
-        "name": "Red Hot Chili Peppers",
-        "type": "artist",
-        "uri": "spotify:artist:0L8ExT028jH3ddEcZwqJJ5"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/0KJc9ksnoJJsdpQxV3z5i1"
-    },
-    "href": "https://api.spotify.com/v1/albums/0KJc9ksnoJJsdpQxV3z5i1",
-    "id": "0KJc9ksnoJJsdpQxV3z5i1",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273aa50644f05f26e73ba950b8c",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02aa50644f05f26e73ba950b8c",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851aa50644f05f26e73ba950b8c",
-        "width": 64
-      }
-    ],
-    "name": "Return of the Dream Canteen",
-    "release_date": "2022-10-14",
-    "release_date_precision": "day",
-    "total_tracks": 17,
-    "type": "album",
-    "uri": "spotify:album:0KJc9ksnoJJsdpQxV3z5i1",
-    "liked": false
-  },
-  {
-    "album_group": "single",
     "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"
-        },
-        "href": "https://api.spotify.com/v1/artists/0L8ExT028jH3ddEcZwqJJ5",
-        "id": "0L8ExT028jH3ddEcZwqJJ5",
-        "name": "Red Hot Chili Peppers",
-        "type": "artist",
-        "uri": "spotify:artist:0L8ExT028jH3ddEcZwqJJ5"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6DUWfrmH8uTH33wMFOBJDu"
-    },
-    "href": "https://api.spotify.com/v1/albums/6DUWfrmH8uTH33wMFOBJDu",
-    "id": "6DUWfrmH8uTH33wMFOBJDu",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732751bd58fbe1b90832eff845",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e022751bd58fbe1b90832eff845",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048512751bd58fbe1b90832eff845",
-        "width": 64
-      }
-    ],
-    "name": "Eddie",
-    "release_date": "2022-09-23",
-    "release_date_precision": "day",
     "total_tracks": 2,
-    "type": "album",
-    "uri": "spotify:album:6DUWfrmH8uTH33wMFOBJDu",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"
-        },
-        "href": "https://api.spotify.com/v1/artists/0L8ExT028jH3ddEcZwqJJ5",
-        "id": "0L8ExT028jH3ddEcZwqJJ5",
-        "name": "Red Hot Chili Peppers",
-        "type": "artist",
-        "uri": "spotify:artist:0L8ExT028jH3ddEcZwqJJ5"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/58As6ZmLLmhtkF8l5voV9p"
+      "spotify": "https://open.spotify.com/album/3uOHma3Ht45RkccGE2TjeJ"
     },
-    "href": "https://api.spotify.com/v1/albums/58As6ZmLLmhtkF8l5voV9p",
-    "id": "58As6ZmLLmhtkF8l5voV9p",
+    "href": "https://api.spotify.com/v1/albums/3uOHma3Ht45RkccGE2TjeJ",
+    "id": "3uOHma3Ht45RkccGE2TjeJ",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273678577e5cca3e19ffd017374",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27326c45c792ba862563d9bf85f",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02678577e5cca3e19ffd017374",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0226c45c792ba862563d9bf85f",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851678577e5cca3e19ffd017374",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485126c45c792ba862563d9bf85f",
         "width": 64
       }
     ],
-    "name": "Tippa My Tongue",
-    "release_date": "2022-08-19",
+    "name": "The Girl That Never Was (Acoustic)",
+    "release_date": "2023-10-20",
     "release_date_precision": "day",
-    "total_tracks": 1,
     "type": "album",
-    "uri": "spotify:album:58As6ZmLLmhtkF8l5voV9p",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
+    "uri": "spotify:album:3uOHma3Ht45RkccGE2TjeJ",
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1HOeqtP7tHkKNJNLzQ2tnr"
+          "spotify": "https://open.spotify.com/artist/7KMqksf0UMdyA0UCf4R3ux"
         },
-        "href": "https://api.spotify.com/v1/artists/1HOeqtP7tHkKNJNLzQ2tnr",
-        "id": "1HOeqtP7tHkKNJNLzQ2tnr",
-        "name": "Everything Everything",
+        "href": "https://api.spotify.com/v1/artists/7KMqksf0UMdyA0UCf4R3ux",
+        "id": "7KMqksf0UMdyA0UCf4R3ux",
+        "name": "James Blunt",
         "type": "artist",
-        "uri": "spotify:artist:1HOeqtP7tHkKNJNLzQ2tnr"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/2jbP92oFLWqPqogflK1wlW"
-        },
-        "href": "https://api.spotify.com/v1/artists/2jbP92oFLWqPqogflK1wlW",
-        "id": "2jbP92oFLWqPqogflK1wlW",
-        "name": "Skream",
-        "type": "artist",
-        "uri": "spotify:artist:2jbP92oFLWqPqogflK1wlW"
+        "uri": "spotify:artist:7KMqksf0UMdyA0UCf4R3ux"
       }
     ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/41I7nSRXcoGU23zZFK4XVk"
-    },
-    "href": "https://api.spotify.com/v1/albums/41I7nSRXcoGU23zZFK4XVk",
-    "id": "41I7nSRXcoGU23zZFK4XVk",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273a5746aa14119d5d0c8fee823",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02a5746aa14119d5d0c8fee823",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851a5746aa14119d5d0c8fee823",
-        "width": 64
-      }
-    ],
-    "name": "Pizza Boy (Skream Remix)",
-    "release_date": "2022-09-02",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:41I7nSRXcoGU23zZFK4XVk",
-    "liked": false
-  },
-  {
     "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
-        },
-        "href": "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
-        "id": "246dkjvS1zLTtiykXe5h60",
-        "name": "Post Malone",
-        "type": "artist",
-        "uri": "spotify:artist:246dkjvS1zLTtiykXe5h60"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6V3F8MZrOKdT9fU686ybE9"
-        },
-        "href": "https://api.spotify.com/v1/artists/6V3F8MZrOKdT9fU686ybE9",
-        "id": "6V3F8MZrOKdT9fU686ybE9",
-        "name": "Mark Morrison",
-        "type": "artist",
-        "uri": "spotify:artist:6V3F8MZrOKdT9fU686ybE9"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3NR7hAacOhmcztWvD7vJfS"
-        },
-        "href": "https://api.spotify.com/v1/artists/3NR7hAacOhmcztWvD7vJfS",
-        "id": "3NR7hAacOhmcztWvD7vJfS",
-        "name": "Sickick",
-        "type": "artist",
-        "uri": "spotify:artist:3NR7hAacOhmcztWvD7vJfS"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4G0HO7POrjMX9cKLX2KxkF"
-    },
-    "href": "https://api.spotify.com/v1/albums/4G0HO7POrjMX9cKLX2KxkF",
-    "id": "4G0HO7POrjMX9cKLX2KxkF",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273ab9f26db4d9b84e4159743b4",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02ab9f26db4d9b84e4159743b4",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851ab9f26db4d9b84e4159743b4",
-        "width": 64
-      }
-    ],
-    "name": "Cooped Up / Return Of The Mack",
-    "release_date": "2022-10-21",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:4G0HO7POrjMX9cKLX2KxkF",
-    "liked": false
+    "is_playable": true
   },
   {
-    "album_group": "album",
     "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6FQqZYVfTNQ1pCqfkwVFEa"
-        },
-        "href": "https://api.spotify.com/v1/artists/6FQqZYVfTNQ1pCqfkwVFEa",
-        "id": "6FQqZYVfTNQ1pCqfkwVFEa",
-        "name": "Foals",
-        "type": "artist",
-        "uri": "spotify:artist:6FQqZYVfTNQ1pCqfkwVFEa"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/7CBK26TFXHyt2l6NQcXIsq"
-    },
-    "href": "https://api.spotify.com/v1/albums/7CBK26TFXHyt2l6NQcXIsq",
-    "id": "7CBK26TFXHyt2l6NQcXIsq",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273408cece71a6d1cdcf2d4ad15",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02408cece71a6d1cdcf2d4ad15",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851408cece71a6d1cdcf2d4ad15",
-        "width": 64
-      }
-    ],
-    "name": "Life Is Yours",
-    "release_date": "2022-06-17",
-    "release_date_precision": "day",
-    "total_tracks": 11,
-    "type": "album",
-    "uri": "spotify:album:7CBK26TFXHyt2l6NQcXIsq",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6FQqZYVfTNQ1pCqfkwVFEa"
-        },
-        "href": "https://api.spotify.com/v1/artists/6FQqZYVfTNQ1pCqfkwVFEa",
-        "id": "6FQqZYVfTNQ1pCqfkwVFEa",
-        "name": "Foals",
-        "type": "artist",
-        "uri": "spotify:artist:6FQqZYVfTNQ1pCqfkwVFEa"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/23o9scVFeIwXVxa5Di4fgk"
-    },
-    "href": "https://api.spotify.com/v1/albums/23o9scVFeIwXVxa5Di4fgk",
-    "id": "23o9scVFeIwXVxa5Di4fgk",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27396621d8e9de3b727de0a0fdf",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0296621d8e9de3b727de0a0fdf",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485196621d8e9de3b727de0a0fdf",
-        "width": 64
-      }
-    ],
-    "name": "2001 (Remixes)",
-    "release_date": "2022-07-29",
-    "release_date_precision": "day",
-    "total_tracks": 3,
-    "type": "album",
-    "uri": "spotify:album:23o9scVFeIwXVxa5Di4fgk",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6FQqZYVfTNQ1pCqfkwVFEa"
-        },
-        "href": "https://api.spotify.com/v1/artists/6FQqZYVfTNQ1pCqfkwVFEa",
-        "id": "6FQqZYVfTNQ1pCqfkwVFEa",
-        "name": "Foals",
-        "type": "artist",
-        "uri": "spotify:artist:6FQqZYVfTNQ1pCqfkwVFEa"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/665QEichnptAga1F4W5TJK"
-    },
-    "href": "https://api.spotify.com/v1/albums/665QEichnptAga1F4W5TJK",
-    "id": "665QEichnptAga1F4W5TJK",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2738042e59a2aa1d495524e5c17",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e028042e59a2aa1d495524e5c17",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048518042e59a2aa1d495524e5c17",
-        "width": 64
-      }
-    ],
-    "name": "Crest of the Wave",
-    "release_date": "2022-06-14",
-    "release_date_precision": "day",
-    "total_tracks": 5,
-    "type": "album",
-    "uri": "spotify:album:665QEichnptAga1F4W5TJK",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
-        },
-        "href": "https://api.spotify.com/v1/artists/57vWImR43h4CaDao012Ofp",
-        "id": "57vWImR43h4CaDao012Ofp",
-        "name": "Steve Lacy",
-        "type": "artist",
-        "uri": "spotify:artist:57vWImR43h4CaDao012Ofp"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3Ks0eeH0GWpY4AU20D5HPD"
-    },
-    "href": "https://api.spotify.com/v1/albums/3Ks0eeH0GWpY4AU20D5HPD",
-    "id": "3Ks0eeH0GWpY4AU20D5HPD",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27368968350c2550e36d96344ee",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0268968350c2550e36d96344ee",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485168968350c2550e36d96344ee",
-        "width": 64
-      }
-    ],
-    "name": "Gemini Rights",
-    "release_date": "2022-07-15",
-    "release_date_precision": "day",
-    "total_tracks": 10,
-    "type": "album",
-    "uri": "spotify:album:3Ks0eeH0GWpY4AU20D5HPD",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
-        },
-        "href": "https://api.spotify.com/v1/artists/57vWImR43h4CaDao012Ofp",
-        "id": "57vWImR43h4CaDao012Ofp",
-        "name": "Steve Lacy",
-        "type": "artist",
-        "uri": "spotify:artist:57vWImR43h4CaDao012Ofp"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5vg6tTa6EHy0c9NNSOSM8T"
-    },
-    "href": "https://api.spotify.com/v1/albums/5vg6tTa6EHy0c9NNSOSM8T",
-    "id": "5vg6tTa6EHy0c9NNSOSM8T",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27397a5e0f288ff9a892840aa49",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0297a5e0f288ff9a892840aa49",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485197a5e0f288ff9a892840aa49",
-        "width": 64
-      }
-    ],
-    "name": "Bad Habit (Sped Up)",
-    "release_date": "2022-07-14",
-    "release_date_precision": "day",
-    "total_tracks": 2,
-    "type": "album",
-    "uri": "spotify:album:5vg6tTa6EHy0c9NNSOSM8T",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
-        },
-        "href": "https://api.spotify.com/v1/artists/57vWImR43h4CaDao012Ofp",
-        "id": "57vWImR43h4CaDao012Ofp",
-        "name": "Steve Lacy",
-        "type": "artist",
-        "uri": "spotify:artist:57vWImR43h4CaDao012Ofp"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6trIghKwHRUyxwvm66HLHH"
-        },
-        "href": "https://api.spotify.com/v1/artists/6trIghKwHRUyxwvm66HLHH",
-        "id": "6trIghKwHRUyxwvm66HLHH",
-        "name": "Fousheé",
-        "type": "artist",
-        "uri": "spotify:artist:6trIghKwHRUyxwvm66HLHH"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/7gZSlFN7JLTjoBMEmApXHk"
-    },
-    "href": "https://api.spotify.com/v1/albums/7gZSlFN7JLTjoBMEmApXHk",
-    "id": "7gZSlFN7JLTjoBMEmApXHk",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2731b864764c3b70ea0b8d372a4",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e021b864764c3b70ea0b8d372a4",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048511b864764c3b70ea0b8d372a4",
-        "width": 64
-      }
-    ],
-    "name": "Sunshine (feat. Fousheé)",
-    "release_date": "2022-07-13",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:7gZSlFN7JLTjoBMEmApXHk",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
-        },
-        "href": "https://api.spotify.com/v1/artists/57vWImR43h4CaDao012Ofp",
-        "id": "57vWImR43h4CaDao012Ofp",
-        "name": "Steve Lacy",
-        "type": "artist",
-        "uri": "spotify:artist:57vWImR43h4CaDao012Ofp"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/69JpAhN3XgLkOsJ7MCtW4V"
-    },
-    "href": "https://api.spotify.com/v1/albums/69JpAhN3XgLkOsJ7MCtW4V",
-    "id": "69JpAhN3XgLkOsJ7MCtW4V",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2739904ecb0b1148a128bdd5e36",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e029904ecb0b1148a128bdd5e36",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048519904ecb0b1148a128bdd5e36",
-        "width": 64
-      }
-    ],
-    "name": "Bad Habit",
-    "release_date": "2022-06-29",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:69JpAhN3XgLkOsJ7MCtW4V",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
-        },
-        "href": "https://api.spotify.com/v1/artists/57vWImR43h4CaDao012Ofp",
-        "id": "57vWImR43h4CaDao012Ofp",
-        "name": "Steve Lacy",
-        "type": "artist",
-        "uri": "spotify:artist:57vWImR43h4CaDao012Ofp"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3pc9LMhg8lyfpPTyywABMd"
-    },
-    "href": "https://api.spotify.com/v1/albums/3pc9LMhg8lyfpPTyywABMd",
-    "id": "3pc9LMhg8lyfpPTyywABMd",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273a77e5ec294344b20317b2d6e",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02a77e5ec294344b20317b2d6e",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851a77e5ec294344b20317b2d6e",
-        "width": 64
-      }
-    ],
-    "name": "Mercury",
-    "release_date": "2022-06-16",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:3pc9LMhg8lyfpPTyywABMd",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3Rsr4Z96O6U3lToOiV3zBh"
-        },
-        "href": "https://api.spotify.com/v1/artists/3Rsr4Z96O6U3lToOiV3zBh",
-        "id": "3Rsr4Z96O6U3lToOiV3zBh",
-        "name": "Jamie T",
-        "type": "artist",
-        "uri": "spotify:artist:3Rsr4Z96O6U3lToOiV3zBh"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/0ek4fqYWlpZ6jnRT9FoLyA"
-    },
-    "href": "https://api.spotify.com/v1/albums/0ek4fqYWlpZ6jnRT9FoLyA",
-    "id": "0ek4fqYWlpZ6jnRT9FoLyA",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273839b665992910d9cdfd003a1",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02839b665992910d9cdfd003a1",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851839b665992910d9cdfd003a1",
-        "width": 64
-      }
-    ],
-    "name": "The Theory Of Whatever (Deluxe)",
-    "release_date": "2022-11-04",
-    "release_date_precision": "day",
-    "total_tracks": 17,
-    "type": "album",
-    "uri": "spotify:album:0ek4fqYWlpZ6jnRT9FoLyA",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3Rsr4Z96O6U3lToOiV3zBh"
-        },
-        "href": "https://api.spotify.com/v1/artists/3Rsr4Z96O6U3lToOiV3zBh",
-        "id": "3Rsr4Z96O6U3lToOiV3zBh",
-        "name": "Jamie T",
-        "type": "artist",
-        "uri": "spotify:artist:3Rsr4Z96O6U3lToOiV3zBh"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5kyMgf8ogldA8iLY9ppyAV"
-    },
-    "href": "https://api.spotify.com/v1/albums/5kyMgf8ogldA8iLY9ppyAV",
-    "id": "5kyMgf8ogldA8iLY9ppyAV",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732f39444a6ee4274fe6042a96",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e022f39444a6ee4274fe6042a96",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048512f39444a6ee4274fe6042a96",
-        "width": 64
-      }
-    ],
-    "name": "The Theory Of Whatever",
-    "release_date": "2022-07-22",
-    "release_date_precision": "day",
-    "total_tracks": 13,
-    "type": "album",
-    "uri": "spotify:album:5kyMgf8ogldA8iLY9ppyAV",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3Rsr4Z96O6U3lToOiV3zBh"
-        },
-        "href": "https://api.spotify.com/v1/artists/3Rsr4Z96O6U3lToOiV3zBh",
-        "id": "3Rsr4Z96O6U3lToOiV3zBh",
-        "name": "Jamie T",
-        "type": "artist",
-        "uri": "spotify:artist:3Rsr4Z96O6U3lToOiV3zBh"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3JDZzKj3R9MGJEncZLi5ZQ"
-    },
-    "href": "https://api.spotify.com/v1/albums/3JDZzKj3R9MGJEncZLi5ZQ",
-    "id": "3JDZzKj3R9MGJEncZLi5ZQ",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2734019bb6313ecf7bc6509a9ba",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e024019bb6313ecf7bc6509a9ba",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048514019bb6313ecf7bc6509a9ba",
-        "width": 64
-      }
-    ],
-    "name": "Between The Rocks",
-    "release_date": "2022-07-20",
-    "release_date_precision": "day",
-    "total_tracks": 3,
-    "type": "album",
-    "uri": "spotify:album:3JDZzKj3R9MGJEncZLi5ZQ",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
-        },
-        "href": "https://api.spotify.com/v1/artists/20JZFwl6HVl6yg8a4H3ZqK",
-        "id": "20JZFwl6HVl6yg8a4H3ZqK",
-        "name": "Panic! At The Disco",
-        "type": "artist",
-        "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/25DhBz5cckEAFcivcSzSTo"
-    },
-    "href": "https://api.spotify.com/v1/albums/25DhBz5cckEAFcivcSzSTo",
-    "id": "25DhBz5cckEAFcivcSzSTo",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2739e4e71f09bb7902fd182bbc1",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e029e4e71f09bb7902fd182bbc1",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048519e4e71f09bb7902fd182bbc1",
-        "width": 64
-      }
-    ],
-    "name": "Viva Las Vengeance",
-    "release_date": "2022-08-19",
-    "release_date_precision": "day",
-    "total_tracks": 12,
-    "type": "album",
-    "uri": "spotify:album:25DhBz5cckEAFcivcSzSTo",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
-        },
-        "href": "https://api.spotify.com/v1/artists/20JZFwl6HVl6yg8a4H3ZqK",
-        "id": "20JZFwl6HVl6yg8a4H3ZqK",
-        "name": "Panic! At The Disco",
-        "type": "artist",
-        "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3R6ZYq94MaeYKEMtPsj2hj"
-    },
-    "href": "https://api.spotify.com/v1/albums/3R6ZYq94MaeYKEMtPsj2hj",
-    "id": "3R6ZYq94MaeYKEMtPsj2hj",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273ffc21ada35a3746f273f42e6",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02ffc21ada35a3746f273f42e6",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851ffc21ada35a3746f273f42e6",
-        "width": 64
-      }
-    ],
-    "name": "House Of Memories",
-    "release_date": "2022-10-28",
-    "release_date_precision": "day",
-    "total_tracks": 3,
-    "type": "album",
-    "uri": "spotify:album:3R6ZYq94MaeYKEMtPsj2hj",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-        },
-        "href": "https://api.spotify.com/v1/artists/0fA0VVWsXO9YnASrzqfmYu",
-        "id": "0fA0VVWsXO9YnASrzqfmYu",
-        "name": "Kid Cudi",
-        "type": "artist",
-        "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4aW4iDepQUl5ZCHd1Gli68"
-    },
-    "href": "https://api.spotify.com/v1/albums/4aW4iDepQUl5ZCHd1Gli68",
-    "id": "4aW4iDepQUl5ZCHd1Gli68",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27371cecf4c653a4bad539da13d",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0271cecf4c653a4bad539da13d",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485171cecf4c653a4bad539da13d",
-        "width": 64
-      }
-    ],
-    "name": "Entergalactic",
-    "release_date": "2022-09-30",
-    "release_date_precision": "day",
-    "total_tracks": 15,
-    "type": "album",
-    "uri": "spotify:album:4aW4iDepQUl5ZCHd1Gli68",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-        },
-        "href": "https://api.spotify.com/v1/artists/0fA0VVWsXO9YnASrzqfmYu",
-        "id": "0fA0VVWsXO9YnASrzqfmYu",
-        "name": "Kid Cudi",
-        "type": "artist",
-        "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/2blXZboio9DF8VC39LmUag"
-    },
-    "href": "https://api.spotify.com/v1/albums/2blXZboio9DF8VC39LmUag",
-    "id": "2blXZboio9DF8VC39LmUag",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273cd4666c02c9749c71dabb8ea",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02cd4666c02c9749c71dabb8ea",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851cd4666c02c9749c71dabb8ea",
-        "width": 64
-      }
-    ],
-    "name": "A Kid Named Cudi",
-    "release_date": "2022-07-15",
-    "release_date_precision": "day",
-    "total_tracks": 16,
-    "type": "album",
-    "uri": "spotify:album:2blXZboio9DF8VC39LmUag",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-        },
-        "href": "https://api.spotify.com/v1/artists/0fA0VVWsXO9YnASrzqfmYu",
-        "id": "0fA0VVWsXO9YnASrzqfmYu",
-        "name": "Kid Cudi",
-        "type": "artist",
-        "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/19ZYOtXGdqGpeeDS9SJccD"
-    },
-    "href": "https://api.spotify.com/v1/albums/19ZYOtXGdqGpeeDS9SJccD",
-    "id": "19ZYOtXGdqGpeeDS9SJccD",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273ef3b5a279ee075749b67e0a7",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02ef3b5a279ee075749b67e0a7",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851ef3b5a279ee075749b67e0a7",
-        "width": 64
-      }
-    ],
-    "name": "The Boy Who Flew To The Moon (Vol. 1)",
-    "release_date": "2022-07-08",
-    "release_date_precision": "day",
-    "total_tracks": 18,
-    "type": "album",
-    "uri": "spotify:album:19ZYOtXGdqGpeeDS9SJccD",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-        },
-        "href": "https://api.spotify.com/v1/artists/0fA0VVWsXO9YnASrzqfmYu",
-        "id": "0fA0VVWsXO9YnASrzqfmYu",
-        "name": "Kid Cudi",
-        "type": "artist",
-        "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7c0XG5cIJTrrAgEC3ULPiq"
-        },
-        "href": "https://api.spotify.com/v1/artists/7c0XG5cIJTrrAgEC3ULPiq",
-        "id": "7c0XG5cIJTrrAgEC3ULPiq",
-        "name": "Ty Dolla $ign",
-        "type": "artist",
-        "uri": "spotify:artist:7c0XG5cIJTrrAgEC3ULPiq"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/2JjCiFis8TPrbTGCoK7T61"
-    },
-    "href": "https://api.spotify.com/v1/albums/2JjCiFis8TPrbTGCoK7T61",
-    "id": "2JjCiFis8TPrbTGCoK7T61",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273771a41947fb408e6605d4e3b",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02771a41947fb408e6605d4e3b",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851771a41947fb408e6605d4e3b",
-        "width": 64
-      }
-    ],
-    "name": "Willing To Trust",
-    "release_date": "2022-09-23",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:2JjCiFis8TPrbTGCoK7T61",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6fXcsuCIKZIeY11ylb8hsw"
-        },
-        "href": "https://api.spotify.com/v1/artists/6fXcsuCIKZIeY11ylb8hsw",
-        "id": "6fXcsuCIKZIeY11ylb8hsw",
-        "name": "Dot Da Genius",
-        "type": "artist",
-        "uri": "spotify:artist:6fXcsuCIKZIeY11ylb8hsw"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-        },
-        "href": "https://api.spotify.com/v1/artists/0fA0VVWsXO9YnASrzqfmYu",
-        "id": "0fA0VVWsXO9YnASrzqfmYu",
-        "name": "Kid Cudi",
-        "type": "artist",
-        "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6fxyWrfmjcbj5d12gXeiNV"
-        },
-        "href": "https://api.spotify.com/v1/artists/6fxyWrfmjcbj5d12gXeiNV",
-        "id": "6fxyWrfmjcbj5d12gXeiNV",
-        "name": "Denzel Curry",
-        "type": "artist",
-        "uri": "spotify:artist:6fxyWrfmjcbj5d12gXeiNV"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/1PzjrzWkqJHdLjJ6SH4Gae"
-    },
-    "href": "https://api.spotify.com/v1/albums/1PzjrzWkqJHdLjJ6SH4Gae",
-    "id": "1PzjrzWkqJHdLjJ6SH4Gae",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273143ebd9a76a928e1bbf4933d",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02143ebd9a76a928e1bbf4933d",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851143ebd9a76a928e1bbf4933d",
-        "width": 64
-      }
-    ],
-    "name": "Talk About Me (feat. Kid Cudi, Denzel Curry & JID)",
-    "release_date": "2022-06-24",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:1PzjrzWkqJHdLjJ6SH4Gae",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7uwY65fDg3FVJ8MkJ5QuZK"
-        },
-        "href": "https://api.spotify.com/v1/artists/7uwY65fDg3FVJ8MkJ5QuZK",
-        "id": "7uwY65fDg3FVJ8MkJ5QuZK",
-        "name": "easy life",
-        "type": "artist",
-        "uri": "spotify:artist:7uwY65fDg3FVJ8MkJ5QuZK"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5vvbek95UXDUAbdeDArk7m"
-    },
-    "href": "https://api.spotify.com/v1/albums/5vvbek95UXDUAbdeDArk7m",
-    "id": "5vvbek95UXDUAbdeDArk7m",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27355689da3b253b2210158f561",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0255689da3b253b2210158f561",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485155689da3b253b2210158f561",
-        "width": 64
-      }
-    ],
-    "name": "MAYBE IN ANOTHER LIFE...",
-    "release_date": "2022-10-07",
-    "release_date_precision": "day",
-    "total_tracks": 15,
-    "type": "album",
-    "uri": "spotify:album:5vvbek95UXDUAbdeDArk7m",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7uwY65fDg3FVJ8MkJ5QuZK"
-        },
-        "href": "https://api.spotify.com/v1/artists/7uwY65fDg3FVJ8MkJ5QuZK",
-        "id": "7uwY65fDg3FVJ8MkJ5QuZK",
-        "name": "easy life",
-        "type": "artist",
-        "uri": "spotify:artist:7uwY65fDg3FVJ8MkJ5QuZK"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/6sHCvZe1PHrOAuYlwTLNH4"
-        },
-        "href": "https://api.spotify.com/v1/artists/6sHCvZe1PHrOAuYlwTLNH4",
-        "id": "6sHCvZe1PHrOAuYlwTLNH4",
-        "name": "Gus Dapperton",
-        "type": "artist",
-        "uri": "spotify:artist:6sHCvZe1PHrOAuYlwTLNH4"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3Ax7G8PfcjdAS3w9EKqxyY"
-    },
-    "href": "https://api.spotify.com/v1/albums/3Ax7G8PfcjdAS3w9EKqxyY",
-    "id": "3Ax7G8PfcjdAS3w9EKqxyY",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27348b35dafcd1be6a5ccc47723",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0248b35dafcd1be6a5ccc47723",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485148b35dafcd1be6a5ccc47723",
-        "width": 64
-      }
-    ],
-    "name": "ANTIFREEZE",
-    "release_date": "2022-09-14",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:3Ax7G8PfcjdAS3w9EKqxyY",
-    "liked": true
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7uwY65fDg3FVJ8MkJ5QuZK"
-        },
-        "href": "https://api.spotify.com/v1/artists/7uwY65fDg3FVJ8MkJ5QuZK",
-        "id": "7uwY65fDg3FVJ8MkJ5QuZK",
-        "name": "easy life",
-        "type": "artist",
-        "uri": "spotify:artist:7uwY65fDg3FVJ8MkJ5QuZK"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0Cp8WN4V8Tu4QJQwCN5Md4"
-        },
-        "href": "https://api.spotify.com/v1/artists/0Cp8WN4V8Tu4QJQwCN5Md4",
-        "id": "0Cp8WN4V8Tu4QJQwCN5Md4",
-        "name": "BENEE",
-        "type": "artist",
-        "uri": "spotify:artist:0Cp8WN4V8Tu4QJQwCN5Md4"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/2BqtVNmZ2QjvrM8mfDb3ZG"
-    },
-    "href": "https://api.spotify.com/v1/albums/2BqtVNmZ2QjvrM8mfDb3ZG",
-    "id": "2BqtVNmZ2QjvrM8mfDb3ZG",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2734c112ad7ddfb07f1bf1a9211",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e024c112ad7ddfb07f1bf1a9211",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048514c112ad7ddfb07f1bf1a9211",
-        "width": 64
-      }
-    ],
-    "name": "OTT",
-    "release_date": "2022-07-05",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:2BqtVNmZ2QjvrM8mfDb3ZG",
-    "liked": true
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
-        },
-        "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
-        "id": "3mIj9lX2MWuHmhNCA7LSCW",
-        "name": "The 1975",
-        "type": "artist",
-        "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6dVCpQ7oGJD1oYs2fv1t5M"
-    },
-    "href": "https://api.spotify.com/v1/albums/6dVCpQ7oGJD1oYs2fv1t5M",
-    "id": "6dVCpQ7oGJD1oYs2fv1t5M",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273716d3be17604c3d792d18fbb",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02716d3be17604c3d792d18fbb",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851716d3be17604c3d792d18fbb",
-        "width": 64
-      }
-    ],
-    "name": "Being Funny In A Foreign Language",
-    "release_date": "2022-10-14",
-    "release_date_precision": "day",
-    "total_tracks": 11,
-    "type": "album",
-    "uri": "spotify:album:6dVCpQ7oGJD1oYs2fv1t5M",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
-        },
-        "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
-        "id": "3mIj9lX2MWuHmhNCA7LSCW",
-        "name": "The 1975",
-        "type": "artist",
-        "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/13ztfgangyOF3Mxt5VbE1s"
-    },
-    "href": "https://api.spotify.com/v1/albums/13ztfgangyOF3Mxt5VbE1s",
-    "id": "13ztfgangyOF3Mxt5VbE1s",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273286ee394cca4f95479d00b4c",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02286ee394cca4f95479d00b4c",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851286ee394cca4f95479d00b4c",
-        "width": 64
-      }
-    ],
-    "name": "All I Need To Hear",
-    "release_date": "2022-09-21",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:13ztfgangyOF3Mxt5VbE1s",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
-        },
-        "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
-        "id": "3mIj9lX2MWuHmhNCA7LSCW",
-        "name": "The 1975",
-        "type": "artist",
-        "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3TI3FFFz3hKQfsL0izZ8JS"
-    },
-    "href": "https://api.spotify.com/v1/albums/3TI3FFFz3hKQfsL0izZ8JS",
-    "id": "3TI3FFFz3hKQfsL0izZ8JS",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27398551386d3d790a830bc24b8",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0298551386d3d790a830bc24b8",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485198551386d3d790a830bc24b8",
-        "width": 64
-      }
-    ],
-    "name": "I'm In Love With You",
-    "release_date": "2022-09-01",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:3TI3FFFz3hKQfsL0izZ8JS",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
-        },
-        "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
-        "id": "3mIj9lX2MWuHmhNCA7LSCW",
-        "name": "The 1975",
-        "type": "artist",
-        "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4KfzkkK3Gt2Ux5A2AVoTK8"
-    },
-    "href": "https://api.spotify.com/v1/albums/4KfzkkK3Gt2Ux5A2AVoTK8",
-    "id": "4KfzkkK3Gt2Ux5A2AVoTK8",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27395cbf32dfa1664d613774364",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0295cbf32dfa1664d613774364",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485195cbf32dfa1664d613774364",
-        "width": 64
-      }
-    ],
-    "name": "Happiness",
-    "release_date": "2022-08-03",
-    "release_date_precision": "day",
-    "total_tracks": 2,
-    "type": "album",
-    "uri": "spotify:album:4KfzkkK3Gt2Ux5A2AVoTK8",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
-        },
-        "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
-        "id": "3mIj9lX2MWuHmhNCA7LSCW",
-        "name": "The 1975",
-        "type": "artist",
-        "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4B8N7qve3H2cNQux3vqywM"
-    },
-    "href": "https://api.spotify.com/v1/albums/4B8N7qve3H2cNQux3vqywM",
-    "id": "4B8N7qve3H2cNQux3vqywM",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273221446eedd1fa203587a82f1",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02221446eedd1fa203587a82f1",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851221446eedd1fa203587a82f1",
-        "width": 64
-      }
-    ],
-    "name": "Part Of The Band",
-    "release_date": "2022-07-07",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:4B8N7qve3H2cNQux3vqywM",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
-        },
-        "href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
-        "id": "7Ln80lUS6He07XvHI8qqHH",
-        "name": "Arctic Monkeys",
-        "type": "artist",
-        "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/2GROf0WKoP5Er2M9RXVNNs"
-    },
-    "href": "https://api.spotify.com/v1/albums/2GROf0WKoP5Er2M9RXVNNs",
-    "id": "2GROf0WKoP5Er2M9RXVNNs",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27307823ee6237208c835802663",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0207823ee6237208c835802663",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485107823ee6237208c835802663",
-        "width": 64
-      }
-    ],
-    "name": "The Car",
-    "release_date": "2022-10-21",
-    "release_date_precision": "day",
-    "total_tracks": 10,
-    "type": "album",
-    "uri": "spotify:album:2GROf0WKoP5Er2M9RXVNNs",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
-        },
-        "href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
-        "id": "7Ln80lUS6He07XvHI8qqHH",
-        "name": "Arctic Monkeys",
-        "type": "artist",
-        "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/1iXbmA1guiEgh69kIcr0On"
-    },
-    "href": "https://api.spotify.com/v1/albums/1iXbmA1guiEgh69kIcr0On",
-    "id": "1iXbmA1guiEgh69kIcr0On",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2733337c088fe6b1540ab13fe11",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e023337c088fe6b1540ab13fe11",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048513337c088fe6b1540ab13fe11",
-        "width": 64
-      }
-    ],
-    "name": "I Ain't Quite Where I Think I Am",
-    "release_date": "2022-10-18",
-    "release_date_precision": "day",
-    "total_tracks": 3,
-    "type": "album",
-    "uri": "spotify:album:1iXbmA1guiEgh69kIcr0On",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
-        },
-        "href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
-        "id": "7Ln80lUS6He07XvHI8qqHH",
-        "name": "Arctic Monkeys",
-        "type": "artist",
-        "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/0AtlEQ56o0yKOd9qM1EBp0"
-    },
-    "href": "https://api.spotify.com/v1/albums/0AtlEQ56o0yKOd9qM1EBp0",
-    "id": "0AtlEQ56o0yKOd9qM1EBp0",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2738187cf1b141898d7c7d04d1a",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e028187cf1b141898d7c7d04d1a",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048518187cf1b141898d7c7d04d1a",
-        "width": 64
-      }
-    ],
-    "name": "Body Paint",
-    "release_date": "2022-09-29",
-    "release_date_precision": "day",
-    "total_tracks": 2,
-    "type": "album",
-    "uri": "spotify:album:0AtlEQ56o0yKOd9qM1EBp0",
-    "liked": true
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
-        },
-        "href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
-        "id": "7Ln80lUS6He07XvHI8qqHH",
-        "name": "Arctic Monkeys",
-        "type": "artist",
-        "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/0ZUmodAwUq8cQJFvyibKwT"
-    },
-    "href": "https://api.spotify.com/v1/albums/0ZUmodAwUq8cQJFvyibKwT",
-    "id": "0ZUmodAwUq8cQJFvyibKwT",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27322ad6386462b75d7371aefae",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0222ad6386462b75d7371aefae",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485122ad6386462b75d7371aefae",
-        "width": 64
-      }
-    ],
-    "name": "There’d Better Be A Mirrorball",
-    "release_date": "2022-08-30",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:0ZUmodAwUq8cQJFvyibKwT",
-    "liked": true
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/4oDjh8wNW5vDHyFRrDYC4k"
-        },
-        "href": "https://api.spotify.com/v1/artists/4oDjh8wNW5vDHyFRrDYC4k",
-        "id": "4oDjh8wNW5vDHyFRrDYC4k",
-        "name": "Loyle Carner",
-        "type": "artist",
-        "uri": "spotify:artist:4oDjh8wNW5vDHyFRrDYC4k"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3McfY0EGNjsrVdYa9ZnoSH"
-    },
-    "href": "https://api.spotify.com/v1/albums/3McfY0EGNjsrVdYa9ZnoSH",
-    "id": "3McfY0EGNjsrVdYa9ZnoSH",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2730d7bd8c43a71910b53126b09",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e020d7bd8c43a71910b53126b09",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048510d7bd8c43a71910b53126b09",
-        "width": 64
-      }
-    ],
-    "name": "hugo",
-    "release_date": "2022-10-21",
-    "release_date_precision": "day",
-    "total_tracks": 10,
-    "type": "album",
-    "uri": "spotify:album:3McfY0EGNjsrVdYa9ZnoSH",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/4oDjh8wNW5vDHyFRrDYC4k"
-        },
-        "href": "https://api.spotify.com/v1/artists/4oDjh8wNW5vDHyFRrDYC4k",
-        "id": "4oDjh8wNW5vDHyFRrDYC4k",
-        "name": "Loyle Carner",
-        "type": "artist",
-        "uri": "spotify:artist:4oDjh8wNW5vDHyFRrDYC4k"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/1SyjEU0yFIlFpR5MBHo1Qv"
-    },
-    "href": "https://api.spotify.com/v1/albums/1SyjEU0yFIlFpR5MBHo1Qv",
-    "id": "1SyjEU0yFIlFpR5MBHo1Qv",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273f20d311adbfed5afd3ad3218",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02f20d311adbfed5afd3ad3218",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851f20d311adbfed5afd3ad3218",
-        "width": 64
-      }
-    ],
-    "name": "Nobody Knows (Ladas Road)",
-    "release_date": "2022-09-13",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:1SyjEU0yFIlFpR5MBHo1Qv",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/4oDjh8wNW5vDHyFRrDYC4k"
-        },
-        "href": "https://api.spotify.com/v1/artists/4oDjh8wNW5vDHyFRrDYC4k",
-        "id": "4oDjh8wNW5vDHyFRrDYC4k",
-        "name": "Loyle Carner",
-        "type": "artist",
-        "uri": "spotify:artist:4oDjh8wNW5vDHyFRrDYC4k"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/0OX3vQ1IUPFf6YMc815xoS"
-    },
-    "href": "https://api.spotify.com/v1/albums/0OX3vQ1IUPFf6YMc815xoS",
-    "id": "0OX3vQ1IUPFf6YMc815xoS",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273e68015247f9eea9f79a1f9cb",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02e68015247f9eea9f79a1f9cb",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851e68015247f9eea9f79a1f9cb",
-        "width": 64
-      }
-    ],
-    "name": "Georgetown (feat. John Agard)",
-    "release_date": "2022-08-10",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:0OX3vQ1IUPFf6YMc815xoS",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/4oDjh8wNW5vDHyFRrDYC4k"
-        },
-        "href": "https://api.spotify.com/v1/artists/4oDjh8wNW5vDHyFRrDYC4k",
-        "id": "4oDjh8wNW5vDHyFRrDYC4k",
-        "name": "Loyle Carner",
-        "type": "artist",
-        "uri": "spotify:artist:4oDjh8wNW5vDHyFRrDYC4k"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/4dW422TVEJ8xnLm5drc3He"
-    },
-    "href": "https://api.spotify.com/v1/albums/4dW422TVEJ8xnLm5drc3He",
-    "id": "4dW422TVEJ8xnLm5drc3He",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27382541e5ba576d6212c54af60",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0282541e5ba576d6212c54af60",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485182541e5ba576d6212c54af60",
-        "width": 64
-      }
-    ],
-    "name": "Hate",
-    "release_date": "2022-07-04",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:4dW422TVEJ8xnLm5drc3He",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-        },
-        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-        "id": "3TVXtAsR1Inumwj472S9r4",
-        "name": "Drake",
-        "type": "artist",
-        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-      },
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1URnnhqYAYcrqrcwql10ft"
-        },
-        "href": "https://api.spotify.com/v1/artists/1URnnhqYAYcrqrcwql10ft",
-        "id": "1URnnhqYAYcrqrcwql10ft",
-        "name": "21 Savage",
-        "type": "artist",
-        "uri": "spotify:artist:1URnnhqYAYcrqrcwql10ft"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5MS3MvWHJ3lOZPLiMxzOU6"
-    },
-    "href": "https://api.spotify.com/v1/albums/5MS3MvWHJ3lOZPLiMxzOU6",
-    "id": "5MS3MvWHJ3lOZPLiMxzOU6",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27302854a7060fccc1a66a4b5ad",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0202854a7060fccc1a66a4b5ad",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485102854a7060fccc1a66a4b5ad",
-        "width": 64
-      }
-    ],
-    "name": "Her Loss",
-    "release_date": "2022-11-04",
-    "release_date_precision": "day",
-    "total_tracks": 16,
-    "type": "album",
-    "uri": "spotify:album:5MS3MvWHJ3lOZPLiMxzOU6",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-        },
-        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-        "id": "3TVXtAsR1Inumwj472S9r4",
-        "name": "Drake",
-        "type": "artist",
-        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3cf4iSSKd8ffTncbtKljXw"
-    },
-    "href": "https://api.spotify.com/v1/albums/3cf4iSSKd8ffTncbtKljXw",
-    "id": "3cf4iSSKd8ffTncbtKljXw",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2738dc0d801766a5aa6a33cbe37",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e028dc0d801766a5aa6a33cbe37",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048518dc0d801766a5aa6a33cbe37",
-        "width": 64
-      }
-    ],
-    "name": "Honestly, Nevermind",
-    "release_date": "2022-06-17",
-    "release_date_precision": "day",
     "total_tracks": 14,
-    "type": "album",
-    "uri": "spotify:album:3cf4iSSKd8ffTncbtKljXw",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU"
-        },
-        "href": "https://api.spotify.com/v1/artists/1xU878Z1QtBldR7ru9owdU",
-        "id": "1xU878Z1QtBldR7ru9owdU",
-        "name": "Phoenix",
-        "type": "artist",
-        "uri": "spotify:artist:1xU878Z1QtBldR7ru9owdU"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/1jEwa4YdGR6FvKxWgRbJcv"
+      "spotify": "https://open.spotify.com/album/2aURKhuptoXbOAzoDth1BK"
     },
-    "href": "https://api.spotify.com/v1/albums/1jEwa4YdGR6FvKxWgRbJcv",
-    "id": "1jEwa4YdGR6FvKxWgRbJcv",
+    "href": "https://api.spotify.com/v1/albums/2aURKhuptoXbOAzoDth1BK",
+    "id": "2aURKhuptoXbOAzoDth1BK",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273321bbb9af41200d1108d1dd9",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273f05f2e283a0928ecc7e1e359",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02321bbb9af41200d1108d1dd9",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02f05f2e283a0928ecc7e1e359",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851321bbb9af41200d1108d1dd9",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851f05f2e283a0928ecc7e1e359",
         "width": 64
       }
     ],
-    "name": "Alpha Zulu",
-    "release_date": "2022-11-04",
+    "name": "Who We Used To Be (Deluxe)",
+    "release_date": "2023-10-27",
     "release_date_precision": "day",
+    "type": "album",
+    "uri": "spotify:album:2aURKhuptoXbOAzoDth1BK",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7KMqksf0UMdyA0UCf4R3ux"
+        },
+        "href": "https://api.spotify.com/v1/artists/7KMqksf0UMdyA0UCf4R3ux",
+        "id": "7KMqksf0UMdyA0UCf4R3ux",
+        "name": "James Blunt",
+        "type": "artist",
+        "uri": "spotify:artist:7KMqksf0UMdyA0UCf4R3ux"
+      }
+    ],
+    "album_group": "album",
+    "is_playable": true
+  },
+  {
+    "album_type": "album",
     "total_tracks": 10,
-    "type": "album",
-    "uri": "spotify:album:1jEwa4YdGR6FvKxWgRbJcv",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU"
-        },
-        "href": "https://api.spotify.com/v1/artists/1xU878Z1QtBldR7ru9owdU",
-        "id": "1xU878Z1QtBldR7ru9owdU",
-        "name": "Phoenix",
-        "type": "artist",
-        "uri": "spotify:artist:1xU878Z1QtBldR7ru9owdU"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/76ZPEP13Boqv4Da5XihzG0"
+      "spotify": "https://open.spotify.com/album/1JiflktVuDJ5OQkX6QFQRs"
     },
-    "href": "https://api.spotify.com/v1/albums/76ZPEP13Boqv4Da5XihzG0",
-    "id": "76ZPEP13Boqv4Da5XihzG0",
+    "href": "https://api.spotify.com/v1/albums/1JiflktVuDJ5OQkX6QFQRs",
+    "id": "1JiflktVuDJ5OQkX6QFQRs",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a7462ce6897b8d96ab96a293",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732a2a59b2c57daeeca24a2e7a",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a7462ce6897b8d96ab96a293",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e022a2a59b2c57daeeca24a2e7a",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851a7462ce6897b8d96ab96a293",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048512a2a59b2c57daeeca24a2e7a",
         "width": 64
       }
     ],
-    "name": "Winter Solstice",
-    "release_date": "2022-10-20",
+    "name": "Embrace",
+    "release_date": "2023-09-22",
     "release_date_precision": "day",
-    "total_tracks": 1,
     "type": "album",
-    "uri": "spotify:album:76ZPEP13Boqv4Da5XihzG0",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
+    "uri": "spotify:album:1JiflktVuDJ5OQkX6QFQRs",
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU"
+          "spotify": "https://open.spotify.com/artist/4AQrqVz6BYwy29iMxcGtx7"
         },
-        "href": "https://api.spotify.com/v1/artists/1xU878Z1QtBldR7ru9owdU",
-        "id": "1xU878Z1QtBldR7ru9owdU",
-        "name": "Phoenix",
+        "href": "https://api.spotify.com/v1/artists/4AQrqVz6BYwy29iMxcGtx7",
+        "id": "4AQrqVz6BYwy29iMxcGtx7",
+        "name": "Roosevelt",
         "type": "artist",
-        "uri": "spotify:artist:1xU878Z1QtBldR7ru9owdU"
+        "uri": "spotify:artist:4AQrqVz6BYwy29iMxcGtx7"
       }
     ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5wZxgj6x4vZP3abXD4fCEj"
-    },
-    "href": "https://api.spotify.com/v1/albums/5wZxgj6x4vZP3abXD4fCEj",
-    "id": "5wZxgj6x4vZP3abXD4fCEj",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27396962bced191aa341c113da8",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0296962bced191aa341c113da8",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485196962bced191aa341c113da8",
-        "width": 64
-      }
-    ],
-    "name": "Tonight (feat. Ezra Koenig) [Remixes]",
-    "release_date": "2022-10-13",
-    "release_date_precision": "day",
-    "total_tracks": 5,
-    "type": "album",
-    "uri": "spotify:album:5wZxgj6x4vZP3abXD4fCEj",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU"
-        },
-        "href": "https://api.spotify.com/v1/artists/1xU878Z1QtBldR7ru9owdU",
-        "id": "1xU878Z1QtBldR7ru9owdU",
-        "name": "Phoenix",
-        "type": "artist",
-        "uri": "spotify:artist:1xU878Z1QtBldR7ru9owdU"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/2GNvZZ39EQbDfg7AqO1UAF"
-    },
-    "href": "https://api.spotify.com/v1/albums/2GNvZZ39EQbDfg7AqO1UAF",
-    "id": "2GNvZZ39EQbDfg7AqO1UAF",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2736e7255cddc018881f02c7409",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e026e7255cddc018881f02c7409",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048516e7255cddc018881f02c7409",
-        "width": 64
-      }
-    ],
-    "name": "Tonight (feat. Ezra Koenig) [8-Bit Button Masher Remix]",
-    "release_date": "2022-09-29",
-    "release_date_precision": "day",
-    "total_tracks": 2,
-    "type": "album",
-    "uri": "spotify:album:2GNvZZ39EQbDfg7AqO1UAF",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU"
-        },
-        "href": "https://api.spotify.com/v1/artists/1xU878Z1QtBldR7ru9owdU",
-        "id": "1xU878Z1QtBldR7ru9owdU",
-        "name": "Phoenix",
-        "type": "artist",
-        "uri": "spotify:artist:1xU878Z1QtBldR7ru9owdU"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3FkF6yz6p8iM2TR18ODmtV"
-    },
-    "href": "https://api.spotify.com/v1/albums/3FkF6yz6p8iM2TR18ODmtV",
-    "id": "3FkF6yz6p8iM2TR18ODmtV",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273102a2ed2ae89b62b4803e26b",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02102a2ed2ae89b62b4803e26b",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851102a2ed2ae89b62b4803e26b",
-        "width": 64
-      }
-    ],
-    "name": "Tonight (feat. Ezra Koenig)",
-    "release_date": "2022-09-07",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:3FkF6yz6p8iM2TR18ODmtV",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU"
-        },
-        "href": "https://api.spotify.com/v1/artists/1xU878Z1QtBldR7ru9owdU",
-        "id": "1xU878Z1QtBldR7ru9owdU",
-        "name": "Phoenix",
-        "type": "artist",
-        "uri": "spotify:artist:1xU878Z1QtBldR7ru9owdU"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/27Csqhuwc1GrVvMvh169mF"
-    },
-    "href": "https://api.spotify.com/v1/albums/27Csqhuwc1GrVvMvh169mF",
-    "id": "27Csqhuwc1GrVvMvh169mF",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27395d651b36709640f5a152693",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0295d651b36709640f5a152693",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485195d651b36709640f5a152693",
-        "width": 64
-      }
-    ],
-    "name": "Alpha Zulu (Remixes)",
-    "release_date": "2022-08-19",
-    "release_date_precision": "day",
-    "total_tracks": 3,
-    "type": "album",
-    "uri": "spotify:album:27Csqhuwc1GrVvMvh169mF",
-    "liked": false
-  },
-  {
     "album_group": "album",
+    "is_playable": true
+  },
+  {
     "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/0SwO7SWeDHJijQ3XNS7xEE"
-        },
-        "href": "https://api.spotify.com/v1/artists/0SwO7SWeDHJijQ3XNS7xEE",
-        "id": "0SwO7SWeDHJijQ3XNS7xEE",
-        "name": "MGMT",
-        "type": "artist",
-        "uri": "spotify:artist:0SwO7SWeDHJijQ3XNS7xEE"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5mGJloHxjO2igmx9XJKAeJ"
-    },
-    "href": "https://api.spotify.com/v1/albums/5mGJloHxjO2igmx9XJKAeJ",
-    "id": "5mGJloHxjO2igmx9XJKAeJ",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273da70145916957ad043208823",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02da70145916957ad043208823",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851da70145916957ad043208823",
-        "width": 64
-      }
-    ],
-    "name": "11•11•11",
-    "release_date": "2022-11-11",
-    "release_date_precision": "day",
-    "total_tracks": 11,
-    "type": "album",
-    "uri": "spotify:album:5mGJloHxjO2igmx9XJKAeJ",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
-        },
-        "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
-        "id": "1Bl6wpkWCQ4KVgnASpvzzA",
-        "name": "BROCKHAMPTON",
-        "type": "artist",
-        "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/0EICXG4UBIAUOKVlfBGipA"
-    },
-    "href": "https://api.spotify.com/v1/albums/0EICXG4UBIAUOKVlfBGipA",
-    "id": "0EICXG4UBIAUOKVlfBGipA",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2731e816be3575d007cc77bac94",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e021e816be3575d007cc77bac94",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048511e816be3575d007cc77bac94",
-        "width": 64
-      }
-    ],
-    "name": "TM",
-    "release_date": "2022-11-18",
-    "release_date_precision": "day",
-    "total_tracks": 11,
-    "type": "album",
-    "uri": "spotify:album:0EICXG4UBIAUOKVlfBGipA",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
-        },
-        "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
-        "id": "1Bl6wpkWCQ4KVgnASpvzzA",
-        "name": "BROCKHAMPTON",
-        "type": "artist",
-        "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/7bNubmdfctkLp7ltJE0pLy"
-    },
-    "href": "https://api.spotify.com/v1/albums/7bNubmdfctkLp7ltJE0pLy",
-    "id": "7bNubmdfctkLp7ltJE0pLy",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273a3a7fef0d7e967752934b8b3",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02a3a7fef0d7e967752934b8b3",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851a3a7fef0d7e967752934b8b3",
-        "width": 64
-      }
-    ],
-    "name": "The Family",
-    "release_date": "2022-11-17",
-    "release_date_precision": "day",
-    "total_tracks": 17,
-    "type": "album",
-    "uri": "spotify:album:7bNubmdfctkLp7ltJE0pLy",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
-        },
-        "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
-        "id": "1Bl6wpkWCQ4KVgnASpvzzA",
-        "name": "BROCKHAMPTON",
-        "type": "artist",
-        "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6U97jLY4aY4LCM3WQ17fIv"
-    },
-    "href": "https://api.spotify.com/v1/albums/6U97jLY4aY4LCM3WQ17fIv",
-    "id": "6U97jLY4aY4LCM3WQ17fIv",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2738fbd6dcafd6e2e6d9c63df3e",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e028fbd6dcafd6e2e6d9c63df3e",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d000048518fbd6dcafd6e2e6d9c63df3e",
-        "width": 64
-      }
-    ],
-    "name": "The Ending",
-    "release_date": "2022-11-11",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:6U97jLY4aY4LCM3WQ17fIv",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
-        },
-        "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
-        "id": "1Bl6wpkWCQ4KVgnASpvzzA",
-        "name": "BROCKHAMPTON",
-        "type": "artist",
-        "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/3aDrSVhq4TRAlAayrAC95o"
-    },
-    "href": "https://api.spotify.com/v1/albums/3aDrSVhq4TRAlAayrAC95o",
-    "id": "3aDrSVhq4TRAlAayrAC95o",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27313a6cc5feee4c926f122e97f",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0213a6cc5feee4c926f122e97f",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485113a6cc5feee4c926f122e97f",
-        "width": 64
-      }
-    ],
-    "name": "Big Pussy",
-    "release_date": "2022-11-04",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:3aDrSVhq4TRAlAayrAC95o",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
-        },
-        "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
-        "id": "1Bl6wpkWCQ4KVgnASpvzzA",
-        "name": "BROCKHAMPTON",
-        "type": "artist",
-        "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/6pM1qrdxcRoGS6iVGBDH77"
-    },
-    "href": "https://api.spotify.com/v1/albums/6pM1qrdxcRoGS6iVGBDH77",
-    "id": "6pM1qrdxcRoGS6iVGBDH77",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273d76b48d817c97f46fdd140f1",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02d76b48d817c97f46fdd140f1",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851d76b48d817c97f46fdd140f1",
-        "width": 64
-      }
-    ],
-    "name": "Hollywood Swinging (From 'Minions: The Rise of Gru' Soundtrack)",
-    "release_date": "2022-06-17",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:6pM1qrdxcRoGS6iVGBDH77",
-    "liked": false
-  },
-  {
-    "album_group": "album",
-    "album_type": "album",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/2SrSdSvpminqmStGELCSNd"
-        },
-        "href": "https://api.spotify.com/v1/artists/2SrSdSvpminqmStGELCSNd",
-        "id": "2SrSdSvpminqmStGELCSNd",
-        "name": "Stormzy",
-        "type": "artist",
-        "uri": "spotify:artist:2SrSdSvpminqmStGELCSNd"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/5feRs2ejrMcxuM5hcDDSBb"
-    },
-    "href": "https://api.spotify.com/v1/albums/5feRs2ejrMcxuM5hcDDSBb",
-    "id": "5feRs2ejrMcxuM5hcDDSBb",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273df075bcefe46d7ca94692651",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02df075bcefe46d7ca94692651",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851df075bcefe46d7ca94692651",
-        "width": 64
-      }
-    ],
-    "name": "This Is What I Mean",
-    "release_date": "2022-11-25",
-    "release_date_precision": "day",
     "total_tracks": 12,
-    "type": "album",
-    "uri": "spotify:album:5feRs2ejrMcxuM5hcDDSBb",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/2SrSdSvpminqmStGELCSNd"
-        },
-        "href": "https://api.spotify.com/v1/artists/2SrSdSvpminqmStGELCSNd",
-        "id": "2SrSdSvpminqmStGELCSNd",
-        "name": "Stormzy",
-        "type": "artist",
-        "uri": "spotify:artist:2SrSdSvpminqmStGELCSNd"
-      }
-    ],
     "external_urls": {
-      "spotify": "https://open.spotify.com/album/4VKvqrfZFcNM28kXsbTwcz"
+      "spotify": "https://open.spotify.com/album/1gd8XxDE2BnfVVsEAoXfs9"
     },
-    "href": "https://api.spotify.com/v1/albums/4VKvqrfZFcNM28kXsbTwcz",
-    "id": "4VKvqrfZFcNM28kXsbTwcz",
+    "href": "https://api.spotify.com/v1/albums/1gd8XxDE2BnfVVsEAoXfs9",
+    "id": "1gd8XxDE2BnfVVsEAoXfs9",
     "images": [
       {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a7d1516f768042d52869d1be",
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273180bb1d6f9b8d3ad2ca92647",
         "width": 640
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a7d1516f768042d52869d1be",
         "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02180bb1d6f9b8d3ad2ca92647",
         "width": 300
       },
       {
+        "url": "https://i.scdn.co/image/ab67616d00004851a7d1516f768042d52869d1be",
         "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851180bb1d6f9b8d3ad2ca92647",
         "width": 64
       }
     ],
-    "name": "Firebabe",
-    "release_date": "2022-11-10",
+    "name": "Exorcism of Youth",
+    "release_date": "2023-08-18",
     "release_date_precision": "day",
-    "total_tracks": 1,
     "type": "album",
-    "uri": "spotify:album:4VKvqrfZFcNM28kXsbTwcz",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
+    "uri": "spotify:album:1gd8XxDE2BnfVVsEAoXfs9",
     "artists": [
       {
         "external_urls": {
-          "spotify": "https://open.spotify.com/artist/2SrSdSvpminqmStGELCSNd"
+          "spotify": "https://open.spotify.com/artist/1fy3AQc7grjf5LnCd7snSg"
         },
-        "href": "https://api.spotify.com/v1/artists/2SrSdSvpminqmStGELCSNd",
-        "id": "2SrSdSvpminqmStGELCSNd",
-        "name": "Stormzy",
+        "href": "https://api.spotify.com/v1/artists/1fy3AQc7grjf5LnCd7snSg",
+        "id": "1fy3AQc7grjf5LnCd7snSg",
+        "name": "The View",
         "type": "artist",
-        "uri": "spotify:artist:2SrSdSvpminqmStGELCSNd"
+        "uri": "spotify:artist:1fy3AQc7grjf5LnCd7snSg"
       }
     ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/1PTZnwfkh9YQUJLSdBOvFe"
-    },
-    "href": "https://api.spotify.com/v1/albums/1PTZnwfkh9YQUJLSdBOvFe",
-    "id": "1PTZnwfkh9YQUJLSdBOvFe",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27361efca85b4a85b0f95ed653d",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e0261efca85b4a85b0f95ed653d",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d0000485161efca85b4a85b0f95ed653d",
-        "width": 64
-      }
-    ],
-    "name": "Hide & Seek",
-    "release_date": "2022-10-14",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:1PTZnwfkh9YQUJLSdBOvFe",
-    "liked": false
-  },
-  {
-    "album_group": "single",
-    "album_type": "single",
-    "artists": [
-      {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/artist/2SrSdSvpminqmStGELCSNd"
-        },
-        "href": "https://api.spotify.com/v1/artists/2SrSdSvpminqmStGELCSNd",
-        "id": "2SrSdSvpminqmStGELCSNd",
-        "name": "Stormzy",
-        "type": "artist",
-        "uri": "spotify:artist:2SrSdSvpminqmStGELCSNd"
-      }
-    ],
-    "external_urls": {
-      "spotify": "https://open.spotify.com/album/2qB4PkpoOUuvLXPzckmYdw"
-    },
-    "href": "https://api.spotify.com/v1/albums/2qB4PkpoOUuvLXPzckmYdw",
-    "id": "2qB4PkpoOUuvLXPzckmYdw",
-    "images": [
-      {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273b61ce47d00308209e80c8e1d",
-        "width": 640
-      },
-      {
-        "height": 300,
-        "url": "https://i.scdn.co/image/ab67616d00001e02b61ce47d00308209e80c8e1d",
-        "width": 300
-      },
-      {
-        "height": 64,
-        "url": "https://i.scdn.co/image/ab67616d00004851b61ce47d00308209e80c8e1d",
-        "width": 64
-      }
-    ],
-    "name": "Mel Made Me Do It",
-    "release_date": "2022-09-22",
-    "release_date_precision": "day",
-    "total_tracks": 1,
-    "type": "album",
-    "uri": "spotify:album:2qB4PkpoOUuvLXPzckmYdw",
-    "liked": false
+    "album_group": "album",
+    "is_playable": true
   }
 ]
