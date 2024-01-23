@@ -4,7 +4,7 @@ import styles from "~/shared/styles/global.css";
 import { useState } from "react";
 import ModalContext from "./shared/contexts/modalContext";
 
-export const meta: MetaFunction = () => {
+/* export const meta: MetaFunction = () => {
   const description =
     "With Spotify Releaser, you will never miss new music from your favourite artists!";
   return {
@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => {
     "og:description": description,
     "og:image": "https://spotify-releaser.vercel.app/meta_img.png",
   };
-};
+}; */
 
 export function links() {
   return [
@@ -43,7 +43,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <Meta />
+        {/*   <Meta /> */}
         <Links />
         {typeof document === "undefined" ? "__STYLES__" : null}
       </head>
