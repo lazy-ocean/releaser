@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import { FlexRow, FlexColumn } from "~/shared/styles/utils";
 
 export const Card = styled.li`

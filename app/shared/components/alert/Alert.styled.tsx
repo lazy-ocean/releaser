@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import { AlertType } from "./Alert.interface";
 
 export const StyledAlert = styled.div<{ alerttype: AlertType | false }>`

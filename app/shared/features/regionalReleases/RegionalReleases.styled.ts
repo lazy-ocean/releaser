@@ -1,5 +1,5 @@
 import { CountryDropdown } from "react-country-region-selector";
-import styled from "styled-components";
+import { styled } from "styled-components";
 import { DropdownStyles } from "../filtersPanel/filtersPanel.styled";
 
 export const Container = styled.section`
