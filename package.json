@@ -18,7 +18,7 @@
     "patch-package": "^7.0.0",
     "postinstall-postinstall": "^2.1.0",
     "react": "^18.3.0-next-fecc288b7-20221025",
-    "react-aria": "^3.31.1",
+    "react-aria-components": "^1.0.1",
     "react-country-region-selector": "^3.6.1",
     "react-dom": "^18.3.0-next-fecc288b7-20221025",
     "react-icons": "^4.4.0",

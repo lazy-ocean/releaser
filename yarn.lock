@@ -1559,6 +1559,17 @@
     "@react-types/checkbox" "^3.6.0"
     "@swc/helpers" "^0.5.0"
 
+"@react-aria/toolbar@3.0.0-beta.1":
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@react-aria/toolbar/-/toolbar-3.0.0-beta.1.tgz#7331c8a06b89d9f293ebf4cbec418aeeffb680d5"
+  integrity sha512-GTQ76i0N8/BzWRJ/95RpOFGmbtv0lV3T2zd7CUis6xmP1zJCpSycs1V2jAUs6ggkVDedHLU2d0AOMkXorZLiUg==
+  dependencies:
+    "@react-aria/focus" "^3.16.0"
+    "@react-aria/i18n" "^3.10.0"
+    "@react-aria/utils" "^3.23.0"
+    "@react-types/shared" "^3.22.0"
+    "@swc/helpers" "^0.5.0"
+
 "@react-aria/tooltip@^3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@react-aria/tooltip/-/tooltip-3.7.0.tgz#70f0f951caabb04d33adf8785c1a716cb0e01c48"
@@ -1635,6 +1646,14 @@
     "@react-stately/select" "^3.6.1"
     "@react-stately/utils" "^3.9.0"
     "@react-types/combobox" "^3.10.0"
+    "@react-types/shared" "^3.22.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/data@^3.11.0":
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/data/-/data-3.11.0.tgz#d744d868ee810126aef4a0a827ab394e3059d33a"
+  integrity sha512-0BlPT58WrAtUvpiEfUuyvIsGFTzp/9vA5y+pk53kGJhOdc5tqBGHi9cg40pYE/i1vdHJGMpyHGRD9nkQb8wN3Q==
+  dependencies:
     "@react-types/shared" "^3.22.0"
     "@swc/helpers" "^0.5.0"
 
@@ -1903,6 +1922,13 @@
   integrity sha512-geYoqAyQaTLG43AaXdMUVqZXYgkSifrD9cF7lR2kPAT0uGFv0YREi6ieU+aui8XJ83EW0xcxP+EPWd2YkN4D4w==
   dependencies:
     "@react-types/overlays" "^3.8.4"
+    "@react-types/shared" "^3.22.0"
+
+"@react-types/form@^3.7.1":
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/@react-types/form/-/form-3.7.1.tgz#0f01bf1a7b8e36aaebf4a17cd40f8c487faecddf"
+  integrity sha512-Wr44McYcB5Od3SwMzLhe1qaaZIy+YUe16jYRc/0io1gyCELXmplpIw8VQmf9/x62ze9CC/aZVdEJ/V9CogXmOA==
+  dependencies:
     "@react-types/shared" "^3.22.0"
 
 "@react-types/grid@^3.2.3":
@@ -7770,6 +7796,27 @@ raw-body@2.5.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-aria-components@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-aria-components/-/react-aria-components-1.0.1.tgz#fce8d1ae1e87d1f8544807a3af94b340eef0bb58"
+  integrity sha512-zlSx5r7Hu3kTg7hDEGNBwrtMNWJnJ81Zt1AXPJASAdO0dw6WUgSgQH2/ZgkDiKLlNmRFQhR8/gKN70rAJ+LZiQ==
+  dependencies:
+    "@internationalized/date" "^3.5.1"
+    "@internationalized/string" "^3.2.0"
+    "@react-aria/focus" "^3.16.0"
+    "@react-aria/interactions" "^3.20.1"
+    "@react-aria/toolbar" "3.0.0-beta.1"
+    "@react-aria/utils" "^3.23.0"
+    "@react-stately/table" "^3.11.4"
+    "@react-types/form" "^3.7.1"
+    "@react-types/grid" "^3.2.3"
+    "@react-types/shared" "^3.22.0"
+    "@react-types/table" "^3.9.2"
+    "@swc/helpers" "^0.5.0"
+    react-aria "^3.31.1"
+    react-stately "^3.29.1"
+    use-sync-external-store "^1.2.0"
+
 react-aria@^3.31.1:
   version "3.31.1"
   resolved "https://registry.yarnpkg.com/react-aria/-/react-aria-3.31.1.tgz#b72fbd59180218672f8be5eae7f56bff7b27e799"
@@ -7885,6 +7932,35 @@ react-spinners@^0.13.4:
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.13.4.tgz#20f7435e5cb3a2bde23110efa8b7dfbe485373e9"
   integrity sha512-V6IURjYOwomhdngMfuVxBp4utCF6v21sjQ6r4K2JoKl8fwXZp1UeHMBLf+2SU+cts8hAVj9rHOJ8kdT5UqqaJw==
+
+react-stately@^3.29.1:
+  version "3.29.1"
+  resolved "https://registry.yarnpkg.com/react-stately/-/react-stately-3.29.1.tgz#c18f7216edf13c9bb2ce2c922c35027f73d0700f"
+  integrity sha512-hc4ZHy/ahvMwr6z7XMjYJ7EgzNVrXhzM4l2Qj17rdRhERo7/ovWmQencf9pF7K8kD5TraEHxPHLrYzGN4fxfUQ==
+  dependencies:
+    "@react-stately/calendar" "^3.4.3"
+    "@react-stately/checkbox" "^3.6.1"
+    "@react-stately/collections" "^3.10.4"
+    "@react-stately/combobox" "^3.8.1"
+    "@react-stately/data" "^3.11.0"
+    "@react-stately/datepicker" "^3.9.1"
+    "@react-stately/dnd" "^3.2.7"
+    "@react-stately/form" "^3.0.0"
+    "@react-stately/list" "^3.10.2"
+    "@react-stately/menu" "^3.6.0"
+    "@react-stately/numberfield" "^3.8.0"
+    "@react-stately/overlays" "^3.6.4"
+    "@react-stately/radio" "^3.10.1"
+    "@react-stately/searchfield" "^3.5.0"
+    "@react-stately/select" "^3.6.1"
+    "@react-stately/selection" "^3.14.2"
+    "@react-stately/slider" "^3.5.0"
+    "@react-stately/table" "^3.11.4"
+    "@react-stately/tabs" "^3.6.3"
+    "@react-stately/toggle" "^3.7.0"
+    "@react-stately/tooltip" "^3.4.6"
+    "@react-stately/tree" "^3.7.5"
+    "@react-types/shared" "^3.22.0"
 
 react@^18.3.0-next-fecc288b7-20221025:
   version "18.3.0-next-fecc288b7-20221025"
@@ -9256,6 +9332,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-sync-external-store@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"

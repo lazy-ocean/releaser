@@ -1,9 +1,9 @@
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
+import type { ActionFunctionArgs } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 
 import { destroySession, getSession } from "~/services/session.server";
 
-export const action: ActionFunction = async ({ request }) => {
+export async function action({ request }: ActionFunctionArgs) {
   return redirect("/", {
     headers: {
       "Set-Cookie": await destroySession(
@@ -11,8 +11,8 @@ export const action: ActionFunction = async ({ request }) => {
       ),
     },
   });
-};
+}
 
-export const loader: LoaderFunction = () => {
+export function loader() {
   throw json({}, { status: 404 });
-};
+}
