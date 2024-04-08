@@ -1,4 +1,4 @@
-import { Form } from "@remix-run/react";
+import { Form, Link } from "@remix-run/react";
 import { Button } from "~/shared/components";
 import { ButtonType } from "~/shared/components/button/button";
 import {
@@ -8,7 +8,6 @@ import {
   Wrapper,
   CTARow,
 } from "./LoginForm.styled";
-import { Link } from "@remix-run/react";
 import type { User } from "remix-auth-spotify";
 
 const LoginForm = ({ user }: { user: User | null }) => {

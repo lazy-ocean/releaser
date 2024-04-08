@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
+import { css, styled } from "styled-components";
 import { FlexColumn, FlexRow } from "~/shared/styles/utils";
-import { HiHeart, HiOutlineHeart } from "react-icons/hi";
-import { MdOutlinePlaylistAdd } from "react-icons/md";
+/* import { HiHeart, HiOutlineHeart } from "react-icons/hi";
+import { MdOutlinePlaylistAdd } from "react-icons/md"; */
 
 const IconCss = css<{ $isLiked: boolean }>`
   width: 1.5rem;
@@ -22,7 +22,7 @@ export const AddToLibraryPanel = styled(FlexColumn)<{ $isLiked?: boolean }>`
   margin-left: auto;
   gap: var(--spacing-xxs);
 `;
-
+/* 
 export const FullHeart = styled(HiHeart)<{ $isLiked: boolean }>`
   ${IconCss}
 `;
@@ -34,6 +34,20 @@ export const EmptyHeart = styled(HiOutlineHeart)<{ $isLiked: boolean }>`
 export const PlaylistButton = styled(MdOutlinePlaylistAdd)`
   width: 2rem;
   height: 2rem;
+`; */
+
+export const FullHeart = styled.div<{ $isLiked: boolean }>`
+  ${IconCss}
+`;
+
+export const EmptyHeart = styled.div<{ $isLiked: boolean }>`
+  ${IconCss}
+`;
+
+export const PlaylistButton = styled.button`
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
 `;
 
 export const Wrapper = styled.div`

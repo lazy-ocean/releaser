@@ -6,7 +6,7 @@ import {
   Username,
   Menu,
 } from "./UserDropdown.styled";
-import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+/* import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai/"; */
 import { Form, useSubmit } from "@remix-run/react";
 import useKeyboard from "~/shared/utils/hooks/useKeyboard";
 
@@ -40,9 +40,9 @@ const UserDropdown = ({ user }: { user: User }) => {
     <UserButton onClick={() => setMenuOpen(!isMenuOpen)} ref={ref}>
       <img src={image} alt="Your avatar" />
       <Username>{name}</Username>
-      <DropdownButton aria-label="Open user menu">
+      {/*       <DropdownButton aria-label="Open user menu">
         {isMenuOpen ? <AiFillCaretUp /> : <AiFillCaretDown />}
-      </DropdownButton>
+      </DropdownButton> */}
 
       {isMenuOpen && (
         <Menu>

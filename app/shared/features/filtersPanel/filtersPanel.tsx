@@ -6,7 +6,7 @@ import {
   FiltersWrapper,
   TooltipWrapper,
 } from "./filtersPanel.styled";
-import { FaFilter } from "react-icons/fa";
+/* import { FaFilter } from "react-icons/fa"; */
 import React, {
   useState,
   useRef,
@@ -174,7 +174,7 @@ const FiltersPanel = ({
           <>
             <div>
               <FilterLabel htmlFor="period">Show releases for </FilterLabel>
-              <Dropdown
+              {/*               <Dropdown
                 id="period"
                 name="period"
                 defaultValue={period}
@@ -189,21 +189,21 @@ const FiltersPanel = ({
                     {label}
                   </option>
                 ))}
-              </Dropdown>
+              </Dropdown> */}
             </div>
             <div>
               <FilterLabel htmlFor="type">Show </FilterLabel>
-              <Dropdown id="type" name="type" defaultValue={type}>
+              {/*               <Dropdown id="type" name="type" defaultValue={type}>
                 {Object.entries(RELEASE_TYPES).map(([key, value], i) => (
                   <option value={key} key={i} aria-selected={value === type}>
                     {value}
                   </option>
                 ))}
-              </Dropdown>
+              </Dropdown> */}
             </div>
             <TooltipWrapper disabled={user?.type === UserType.demo}>
               <FilterLabel htmlFor="library">Show releases from </FilterLabel>
-              <Dropdown
+              {/*              <Dropdown
                 id="library"
                 name="library"
                 defaultValue={libraryAccess}
@@ -220,7 +220,7 @@ const FiltersPanel = ({
                     {value}
                   </option>
                 ))}
-              </Dropdown>
+              </Dropdown> */}
             </TooltipWrapper>
           </>
         ) : (
@@ -260,7 +260,7 @@ const FiltersPanel = ({
         type="submit"
         aria-label={filtersOpen ? "Submit filters" : "Open filters"}
       >
-        <FaFilter />
+        {/* <FaFilter /> */}
       </FiltersButton>
       <LikedSongsWarningModal
         onAccept={onConfirmSearch}

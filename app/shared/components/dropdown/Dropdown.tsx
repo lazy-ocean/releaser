@@ -1,12 +1,14 @@
 import { Container } from "./Dropdown.styled";
 import type { DropdownProps } from "./Dropdown.interface";
 import useKeyboard from "~/shared/utils/hooks/useKeyboard";
-import MenuUnstyled from "@mui/base/MenuUnstyled";
-import MenuItemUnstyled from "@mui/base/MenuItemUnstyled";
+/* import { Menu } from "@mui/base/Menu";
+import { MenuItem } from "@mui/base/MenuItem"; */
+import { Menu, Popover, MenuItem } from "react-aria-components";
+import { useState } from "react";
 
 const Dropdown = (props: DropdownProps) => {
-  const { items, action, anchorEl, handleClose } = props;
-  const open = Boolean(anchorEl);
+  const { items, action, anchorEl, handleClose, isOpen, setIsOpen } = props;
+  /*   const open = Boolean(anchorEl); */
 
   useKeyboard({
     enter: (target: { id: string; dataset: { name: string } }) =>
@@ -14,32 +16,38 @@ const Dropdown = (props: DropdownProps) => {
   });
 
   return (
-    <MenuUnstyled
-      role="listbox"
-      aria-multiselectable="false"
-      open={open}
-      anchorEl={anchorEl}
+    <Popover
+      isOpen={isOpen}
       onClose={handleClose}
-      slots={{ listbox: Container }}
+      placement="bottom"
+      triggerRef={anchorEl}
+      shouldCloseOnInteractOutside={() => setIsOpen(false)}
     >
-      {items.map(({ id, name }) => (
-        <MenuItemUnstyled
-          key={id}
-          id={id}
-          data-name={name}
-          onClick={() => {
-            action(id, name);
-          }}
-          aria-label={props.ariaLabel ? props.ariaLabel + name : ""}
-          tabIndex={0}
-          role="option"
-          aria-selected={false}
-          style={{ cursor: "pointer" }}
-        >
-          {name}
-        </MenuItemUnstyled>
-      ))}
-    </MenuUnstyled>
+      <Container
+        aria-multiselectable="false"
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        slots={{ listbox: Container }}
+      >
+        {items.map(({ id, name }) => (
+          <MenuItem
+            key={id}
+            id={id}
+            data-name={name}
+            onClick={() => {
+              action(id, name);
+            }}
+            aria-label={props.ariaLabel ? props.ariaLabel + name : ""}
+            tabIndex={0}
+            role="option"
+            aria-selected={false}
+            style={{ cursor: "pointer" }}
+          >
+            {name}
+          </MenuItem>
+        ))}
+      </Container>
+    </Popover>
   );
 };
 

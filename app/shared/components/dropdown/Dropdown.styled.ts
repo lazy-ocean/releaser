@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
+import { Menu, Popover, MenuItem } from "react-aria-components";
 
-export const Container = styled.ul`
+export const Container = styled(Menu)`
   list-style-type: none;
   background-color: var(--bg-elevation);
   padding: var(--spacing-xxs);

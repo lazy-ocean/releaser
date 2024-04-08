@@ -14,6 +14,7 @@ import {
   readFromLocalStorage,
   setLocalStorageItem,
 } from "~/shared/utils/hooks/useLocalStorage";
+import { MenuTrigger, DialogTrigger } from "react-aria-components";
 
 const STORED_PLAYLISTS_KEY = "playlists";
 
@@ -24,6 +25,7 @@ const AddToPlaylist = ({
   albumId: string;
   albumName: string;
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
   const [playlists, setPlaylists] = useState<Playlist[]>([]);
   const [name, setName] = useState<string>("");
@@ -45,7 +47,8 @@ const AddToPlaylist = ({
         );
         setPlaylists(items);
       } else setPlaylists(demoPlaylists);
-      setAnchorEl(e.target as HTMLButtonElement);
+      /* setAnchorEl(e.target as HTMLButtonElement); */
+      setIsOpen(true);
     } catch (e) {
       setAlertText("Something went wrong");
       setAlertIsOpen(AlertType.ERROR);
@@ -120,7 +123,7 @@ const AddToPlaylist = ({
       setSongsInPlaylist(inPlaylist);
       setSongsToAdd(toAdd);
       setAnchorEl(null);
-      if (ref && ref.current) ref.current.focus();
+      /*    if (ref && ref.current) ref.current.focus(); */
       if (inPlaylist.length) {
         setIsModalOpen(id);
       } else {
@@ -135,25 +138,29 @@ const AddToPlaylist = ({
 
   const handleClose = () => {
     setAnchorEl(null);
-    if (ref && ref.current) ref.current.focus();
+    /* if (ref && ref.current) ref.current.focus(); */
   };
 
   return (
     <Wrapper>
-      <IconButton
-        aria-label={`Add ${albumName} to your playlists`}
-        onClick={(e: React.MouseEvent) => handleClick(e)}
-        ref={ref}
-      >
-        <PlaylistButton aria-hidden={true} />
-      </IconButton>
-      <Dropdown
-        items={playlists}
-        action={handleAlbumAdd}
-        ariaLabel={`Add ${albumName} to `}
-        anchorEl={anchorEl}
-        handleClose={handleClose}
-      />
+      <DialogTrigger>
+        <IconButton
+          aria-label={`Add ${albumName} to your playlists`}
+          onClick={(e: React.MouseEvent) => handleClick(e)}
+          ref={ref}
+        >
+          <PlaylistButton aria-hidden={true} />
+        </IconButton>
+        <Dropdown
+          items={playlists}
+          action={handleAlbumAdd}
+          ariaLabel={`Add ${albumName} to `}
+          anchorEl={ref}
+          handleClose={handleClose}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
+      </DialogTrigger>
       <PlaylistErrorModal
         id={id}
         onAccept={() =>

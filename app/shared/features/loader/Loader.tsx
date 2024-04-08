@@ -1,10 +1,13 @@
+/* import pkg from "react-spinners"; */
 import type { RefObject } from "react";
 import { useState } from "react";
-import { ClipLoader } from "react-spinners";
+/* import { ClipLoader } from "react-spinners"; */
 import { Button } from "~/shared/components";
 import { ButtonType } from "~/shared/components/button/button";
 import { LoaderWrapper } from "../albumsTile/Tile.styled";
 import { LibraryAccessType } from "../filtersPanel/filtersPanel.interface";
+
+/* const { ClipLoader } = pkg; */
 
 const Loader = ({
   total,
@@ -18,9 +21,10 @@ const Loader = ({
   controller: RefObject<any>;
 }) => {
   const [abort, setAbort] = useState(false);
+
   return (
     <LoaderWrapper>
-      <ClipLoader color="#1ed760" size={100} />
+      {/*    <ClipLoader color="#1ed760" size={100} /> */}
       {abort && (
         <>
           <h3>Stopping everything...</h3>

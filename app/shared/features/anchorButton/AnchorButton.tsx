@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { IoIosArrowUp } from "react-icons/io";
+/* import { IoIosArrowUp } from "react-icons/io"; */
 import { AnchorBtn } from "./AnchorButton.styled";
 
 const AnchorButton = () => {
@@ -25,7 +25,7 @@ const AnchorButton = () => {
 
   return (
     <AnchorBtn onClick={handleClick} isVisible={isVisible}>
-      <IoIosArrowUp aria-hidden={true} />
+      {/* <IoIosArrowUp aria-hidden={true} /> */}
       To the top
     </AnchorBtn>
   );
