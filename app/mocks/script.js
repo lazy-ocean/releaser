@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const dateToFilter = "2023-01-01";
+const dateToFilter = "2023-04-01";
 
 fs.readFile("releases.json", "utf8", (err, data) => {
   if (err) {
@@ -11,9 +11,12 @@ fs.readFile("releases.json", "utf8", (err, data) => {
   try {
     const albums = JSON.parse(data);
 
-    const filteredAlbums = albums.filter(
-      (album) => album.release_date >= dateToFilter
-    );
+    const filteredAlbums = albums
+      .filter((album) => album.release_date >= dateToFilter)
+      .map((album) => {
+        delete album.available_markets;
+        return album;
+      });
 
     fs.writeFile(
       "releases.json",
