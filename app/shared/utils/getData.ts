@@ -6,10 +6,8 @@ export const ENDPOINTS = {
     `https://api.spotify.com/v1/artists/${id}/albums?include_groups=${
       type ? type : "album,single"
     }`,
-  RECENT_RELEASES: (country?: string): string =>
-    `https://api.spotify.com/v1/browse/new-releases?limit=10${
-      country ? `&country=${country}` : ""
-    }`,
+  RECENT_RELEASES: (): string =>
+    `https://api.spotify.com/v1/browse/new-releases?limit=10`,
   REQUEST_TOKEN: "https://accounts.spotify.com/api/token",
   IF_ALBUM_IN_LIBRARY: (id: string) =>
     `https://api.spotify.com/v1/me/albums/contains?ids=${id}`,

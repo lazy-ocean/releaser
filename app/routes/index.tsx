@@ -25,39 +25,28 @@ export const loader: LoaderFunction = async ({ request }) => {
 
 export default function Index() {
   const data = useLoaderData<IndexData>();
-  const [country, setCountry] = useState<string>("");
   const { user = null, releases, baseAccessToken } = data;
   const [regionalReleases, setRegionalReleases] = useState(releases);
   const { setIsModalOpen } = useContext(ModalContext);
 
   useEffect(() => {
     const getReleases = async () => {
-      if (country) {
-        try {
-          const chosenReleases = await getRegionalReleases(
-            baseAccessToken,
-            country
-          );
-          setRegionalReleases(chosenReleases);
-        } catch (e) {
-          setIsModalOpen("location-error");
-          setCountry("");
-        }
+      try {
+        const chosenReleases = await getRegionalReleases(baseAccessToken);
+        setRegionalReleases(chosenReleases);
+      } catch (e) {
+        setIsModalOpen("location-error");
       }
     };
     getReleases();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [country, baseAccessToken]);
+  }, [baseAccessToken]);
 
   return (
     <>
       <Header user={user} />
       <LoginForm user={user} />
-      <RegionalReleases
-        releases={regionalReleases.albums}
-        location={country}
-        setUserCountry={setCountry}
-      />
+      <RegionalReleases releases={regionalReleases.albums} />
       <ErrorLocationModal />
       <Footer />
     </>

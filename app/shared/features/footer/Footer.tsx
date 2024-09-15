@@ -9,7 +9,7 @@ const Footer = () => (
       </a>
     </p>
     <p>
-      2022, made by{" "}
+      {new Date().getFullYear()}, made by{" "}
       <a href="https://lazy-ocean.vercel.app/">Vladlena Panchenko</a>
     </p>
   </StyledFooter>
